@@ -15,6 +15,7 @@ export class MovieComponent implements OnInit {
   grayscale = false;
   firstname = 'firstname';
   lastname = 'lastname';
+  loading = false;
 
   
   constructor(private apiservice: HttpService) {
@@ -31,6 +32,7 @@ export class MovieComponent implements OnInit {
   }
 
   generateTiles() {
+    this.loading = true;
     this.totallegth += this.tilescount;
     console.log('======this.grayscale', this.grayscale);
     const url = `http://api.icndb.com/jokes/random/${this.tilescount}/?exclude=[explicit]`;
@@ -47,6 +49,9 @@ export class MovieComponent implements OnInit {
           };
           this.alltiles.push(tempObj);
         });
+        setTimeout(() => {
+          this.loading = false;
+        }, 2000);
       }
     );
   }
