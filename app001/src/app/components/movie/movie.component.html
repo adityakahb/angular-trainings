@@ -1,0 +1,59 @@
+<div class="w1">
+  <div class="max-wrap">
+    <div class="container-fluid">
+      <div class="row justify-content-center">
+        <div class="col-md-6 mt-3 mb-3">
+          <form #heroForm="ngForm" class="form-inline" (ngSubmit)="generateTiles()">
+            <div class="form-group pl-1 pr-1">
+              <input class="form-control" type="text" name="firstname" [(ngModel)]="firstname"/>
+            </div>
+            <div class="form-group pl-1 pr-1">
+              <input class="form-control" type="text" name="lastname" [(ngModel)]="lastname"/>
+            </div>
+            <div class="form-group pl-1 pr-1">
+              <div class="custom-control custom-checkbox text-center">
+                <input type="checkbox" class="custom-control-input" name="grayscale1" id="grayscale1" [(ngModel)]="grayscale">
+                <label class="custom-control-label" for="grayscale1">
+                  Grayscale?
+                </label>
+              </div>
+            </div>
+            <div class="form-group pl-1 pr-1">
+              <button type="submit" class="btn btn-secondary" (click)="applyTransform()">Apply Transform</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="buffer">
+
+</div>
+<div class="max-wrap">
+  <div class="container-fluid">
+    <div class="row justify-content-center">
+      <div class="col-sm-6 col-md-4 pt-3 pb-3" *ngFor="let item of alltiles">
+        <article class="tile-wrap">
+          <div class="img-wrap">
+            <img [src]="item.banner"/>
+          </div>
+          <div class="text-wrap">
+            <div class="avatar-wrap">
+              <div class="avatar-img">
+                <img [src]="item.avatar"/>
+              </div>
+              <div class="avatar-name">
+                {{item.name}}
+              </div>
+            </div>
+            <div class="desc-wrap" [innerHTML]="item.joke"></div>
+          </div>
+        </article>
+      </div>
+    </div>
+    <div class="row justify-content-center">
+      <button type="button" (click)="generateTiles()" class="btn btn-primary btn-lg">Load More</button>
+    </div>
+  </div>  
+</div>
