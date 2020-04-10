@@ -17,6 +17,7 @@ export class MovieComponent implements OnInit {
   lastname = 'lastname';
   loading = false;
 
+  apiresponse;
   
   constructor(private apiservice: HttpService) {
     this.generateTiles();
@@ -34,11 +35,12 @@ export class MovieComponent implements OnInit {
   generateTiles() {
     this.loading = true;
     this.totallegth += this.tilescount;
-    console.log('======this.grayscale', this.grayscale);
     const url = `http://api.icndb.com/jokes/random/${this.tilescount}/?exclude=[explicit]`;
     this.apiservice.getData(url).subscribe(
       (response) => {
-        const data: any = (response || {}).value || [];
+        this.apiresponse = response;
+        const data = (this.apiresponse || {}).value || [];
+        console.log('======data', data);
         data.forEach((item, index) => {
           const tempObj: Movietile = {
             id: item.id,
