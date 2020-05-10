@@ -6,11 +6,15 @@ import { HttpClientModule } from '@angular/common/http';
 import { MovieComponent } from './components/movie/movie.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { NgModule } from '@angular/core';
+import { GridComponent } from './components/grid/grid.component';
+import { GridsortPipe } from './pipes/gridsort.pipe';
 
 @NgModule({
   declarations: [
     AppComponent,
     MovieComponent,
+    GridComponent,
+    GridsortPipe,
   ],
   imports: [
     AppRoutingModule,
