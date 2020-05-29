@@ -58,6 +58,45 @@ export class SiteheaderComponent implements OnInit, AfterViewInit {
         this.langArr.push(item);
       }
     });
+
+    let elem = document.querySelector('#megamenudiv');
+    let mArr = [];
+    if (elem) {
+      let ul = elem.querySelector('#megamenudiv ._114Zhd');
+      let megamenu = this.generateMegamenuArr(ul, 0);
+      // console.log('=========megamenu', JSON.stringify(megamenu));
+    }
+  }
+
+  generateMegamenuArr(ul, level) {
+    let arr = [];
+    let li = Array.prototype.slice.call(ul.children || []);
+    
+    (li || []).forEach(liitem => {
+      let obj = {};
+      let items = Array.prototype.slice.call(liitem.children || []);
+      let isMain = liitem.classList.contains('_2BfSTw');
+      // if (items.length === 1 && items[0].tagName === 'UL') {
+      //   this.generateMegamenuArr(item, level+1); 
+      // } else {
+        
+      // }
+      items.forEach(item => {
+        if (item.tagName === 'A' || item.tagName === 'SPAN') {
+          obj['level'] = '' + level;
+          obj['title'] = (item.innerHTML).replace( /(<([^>]+)>)/ig, '');
+          obj['href'] = '#';
+          if (isMain) {
+            obj['ismain'] = 'true';
+          }
+        }
+        if (item.tagName === 'UL') {
+          obj['links'] = this.generateMegamenuArr(item, level+1);
+        }
+      });
+      arr.push(obj)
+    });
+    return arr;
   }
 
   ngOnInit(): void {

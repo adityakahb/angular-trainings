@@ -1,0 +1,3143 @@
+[
+  {
+    "level": "0",
+    "title": "Electronics",
+    "href": "#",
+    "subnav": [
+      {
+        "links": [
+          {
+            "level": "3",
+            "title": "Mobiles",
+            "href": "#",
+            "ismain": "true"
+          },
+          {
+            "level": "3",
+            "title": "Mi",
+            "href": "#"
+          },
+          {
+            "level": "3",
+            "title": "Realme",
+            "href": "#"
+          },
+          {
+            "level": "3",
+            "title": "Samsung",
+            "href": "#"
+          },
+          {
+            "level": "3",
+            "title": "Infinix",
+            "href": "#"
+          },
+          {
+            "level": "3",
+            "title": "OPPO",
+            "href": "#"
+          },
+          {
+            "level": "3",
+            "title": "Apple",
+            "href": "#"
+          },
+          {
+            "level": "3",
+            "title": "Vivo",
+            "href": "#"
+          },
+          {
+            "level": "3",
+            "title": "Honor",
+            "href": "#"
+          },
+          {
+            "level": "3",
+            "title": "Asus",
+            "href": "#"
+          },
+          {
+            "level": "3",
+            "title": "realme 6",
+            "href": "#"
+          },
+          {
+            "level": "3",
+            "title": "Samsung S10 Lite",
+            "href": "#"
+          },
+          {
+            "level": "3",
+            "title": "POCO X2",
+            "href": "#"
+          },
+          {
+            "level": "3",
+            "title": "Infinix s5 Pro",
+            "href": "#"
+          },
+          {
+            "level": "3",
+            "title": "realme X50 Pro",
+            "href": "#"
+          },
+          {
+            "level": "3",
+            "title": "realme 6 Pro",
+            "href": "#"
+          },
+          {
+            "level": "3",
+            "title": "OPPO F15",
+            "href": "#"
+          },
+          {
+            "level": "3",
+            "title": "IQOO 3",
+            "href": "#"
+          }
+        ]
+      },
+      {
+        "links": [
+          {
+            "level": "3",
+            "title": "Mobile Accessories",
+            "href": "#",
+            "ismain": "true"
+          },
+          {
+            "level": "3",
+            "title": "Mobile Cases",
+            "href": "#"
+          },
+          {
+            "level": "3",
+            "title": "Headphones &amp; Headsets",
+            "href": "#"
+          },
+          {
+            "level": "3",
+            "title": "Power Banks",
+            "href": "#"
+          },
+          {
+            "level": "3",
+            "title": "Screenguards",
+            "href": "#"
+          },
+          {
+            "level": "3",
+            "title": "Memory Cards",
+            "href": "#"
+          },
+          {
+            "level": "3",
+            "title": "Smart Headphones",
+            "href": "#"
+          },
+          {
+            "level": "3",
+            "title": "Mobile Cables",
+            "href": "#"
+          },
+          {
+            "level": "3",
+            "title": "Mobile Chargers",
+            "href": "#"
+          },
+          {
+            "level": "3",
+            "title": "Mobile Holders",
+            "href": "#"
+          },
+          {
+            "level": "3",
+            "title": "Smart Wearable Tech",
+            "href": "#",
+            "ismain": "true"
+          },
+          {
+            "level": "3",
+            "title": "Smart Watches",
+            "href": "#"
+          },
+          {
+            "level": "3",
+            "title": "Smart Glasses (VR)",
+            "href": "#"
+          },
+          {
+            "level": "3",
+            "title": "Smart Bands",
+            "href": "#"
+          },
+          {
+            "level": "3",
+            "title": "Health Care Appliances",
+            "href": "#",
+            "ismain": "true"
+          },
+          {
+            "level": "3",
+            "title": "Bp Monitors",
+            "href": "#"
+          },
+          {
+            "level": "3",
+            "title": "Weighing Scale",
+            "href": "#"
+          }
+        ]
+      },
+      {
+        "links": [
+          {
+            "level": "3",
+            "title": "Laptops",
+            "href": "#",
+            "ismain": "true"
+          },
+          {
+            "level": "3",
+            "title": "Gaming Laptops",
+            "href": "#"
+          },
+          {
+            "level": "3",
+            "title": "Desktop PCs",
+            "href": "#",
+            "ismain": "true"
+          },
+          {
+            "level": "3",
+            "title": "Gaming &amp; Accessories",
+            "href": "#",
+            "ismain": "true"
+          },
+          {
+            "level": "3",
+            "title": "Computer Accessories",
+            "href": "#",
+            "ismain": "true"
+          },
+          {
+            "level": "3",
+            "title": "External Hard Disks",
+            "href": "#"
+          },
+          {
+            "level": "3",
+            "title": "Pendrives",
+            "href": "#"
+          },
+          {
+            "level": "3",
+            "title": "Laptop Skins &amp; Decals",
+            "href": "#"
+          },
+          {
+            "level": "3",
+            "title": "Laptop Bags",
+            "href": "#"
+          },
+          {
+            "level": "3",
+            "title": "Mouse",
+            "href": "#"
+          },
+          {
+            "level": "3",
+            "title": "Computer Peripherals",
+            "href": "#",
+            "ismain": "true"
+          },
+          {
+            "level": "3",
+            "title": "Printers &amp; Ink Cartridges",
+            "href": "#"
+          },
+          {
+            "level": "3",
+            "title": "Monitors",
+            "href": "#"
+          },
+          {
+            "level": "3",
+            "title": "Tablets",
+            "href": "#",
+            "ismain": "true"
+          },
+          {
+            "level": "3",
+            "title": "Apple iPads",
+            "href": "#"
+          }
+        ]
+      },
+      {
+        "links": [
+          {
+            "level": "3",
+            "title": "Televisions",
+            "href": "#"
+          },
+          {
+            "level": "3",
+            "title": "Speakers",
+            "href": "#",
+            "ismain": "true"
+          },
+          {
+            "level": "3",
+            "title": "Home Audio Speakers",
+            "href": "#"
+          },
+          {
+            "level": "3",
+            "title": "Home Theatres",
+            "href": "#"
+          },
+          {
+            "level": "3",
+            "title": "Soundbars",
+            "href": "#"
+          },
+          {
+            "level": "3",
+            "title": "Bluetooth Speakers",
+            "href": "#"
+          },
+          {
+            "level": "3",
+            "title": "DTH Set Top Box",
+            "href": "#"
+          },
+          {
+            "level": "3",
+            "title": "Smart Home Automation",
+            "href": "#",
+            "ismain": "true"
+          },
+          {
+            "level": "3",
+            "title": "Google Nest",
+            "href": "#"
+          },
+          {
+            "level": "3",
+            "title": "Camera",
+            "href": "#",
+            "ismain": "true"
+          },
+          {
+            "level": "3",
+            "title": "DSLR &amp; Mirrorless",
+            "href": "#"
+          },
+          {
+            "level": "3",
+            "title": "Compact &amp; Bridge Cameras",
+            "href": "#"
+          },
+          {
+            "level": "3",
+            "title": "Sports &amp; Action",
+            "href": "#"
+          },
+          {
+            "level": "3",
+            "title": "Camera Accessories",
+            "href": "#",
+            "ismain": "true"
+          },
+          {
+            "level": "3",
+            "title": "Lens",
+            "href": "#"
+          },
+          {
+            "level": "3",
+            "title": "Tripods",
+            "href": "#"
+          },
+          {
+            "level": "3",
+            "title": "Network Components",
+            "href": "#",
+            "ismain": "true"
+          },
+          {
+            "level": "3",
+            "title": "Routers",
+            "href": "#"
+          }
+        ]
+      },
+      {
+        "links": [
+          {},
+          {
+            "level": "3",
+            "title": "Google Assistant Store",
+            "href": "#"
+          },
+          {
+            "level": "3",
+            "title": "Laptops on Buyback Guarantee",
+            "href": "#"
+          },
+          {
+            "level": "3",
+            "title": "Flipkart SmartBuy",
+            "href": "#"
+          },
+          {
+            "level": "3",
+            "title": "Li-Polymer Power Banks",
+            "href": "#"
+          },
+          {
+            "level": "3",
+            "title": "Sony PS4 Pro &amp; Slim",
+            "href": "#"
+          },
+          {
+            "level": "3",
+            "title": "Apple Products",
+            "href": "#"
+          },
+          {
+            "level": "3",
+            "title": "Microsoft Store",
+            "href": "#"
+          },
+          {
+            "level": "3",
+            "title": "Lenovo Phab Series",
+            "href": "#"
+          },
+          {
+            "level": "3",
+            "title": "JBL Speakers",
+            "href": "#"
+          },
+          {
+            "level": "3",
+            "title": "Smartphones On Buyback Guarantee",
+            "href": "#"
+          },
+          {
+            "level": "3",
+            "title": "Philips",
+            "href": "#"
+          },
+          {
+            "level": "3",
+            "title": "Dr. Morepen",
+            "href": "#"
+          },
+          {
+            "level": "3",
+            "title": "Complete Mobile Protection",
+            "href": "#"
+          },
+          {
+            "level": "3",
+            "title": "Mobiles No Cost EMI",
+            "href": "#"
+          },
+          {
+            "level": "3",
+            "title": "Huawei Watch Gt 2e Smart Watch",
+            "href": "#"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "level": "0",
+    "title": "TVs &amp; Appliances",
+    "href": "#",
+    "subnav": [
+      {
+        "links": [
+          {
+            "level": "3",
+            "title": "Television",
+            "href": "#",
+            "ismain": "true"
+          },
+          {
+            "level": "3",
+            "title": "New Launches",
+            "href": "#",
+            "ismain": "true"
+          },
+          {
+            "level": "3",
+            "title": "Smart &amp; Ultra HD",
+            "href": "#",
+            "ismain": "true"
+          },
+          {},
+          {
+            "level": "3",
+            "title": "Mi",
+            "href": "#"
+          },
+          {
+            "level": "3",
+            "title": "Vu",
+            "href": "#"
+          },
+          {
+            "level": "3",
+            "title": "Thomson",
+            "href": "#"
+          },
+          {
+            "level": "3",
+            "title": "Samsung",
+            "href": "#"
+          },
+          {
+            "level": "3",
+            "title": "iFFALCON by TCL",
+            "href": "#"
+          },
+          {
+            "level": "3",
+            "title": "Nokia",
+            "href": "#"
+          },
+          {
+            "level": "3",
+            "title": "LG",
+            "href": "#"
+          },
+          {
+            "level": "3",
+            "title": "BPL",
+            "href": "#"
+          },
+          {
+            "level": "3",
+            "title": "Motorola",
+            "href": "#"
+          },
+          {},
+          {
+            "level": "3",
+            "title": "24 &amp; below",
+            "href": "#"
+          },
+          {
+            "level": "3",
+            "title": "28 - 32",
+            "href": "#"
+          },
+          {
+            "level": "3",
+            "title": "39 - 43",
+            "href": "#"
+          },
+          {
+            "level": "3",
+            "title": "48 - 55",
+            "href": "#"
+          },
+          {
+            "level": "3",
+            "title": "60 &amp; above",
+            "href": "#"
+          }
+        ]
+      },
+      {
+        "links": [
+          {
+            "level": "3",
+            "title": "Washing Machine",
+            "href": "#",
+            "ismain": "true"
+          },
+          {
+            "level": "3",
+            "title": "Fully Automatic Front Load",
+            "href": "#"
+          },
+          {
+            "level": "3",
+            "title": "Semi Automatic Top Load",
+            "href": "#"
+          },
+          {
+            "level": "3",
+            "title": "Fully Automatic Top Load",
+            "href": "#"
+          },
+          {
+            "level": "3",
+            "title": "Air Conditioners",
+            "href": "#",
+            "ismain": "true"
+          },
+          {
+            "level": "3",
+            "title": "Inverter AC",
+            "href": "#"
+          },
+          {
+            "level": "3",
+            "title": "Split ACs",
+            "href": "#"
+          },
+          {
+            "level": "3",
+            "title": "Window ACs",
+            "href": "#"
+          },
+          {},
+          {
+            "level": "3",
+            "title": "LG",
+            "href": "#"
+          },
+          {
+            "level": "3",
+            "title": "Hitachi",
+            "href": "#"
+          },
+          {
+            "level": "3",
+            "title": "Carrier",
+            "href": "#"
+          },
+          {
+            "level": "3",
+            "title": "Refrigerators",
+            "href": "#",
+            "ismain": "true"
+          },
+          {
+            "level": "3",
+            "title": "Single Door",
+            "href": "#"
+          },
+          {
+            "level": "3",
+            "title": "Double Door",
+            "href": "#"
+          },
+          {
+            "level": "3",
+            "title": "Triple door",
+            "href": "#"
+          },
+          {
+            "level": "3",
+            "title": "Side by Side",
+            "href": "#"
+          },
+          {
+            "level": "3",
+            "title": "Convertible",
+            "href": "#"
+          }
+        ]
+      },
+      {
+        "links": [
+          {
+            "level": "3",
+            "title": "Kitchen Appliances",
+            "href": "#",
+            "ismain": "true"
+          },
+          {
+            "level": "3",
+            "title": "Microwave Ovens",
+            "href": "#"
+          },
+          {
+            "level": "3",
+            "title": "Oven Toaster Grills (OTG)",
+            "href": "#"
+          },
+          {
+            "level": "3",
+            "title": "Juicer/Mixer/Grinder",
+            "href": "#"
+          },
+          {
+            "level": "3",
+            "title": "Electric Kettle",
+            "href": "#"
+          },
+          {
+            "level": "3",
+            "title": "Induction Cooktops",
+            "href": "#"
+          },
+          {
+            "level": "3",
+            "title": "Chimneys",
+            "href": "#"
+          },
+          {
+            "level": "3",
+            "title": "Hand Blenders",
+            "href": "#"
+          },
+          {
+            "level": "3",
+            "title": "Sandwich Makers",
+            "href": "#"
+          },
+          {
+            "level": "3",
+            "title": "Pop Up Toasters",
+            "href": "#"
+          },
+          {
+            "level": "3",
+            "title": "Electric Cookers",
+            "href": "#"
+          },
+          {
+            "level": "3",
+            "title": "Wet Grinders",
+            "href": "#"
+          },
+          {
+            "level": "3",
+            "title": "Food Processors",
+            "href": "#"
+          },
+          {
+            "level": "3",
+            "title": "Coffee Makers",
+            "href": "#"
+          },
+          {
+            "level": "3",
+            "title": "Dishwashers",
+            "href": "#"
+          },
+          {
+            "level": "3",
+            "title": "Healthy Living Appliances",
+            "href": "#",
+            "ismain": "true"
+          }
+        ]
+      },
+      {
+        "links": [
+          {
+            "level": "3",
+            "title": "Small Home Appliances",
+            "href": "#",
+            "ismain": "true"
+          },
+          {
+            "level": "3",
+            "title": "Irons",
+            "href": "#"
+          },
+          {
+            "level": "3",
+            "title": "Water Purifiers",
+            "href": "#"
+          },
+          {
+            "level": "3",
+            "title": "Fans",
+            "href": "#"
+          },
+          {
+            "level": "3",
+            "title": "Air Coolers",
+            "href": "#"
+          },
+          {
+            "level": "3",
+            "title": "Inverters",
+            "href": "#"
+          },
+          {
+            "level": "3",
+            "title": "Vacuum Cleaners",
+            "href": "#"
+          },
+          {
+            "level": "3",
+            "title": "Sewing Machines",
+            "href": "#"
+          },
+          {
+            "level": "3",
+            "title": "Voltage Stabilizers",
+            "href": "#"
+          },
+          {
+            "level": "3",
+            "title": "Water Geysers",
+            "href": "#"
+          },
+          {
+            "level": "3",
+            "title": "Immersion Rods",
+            "href": "#"
+          },
+          {},
+          {
+            "level": "3",
+            "title": "Livpure",
+            "href": "#"
+          },
+          {
+            "level": "3",
+            "title": "Philips",
+            "href": "#"
+          },
+          {
+            "level": "3",
+            "title": "Bajaj",
+            "href": "#"
+          },
+          {
+            "level": "3",
+            "title": "IFB",
+            "href": "#"
+          },
+          {
+            "level": "3",
+            "title": "Eureka Forbes",
+            "href": "#"
+          },
+          {
+            "level": "3",
+            "title": "Kaff",
+            "href": "#"
+          }
+        ]
+      },
+      {
+        "links": [
+          {},
+          {
+            "level": "3",
+            "title": "Televisions",
+            "href": "#"
+          },
+          {
+            "level": "3",
+            "title": "Washing Machines",
+            "href": "#"
+          },
+          {
+            "level": "3",
+            "title": "Refrigerators",
+            "href": "#"
+          },
+          {
+            "level": "3",
+            "title": "Air Conditioners",
+            "href": "#"
+          },
+          {
+            "level": "3",
+            "title": "Water Purifiers",
+            "href": "#"
+          },
+          {
+            "level": "3",
+            "title": "Air Purifiers",
+            "href": "#"
+          },
+          {
+            "level": "3",
+            "title": "Chimneys",
+            "href": "#"
+          },
+          {
+            "level": "3",
+            "title": "Water Geysers",
+            "href": "#"
+          },
+          {},
+          {
+            "level": "3",
+            "title": "Coocaa Smart TVs",
+            "href": "#"
+          },
+          {
+            "level": "3",
+            "title": "Nokia (55) 4K Android TV",
+            "href": "#"
+          },
+          {
+            "level": "3",
+            "title": "Mi (32) 4A Pro Android TV",
+            "href": "#"
+          },
+          {
+            "level": "3",
+            "title": "MarQ (43) FHD Smart TV",
+            "href": "#"
+          },
+          {
+            "level": "3",
+            "title": "LG Refrigerators",
+            "href": "#"
+          },
+          {
+            "level": "3",
+            "title": "Thomson (40) 4K Smart TV",
+            "href": "#"
+          },
+          {
+            "level": "3",
+            "title": "Whirlpool Refrigerators",
+            "href": "#"
+          },
+          {
+            "level": "3",
+            "title": "Kodak (22) | (32) LED TVs",
+            "href": "#"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "level": "0",
+    "title": "Men",
+    "href": "#",
+    "subnav": [
+      {
+        "links": [
+          {
+            "level": "3",
+            "title": "Footwear",
+            "href": "#",
+            "ismain": "true"
+          },
+          {
+            "level": "3",
+            "title": "Sports Shoes",
+            "href": "#"
+          },
+          {
+            "level": "3",
+            "title": "Casual Shoes",
+            "href": "#"
+          },
+          {
+            "level": "3",
+            "title": "Formal Shoes",
+            "href": "#"
+          },
+          {
+            "level": "3",
+            "title": "Sandals &amp; Floaters",
+            "href": "#"
+          },
+          {
+            "level": "3",
+            "title": "Flip- Flops",
+            "href": "#"
+          },
+          {
+            "level": "3",
+            "title": "Loafers",
+            "href": "#"
+          },
+          {
+            "level": "3",
+            "title": "Boots",
+            "href": "#"
+          },
+          {
+            "level": "3",
+            "title": "Running Shoes",
+            "href": "#"
+          },
+          {
+            "level": "3",
+            "title": "Sneakers",
+            "href": "#"
+          },
+          {
+            "level": "3",
+            "title": "Men's Grooming",
+            "href": "#",
+            "ismain": "true"
+          },
+          {
+            "level": "3",
+            "title": "Deodorants",
+            "href": "#"
+          },
+          {
+            "level": "3",
+            "title": "Perfumes",
+            "href": "#"
+          },
+          {
+            "level": "3",
+            "title": "Beard Care &amp; Grooming",
+            "href": "#"
+          },
+          {
+            "level": "3",
+            "title": "Shaving &amp; Aftershave",
+            "href": "#"
+          },
+          {
+            "level": "3",
+            "title": "Sexual Wellness",
+            "href": "#"
+          }
+        ]
+      },
+      {
+        "links": [
+          {
+            "level": "3",
+            "title": "Clothing",
+            "href": "#",
+            "ismain": "true"
+          },
+          {
+            "level": "3",
+            "title": "Top wear",
+            "href": "#",
+            "ismain": "true"
+          },
+          {
+            "level": "3",
+            "title": "T-Shirts",
+            "href": "#"
+          },
+          {
+            "level": "3",
+            "title": "Shirts",
+            "href": "#"
+          },
+          {
+            "level": "3",
+            "title": "Kurtas",
+            "href": "#"
+          },
+          {
+            "level": "3",
+            "title": "Suits &amp; Blazers",
+            "href": "#"
+          },
+          {
+            "level": "3",
+            "title": "Ties, Socks, Caps &amp; more",
+            "href": "#",
+            "ismain": "true"
+          },
+          {
+            "level": "3",
+            "title": "Kurta, Pyjama &amp; more",
+            "href": "#",
+            "ismain": "true"
+          },
+          {
+            "level": "3",
+            "title": "Fabrics",
+            "href": "#",
+            "ismain": "true"
+          },
+          {
+            "level": "3",
+            "title": "Bottom wear",
+            "href": "#",
+            "ismain": "true"
+          },
+          {
+            "level": "3",
+            "title": "Jeans",
+            "href": "#"
+          },
+          {
+            "level": "3",
+            "title": "Trousers",
+            "href": "#"
+          },
+          {
+            "level": "3",
+            "title": "Shorts &amp; 3/4ths",
+            "href": "#"
+          },
+          {
+            "level": "3",
+            "title": "Cargos",
+            "href": "#"
+          },
+          {
+            "level": "3",
+            "title": "Track pants",
+            "href": "#"
+          }
+        ]
+      },
+      {
+        "links": [
+          {
+            "level": "3",
+            "title": "Seasonal Wear",
+            "href": "#",
+            "ismain": "true"
+          },
+          {
+            "level": "3",
+            "title": "Sweaters",
+            "href": "#"
+          },
+          {
+            "level": "3",
+            "title": "Jackets",
+            "href": "#"
+          },
+          {
+            "level": "3",
+            "title": "Sweatshirts",
+            "href": "#"
+          },
+          {
+            "level": "3",
+            "title": "Thermals",
+            "href": "#"
+          },
+          {
+            "level": "3",
+            "title": "Raincoats",
+            "href": "#"
+          },
+          {
+            "level": "3",
+            "title": "Sports wear",
+            "href": "#",
+            "ismain": "true"
+          },
+          {
+            "level": "3",
+            "title": "Sports T-Shirts",
+            "href": "#"
+          },
+          {
+            "level": "3",
+            "title": "Track Pants",
+            "href": "#"
+          },
+          {
+            "level": "3",
+            "title": "Track Suits",
+            "href": "#"
+          },
+          {
+            "level": "3",
+            "title": "Shorts",
+            "href": "#"
+          },
+          {
+            "level": "3",
+            "title": "Innerwear &amp; Sleepwear",
+            "href": "#",
+            "ismain": "true"
+          },
+          {
+            "level": "3",
+            "title": "Briefs &amp; Trunks",
+            "href": "#"
+          },
+          {
+            "level": "3",
+            "title": "Vests",
+            "href": "#"
+          },
+          {
+            "level": "3",
+            "title": "Boxers",
+            "href": "#"
+          },
+          {
+            "level": "3",
+            "title": "Thermals",
+            "href": "#"
+          }
+        ]
+      },
+      {
+        "links": [
+          {
+            "level": "3",
+            "title": "Watches",
+            "href": "#",
+            "ismain": "true"
+          },
+          {
+            "level": "3",
+            "title": "Fastrack",
+            "href": "#"
+          },
+          {
+            "level": "3",
+            "title": "Casio",
+            "href": "#"
+          },
+          {
+            "level": "3",
+            "title": "Titan",
+            "href": "#"
+          },
+          {
+            "level": "3",
+            "title": "Fossil",
+            "href": "#"
+          },
+          {
+            "level": "3",
+            "title": "Sonata",
+            "href": "#"
+          },
+          {
+            "level": "3",
+            "title": "Accessories",
+            "href": "#",
+            "ismain": "true"
+          },
+          {
+            "level": "3",
+            "title": "Backpacks",
+            "href": "#"
+          },
+          {
+            "level": "3",
+            "title": "Wallets",
+            "href": "#"
+          },
+          {
+            "level": "3",
+            "title": "Belts",
+            "href": "#"
+          },
+          {
+            "level": "3",
+            "title": "Sunglasses",
+            "href": "#"
+          },
+          {
+            "level": "3",
+            "title": "Luggage &amp; Travel",
+            "href": "#"
+          },
+          {
+            "level": "3",
+            "title": "Frames",
+            "href": "#"
+          },
+          {
+            "level": "3",
+            "title": "Jewellery",
+            "href": "#"
+          },
+          {
+            "level": "3",
+            "title": "Sports &amp; Fitness Store",
+            "href": "#",
+            "ismain": "true"
+          }
+        ]
+      },
+      {
+        "links": [
+          {
+            "level": "3",
+            "title": "Smart Watches",
+            "href": "#",
+            "ismain": "true"
+          },
+          {
+            "level": "3",
+            "title": "Smart Bands",
+            "href": "#",
+            "ismain": "true"
+          },
+          {
+            "level": "3",
+            "title": "Personal Care Appliances",
+            "href": "#",
+            "ismain": "true"
+          },
+          {
+            "level": "3",
+            "title": "Trimmers",
+            "href": "#"
+          },
+          {
+            "level": "3",
+            "title": "Shavers",
+            "href": "#"
+          },
+          {
+            "level": "3",
+            "title": "Grooming Kits",
+            "href": "#"
+          },
+          {},
+          {
+            "level": "3",
+            "title": "Watches Store",
+            "href": "#"
+          },
+          {
+            "level": "3",
+            "title": "Footwear Club",
+            "href": "#"
+          },
+          {
+            "level": "3",
+            "title": "Bags &amp; Wallet",
+            "href": "#"
+          },
+          {
+            "level": "3",
+            "title": "T-Shirt Store",
+            "href": "#"
+          },
+          {
+            "level": "3",
+            "title": "Adidas",
+            "href": "#"
+          },
+          {
+            "level": "3",
+            "title": "Beardo",
+            "href": "#"
+          },
+          {
+            "level": "3",
+            "title": "Reebok",
+            "href": "#"
+          },
+          {
+            "level": "3",
+            "title": "Skechers",
+            "href": "#"
+          },
+          {
+            "level": "3",
+            "title": "Nike",
+            "href": "#"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "level": "0",
+    "title": "Women",
+    "href": "#",
+    "subnav": [
+      {
+        "links": [
+          {
+            "level": "3",
+            "title": "Clothing",
+            "href": "#",
+            "ismain": "true"
+          },
+          {
+            "level": "3",
+            "title": "Western Wear",
+            "href": "#",
+            "ismain": "true"
+          },
+          {
+            "level": "3",
+            "title": "Tops, T-Shirts &amp; Shirts",
+            "href": "#"
+          },
+          {
+            "level": "3",
+            "title": "Dresses",
+            "href": "#"
+          },
+          {
+            "level": "3",
+            "title": "Jeans",
+            "href": "#"
+          },
+          {
+            "level": "3",
+            "title": "Shorts",
+            "href": "#"
+          },
+          {
+            "level": "3",
+            "title": "Skirts",
+            "href": "#"
+          },
+          {
+            "level": "3",
+            "title": "Leggings &amp; Jeggings",
+            "href": "#"
+          },
+          {
+            "level": "3",
+            "title": "Trousers &amp; Capris",
+            "href": "#"
+          },
+          {
+            "level": "3",
+            "title": "Lingerie &amp; Sleepwear",
+            "href": "#",
+            "ismain": "true"
+          },
+          {
+            "level": "3",
+            "title": "Bras",
+            "href": "#"
+          },
+          {
+            "level": "3",
+            "title": "Panties",
+            "href": "#"
+          },
+          {
+            "level": "3",
+            "title": "Lingerie Sets",
+            "href": "#"
+          },
+          {
+            "level": "3",
+            "title": "Night Dresses &amp; Nighties",
+            "href": "#"
+          },
+          {
+            "level": "3",
+            "title": "Shapewear",
+            "href": "#"
+          },
+          {
+            "level": "3",
+            "title": "Camisoles &amp; Slips",
+            "href": "#"
+          },
+          {
+            "level": "3",
+            "title": "Swim &amp; Beachwear",
+            "href": "#",
+            "ismain": "true"
+          },
+          {
+            "level": "3",
+            "title": "Party Dresses",
+            "href": "#",
+            "ismain": "true"
+          },
+          {
+            "level": "3",
+            "title": "Sports &amp; Gym Wear",
+            "href": "#",
+            "ismain": "true"
+          },
+          {
+            "level": "3",
+            "title": "Winter &amp; Seasonal Wear",
+            "href": "#",
+            "ismain": "true"
+          }
+        ]
+      },
+      {
+        "links": [
+          {
+            "level": "3",
+            "title": "Ethnic Wear",
+            "href": "#",
+            "ismain": "true"
+          },
+          {
+            "level": "3",
+            "title": "Sarees",
+            "href": "#"
+          },
+          {
+            "level": "3",
+            "title": "Kurtas &amp; Kurtis",
+            "href": "#"
+          },
+          {
+            "level": "3",
+            "title": "Dress Material",
+            "href": "#"
+          },
+          {
+            "level": "3",
+            "title": "Lehenga Choli",
+            "href": "#"
+          },
+          {
+            "level": "3",
+            "title": "Blouse",
+            "href": "#"
+          },
+          {
+            "level": "3",
+            "title": "Ethnic Bottoms",
+            "href": "#"
+          },
+          {
+            "level": "3",
+            "title": "Anarkali Suits",
+            "href": "#"
+          },
+          {
+            "level": "3",
+            "title": "Petticoats",
+            "href": "#"
+          },
+          {
+            "level": "3",
+            "title": "Abhayas &amp; Burqas",
+            "href": "#"
+          },
+          {
+            "level": "3",
+            "title": "Dupattas",
+            "href": "#"
+          },
+          {
+            "level": "3",
+            "title": "Sports Wear",
+            "href": "#",
+            "ismain": "true"
+          },
+          {
+            "level": "3",
+            "title": "International Brands",
+            "href": "#",
+            "ismain": "true"
+          },
+          {
+            "level": "3",
+            "title": "New arrivals !",
+            "href": "#",
+            "ismain": "true"
+          },
+          {
+            "level": "3",
+            "title": "Under 499",
+            "href": "#",
+            "ismain": "true"
+          }
+        ]
+      },
+      {
+        "links": [
+          {
+            "level": "3",
+            "title": "Footwear",
+            "href": "#",
+            "ismain": "true"
+          },
+          {
+            "level": "3",
+            "title": "Sandals",
+            "href": "#",
+            "ismain": "true"
+          },
+          {
+            "level": "3",
+            "title": "Flats",
+            "href": "#"
+          },
+          {
+            "level": "3",
+            "title": "Heels",
+            "href": "#"
+          },
+          {
+            "level": "3",
+            "title": "Wedges",
+            "href": "#"
+          },
+          {
+            "level": "3",
+            "title": "Shoes",
+            "href": "#",
+            "ismain": "true"
+          },
+          {
+            "level": "3",
+            "title": "Sports Shoes",
+            "href": "#"
+          },
+          {
+            "level": "3",
+            "title": "Casual Shoes",
+            "href": "#"
+          },
+          {
+            "level": "3",
+            "title": "Boots",
+            "href": "#"
+          },
+          {
+            "level": "3",
+            "title": "Ballerinas",
+            "href": "#",
+            "ismain": "true"
+          },
+          {
+            "level": "3",
+            "title": "Slippers &amp; Flip- Flop's",
+            "href": "#",
+            "ismain": "true"
+          },
+          {
+            "level": "3",
+            "title": "Watches",
+            "href": "#",
+            "ismain": "true"
+          },
+          {
+            "level": "3",
+            "title": "Smart Watches",
+            "href": "#",
+            "ismain": "true"
+          },
+          {
+            "level": "3",
+            "title": "Personal Care Appliances",
+            "href": "#",
+            "ismain": "true"
+          },
+          {
+            "level": "3",
+            "title": "Hair Straightners",
+            "href": "#"
+          },
+          {
+            "level": "3",
+            "title": "Hair Dryers",
+            "href": "#"
+          },
+          {
+            "level": "3",
+            "title": "Epilators",
+            "href": "#"
+          }
+        ]
+      },
+      {
+        "links": [
+          {
+            "level": "3",
+            "title": "Beauty &amp; Grooming",
+            "href": "#",
+            "ismain": "true"
+          },
+          {
+            "level": "3",
+            "title": "Make Up",
+            "href": "#"
+          },
+          {
+            "level": "3",
+            "title": "Skin Care",
+            "href": "#"
+          },
+          {
+            "level": "3",
+            "title": "Hair Care",
+            "href": "#"
+          },
+          {
+            "level": "3",
+            "title": "Bath &amp; Spa",
+            "href": "#"
+          },
+          {
+            "level": "3",
+            "title": "Deodorants &amp; Perfumes",
+            "href": "#"
+          },
+          {
+            "level": "3",
+            "title": "Jewellery",
+            "href": "#",
+            "ismain": "true"
+          },
+          {
+            "level": "3",
+            "title": "Artificial Jewellery",
+            "href": "#"
+          },
+          {
+            "level": "3",
+            "title": "Silver Jewellery",
+            "href": "#"
+          },
+          {
+            "level": "3",
+            "title": "Precious Jewellery",
+            "href": "#"
+          },
+          {
+            "level": "3",
+            "title": "Coins and Bars",
+            "href": "#"
+          },
+          {
+            "level": "3",
+            "title": "Accessories",
+            "href": "#",
+            "ismain": "true"
+          },
+          {
+            "level": "3",
+            "title": "Handbags",
+            "href": "#"
+          },
+          {
+            "level": "3",
+            "title": "Shoulder Bags",
+            "href": "#"
+          },
+          {
+            "level": "3",
+            "title": "Totes",
+            "href": "#"
+          },
+          {
+            "level": "3",
+            "title": "Sling bags",
+            "href": "#"
+          },
+          {
+            "level": "3",
+            "title": "Clutches",
+            "href": "#"
+          },
+          {
+            "level": "3",
+            "title": "Wallets &amp; Belts",
+            "href": "#"
+          },
+          {
+            "level": "3",
+            "title": "Luggage &amp; Travel",
+            "href": "#"
+          },
+          {
+            "level": "3",
+            "title": "Sunglasses",
+            "href": "#"
+          },
+          {
+            "level": "3",
+            "title": "Frames",
+            "href": "#"
+          }
+        ]
+      },
+      {
+        "links": [
+          {},
+          {
+            "level": "3",
+            "title": "Forever 21",
+            "href": "#"
+          },
+          {
+            "level": "3",
+            "title": "Accessorize",
+            "href": "#"
+          },
+          {
+            "level": "3",
+            "title": "W",
+            "href": "#"
+          },
+          {
+            "level": "3",
+            "title": "Pantaloons",
+            "href": "#"
+          },
+          {
+            "level": "3",
+            "title": "Chemistry",
+            "href": "#"
+          },
+          {
+            "level": "3",
+            "title": "Lakme",
+            "href": "#"
+          },
+          {
+            "level": "3",
+            "title": "Nivea",
+            "href": "#"
+          },
+          {
+            "level": "3",
+            "title": "Catwalk",
+            "href": "#"
+          },
+          {
+            "level": "3",
+            "title": "Titan-Raga",
+            "href": "#"
+          },
+          {
+            "level": "3",
+            "title": "Fastrack",
+            "href": "#"
+          },
+          {
+            "level": "3",
+            "title": "Divastri",
+            "href": "#"
+          },
+          {
+            "level": "3",
+            "title": "Rare Roots",
+            "href": "#"
+          },
+          {
+            "level": "3",
+            "title": "Anmi",
+            "href": "#"
+          },
+          {
+            "level": "3",
+            "title": "Coins &amp; Bars",
+            "href": "#"
+          },
+          {
+            "level": "3",
+            "title": "Crocs",
+            "href": "#"
+          },
+          {},
+          {
+            "level": "3",
+            "title": "Ruffles &amp; Frills",
+            "href": "#"
+          },
+          {
+            "level": "3",
+            "title": "Pastel Kurtas &amp; Kurtis",
+            "href": "#"
+          },
+          {
+            "level": "3",
+            "title": "Designer Net Sarees",
+            "href": "#"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "level": "0",
+    "title": "Baby &amp; Kids",
+    "href": "#",
+    "subnav": [
+      {
+        "links": [
+          {
+            "level": "3",
+            "title": "Kids Clothing",
+            "href": "#",
+            "ismain": "true"
+          },
+          {
+            "level": "3",
+            "title": "Boys' Clothing",
+            "href": "#",
+            "ismain": "true"
+          },
+          {
+            "level": "3",
+            "title": "Polos &amp; T-Shirts",
+            "href": "#"
+          },
+          {
+            "level": "3",
+            "title": "Ethnic Wear",
+            "href": "#"
+          },
+          {
+            "level": "3",
+            "title": "Shorts &amp; 3/4ths",
+            "href": "#"
+          },
+          {
+            "level": "3",
+            "title": "Girls' Clothing",
+            "href": "#",
+            "ismain": "true"
+          },
+          {
+            "level": "3",
+            "title": "Dresses &amp; Skirts",
+            "href": "#"
+          },
+          {
+            "level": "3",
+            "title": "Ethnic Wear",
+            "href": "#"
+          },
+          {
+            "level": "3",
+            "title": "T-shirts &amp; Tops",
+            "href": "#"
+          },
+          {
+            "level": "3",
+            "title": "Baby Boy Clothing",
+            "href": "#",
+            "ismain": "true"
+          },
+          {
+            "level": "3",
+            "title": "Body Suits",
+            "href": "#"
+          },
+          {
+            "level": "3",
+            "title": "Polos &amp; T-Shirts",
+            "href": "#"
+          },
+          {
+            "level": "3",
+            "title": "Baby Girl Clothing",
+            "href": "#",
+            "ismain": "true"
+          },
+          {
+            "level": "3",
+            "title": "Body Suits",
+            "href": "#"
+          },
+          {
+            "level": "3",
+            "title": "Dresses",
+            "href": "#"
+          }
+        ]
+      },
+      {
+        "links": [
+          {
+            "level": "3",
+            "title": "Kids Footwear",
+            "href": "#",
+            "ismain": "true"
+          },
+          {
+            "level": "3",
+            "title": "Boys' Footwear",
+            "href": "#",
+            "ismain": "true"
+          },
+          {
+            "level": "3",
+            "title": "Sandals",
+            "href": "#"
+          },
+          {
+            "level": "3",
+            "title": "Sport Shoes",
+            "href": "#"
+          },
+          {
+            "level": "3",
+            "title": "Girls' Footwear",
+            "href": "#",
+            "ismain": "true"
+          },
+          {
+            "level": "3",
+            "title": "Flats &amp; Bellies",
+            "href": "#"
+          },
+          {
+            "level": "3",
+            "title": "Sport Shoes",
+            "href": "#"
+          },
+          {
+            "level": "3",
+            "title": "Baby Footwear",
+            "href": "#",
+            "ismain": "true"
+          },
+          {
+            "level": "3",
+            "title": "Character Shoes",
+            "href": "#",
+            "ismain": "true"
+          },
+          {
+            "level": "3",
+            "title": "Kids Winter Wear",
+            "href": "#",
+            "ismain": "true"
+          },
+          {
+            "level": "3",
+            "title": "Boys Winter Wear",
+            "href": "#"
+          },
+          {
+            "level": "3",
+            "title": "Girls Winter Wear",
+            "href": "#"
+          },
+          {
+            "level": "3",
+            "title": "Infants Winter Wear",
+            "href": "#"
+          },
+          {
+            "level": "3",
+            "title": "Thermals",
+            "href": "#"
+          },
+          {
+            "level": "3",
+            "title": "Kids' Watches",
+            "href": "#"
+          },
+          {
+            "level": "3",
+            "title": "Kids' Sunglasses",
+            "href": "#"
+          }
+        ]
+      },
+      {
+        "links": [
+          {
+            "level": "3",
+            "title": "Toys",
+            "href": "#",
+            "ismain": "true"
+          },
+          {
+            "level": "3",
+            "title": "Remote Control Toys",
+            "href": "#"
+          },
+          {
+            "level": "3",
+            "title": "Educational Toys",
+            "href": "#"
+          },
+          {
+            "level": "3",
+            "title": "Soft Toys",
+            "href": "#"
+          },
+          {
+            "level": "3",
+            "title": "Cars &amp; Die-cast Vehicles",
+            "href": "#"
+          },
+          {
+            "level": "3",
+            "title": "Outdoor Toys",
+            "href": "#"
+          },
+          {
+            "level": "3",
+            "title": "Action Figures",
+            "href": "#"
+          },
+          {
+            "level": "3",
+            "title": "Board Games",
+            "href": "#"
+          },
+          {
+            "level": "3",
+            "title": "Musical Toys",
+            "href": "#"
+          },
+          {
+            "level": "3",
+            "title": "Dolls &amp; Doll Houses",
+            "href": "#"
+          },
+          {
+            "level": "3",
+            "title": "Puzzles",
+            "href": "#"
+          },
+          {
+            "level": "3",
+            "title": "S.T.E.M Toys",
+            "href": "#"
+          },
+          {
+            "level": "3",
+            "title": "Helicopter &amp; Drones",
+            "href": "#"
+          },
+          {
+            "level": "3",
+            "title": "Toy Guns",
+            "href": "#"
+          },
+          {
+            "level": "3",
+            "title": "Party Supplies",
+            "href": "#"
+          },
+          {
+            "level": "3",
+            "title": "School Supplies",
+            "href": "#",
+            "ismain": "true"
+          },
+          {
+            "level": "3",
+            "title": "School Bags",
+            "href": "#"
+          },
+          {
+            "level": "3",
+            "title": "School Combo Sets",
+            "href": "#"
+          },
+          {
+            "level": "3",
+            "title": "Lunch Box",
+            "href": "#"
+          }
+        ]
+      },
+      {
+        "links": [
+          {
+            "level": "3",
+            "title": "Baby Care",
+            "href": "#",
+            "ismain": "true"
+          },
+          {
+            "level": "3",
+            "title": "Diapers",
+            "href": "#"
+          },
+          {
+            "level": "3",
+            "title": "Wipes",
+            "href": "#"
+          },
+          {
+            "level": "3",
+            "title": "Diapering &amp; Potty Training",
+            "href": "#"
+          },
+          {
+            "level": "3",
+            "title": "Baby Bath, Hair &amp; Skin Care",
+            "href": "#"
+          },
+          {
+            "level": "3",
+            "title": "Baby Grooming",
+            "href": "#"
+          },
+          {
+            "level": "3",
+            "title": "Baby Bathing Accessories",
+            "href": "#"
+          },
+          {
+            "level": "3",
+            "title": "Baby Gift Sets &amp; Combo",
+            "href": "#"
+          },
+          {
+            "level": "3",
+            "title": "Baby Oral Care",
+            "href": "#"
+          },
+          {
+            "level": "3",
+            "title": "Nursing &amp; Breast Feeding",
+            "href": "#"
+          },
+          {
+            "level": "3",
+            "title": "Baby Food",
+            "href": "#"
+          },
+          {
+            "level": "3",
+            "title": "Baby Feeding Bottle &amp; Accessories",
+            "href": "#"
+          },
+          {
+            "level": "3",
+            "title": "Baby Feeding Utensils &amp; Accessories",
+            "href": "#"
+          },
+          {
+            "level": "3",
+            "title": "Baby Bedding",
+            "href": "#"
+          },
+          {
+            "level": "3",
+            "title": "Baby Gear",
+            "href": "#"
+          },
+          {
+            "level": "3",
+            "title": "Baby Medical &amp; Health Care",
+            "href": "#"
+          },
+          {
+            "level": "3",
+            "title": "Baby Proofing &amp; Safety",
+            "href": "#"
+          },
+          {
+            "level": "3",
+            "title": "Baby Cleaners &amp; Detergents",
+            "href": "#"
+          }
+        ]
+      },
+      {
+        "links": [
+          {},
+          {
+            "level": "3",
+            "title": "Miss &amp; Chief",
+            "href": "#"
+          },
+          {
+            "level": "3",
+            "title": "Barbie",
+            "href": "#"
+          },
+          {
+            "level": "3",
+            "title": "Disney",
+            "href": "#"
+          },
+          {
+            "level": "3",
+            "title": "United Colors of Benetton",
+            "href": "#"
+          },
+          {
+            "level": "3",
+            "title": "The Children's Place",
+            "href": "#"
+          },
+          {
+            "level": "3",
+            "title": "US Polo",
+            "href": "#"
+          },
+          {
+            "level": "3",
+            "title": "Flying Machine",
+            "href": "#"
+          },
+          {
+            "level": "3",
+            "title": "Crocs",
+            "href": "#"
+          },
+          {
+            "level": "3",
+            "title": "Puma",
+            "href": "#"
+          },
+          {
+            "level": "3",
+            "title": "Funskool",
+            "href": "#"
+          },
+          {
+            "level": "3",
+            "title": "Lego",
+            "href": "#"
+          },
+          {
+            "level": "3",
+            "title": "Luvlap",
+            "href": "#"
+          },
+          {
+            "level": "3",
+            "title": "Mamy Poko",
+            "href": "#"
+          },
+          {
+            "level": "3",
+            "title": "Mee Mee",
+            "href": "#"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "level": "0",
+    "title": "Home &amp; Furniture",
+    "href": "#",
+    "subnav": [
+      {
+        "links": [
+          {
+            "level": "3",
+            "title": "Kitchen, Cookware &amp; Serveware",
+            "href": "#",
+            "ismain": "true"
+          },
+          {
+            "level": "3",
+            "title": "Pans",
+            "href": "#"
+          },
+          {
+            "level": "3",
+            "title": "Tawas",
+            "href": "#"
+          },
+          {
+            "level": "3",
+            "title": "Pressure Cookers",
+            "href": "#"
+          },
+          {
+            "level": "3",
+            "title": "Kitchen tools",
+            "href": "#"
+          },
+          {
+            "level": "3",
+            "title": "Gas Stoves",
+            "href": "#"
+          },
+          {
+            "level": "3",
+            "title": "Tableware &amp; Dinnerware",
+            "href": "#",
+            "ismain": "true"
+          },
+          {
+            "level": "3",
+            "title": "Coffee Mugs",
+            "href": "#"
+          },
+          {
+            "level": "3",
+            "title": "Dinner Set",
+            "href": "#"
+          },
+          {
+            "level": "3",
+            "title": "Barware",
+            "href": "#"
+          },
+          {
+            "level": "3",
+            "title": "Kitchen Storage",
+            "href": "#",
+            "ismain": "true"
+          },
+          {
+            "level": "3",
+            "title": "Water Bottles",
+            "href": "#"
+          },
+          {
+            "level": "3",
+            "title": "Lunch Boxes",
+            "href": "#"
+          },
+          {
+            "level": "3",
+            "title": "Flasks",
+            "href": "#"
+          },
+          {
+            "level": "3",
+            "title": "Casseroles",
+            "href": "#"
+          },
+          {
+            "level": "3",
+            "title": "Kitchen Containers",
+            "href": "#"
+          },
+          {
+            "level": "3",
+            "title": "Cleaning Supplies",
+            "href": "#",
+            "ismain": "true"
+          }
+        ]
+      },
+      {
+        "links": [
+          {
+            "level": "3",
+            "title": "Furniture Top Offers",
+            "href": "#",
+            "ismain": "true"
+          },
+          {
+            "level": "3",
+            "title": "Bed Room Furniture",
+            "href": "#",
+            "ismain": "true"
+          },
+          {
+            "level": "3",
+            "title": "Beds",
+            "href": "#"
+          },
+          {
+            "level": "3",
+            "title": "Mattresses",
+            "href": "#"
+          },
+          {
+            "level": "3",
+            "title": "Wardrobes",
+            "href": "#"
+          },
+          {
+            "level": "3",
+            "title": "Living Room Furniture",
+            "href": "#",
+            "ismain": "true"
+          },
+          {
+            "level": "3",
+            "title": "Sofa",
+            "href": "#"
+          },
+          {
+            "level": "3",
+            "title": "Sofa Beds",
+            "href": "#"
+          },
+          {
+            "level": "3",
+            "title": "TV Units",
+            "href": "#"
+          },
+          {
+            "level": "3",
+            "title": "Dining Tables &amp; Chairs",
+            "href": "#"
+          },
+          {
+            "level": "3",
+            "title": "Coffee Tables",
+            "href": "#"
+          },
+          {
+            "level": "3",
+            "title": "Shoe Racks",
+            "href": "#"
+          },
+          {
+            "level": "3",
+            "title": "Office &amp; Study Furniture",
+            "href": "#",
+            "ismain": "true"
+          },
+          {
+            "level": "3",
+            "title": "Kids Room Furniture",
+            "href": "#"
+          },
+          {},
+          {
+            "level": "3",
+            "title": "Bean Bags",
+            "href": "#"
+          },
+          {
+            "level": "3",
+            "title": "Collapsible Wardrobes",
+            "href": "#"
+          }
+        ]
+      },
+      {
+        "links": [
+          {
+            "level": "3",
+            "title": "Furnishing",
+            "href": "#",
+            "ismain": "true"
+          },
+          {
+            "level": "3",
+            "title": "Bedsheets",
+            "href": "#"
+          },
+          {
+            "level": "3",
+            "title": "Curtains",
+            "href": "#"
+          },
+          {
+            "level": "3",
+            "title": "Cushions &amp; Pillows",
+            "href": "#"
+          },
+          {
+            "level": "3",
+            "title": "Blankets",
+            "href": "#"
+          },
+          {
+            "level": "3",
+            "title": "Bath Towels",
+            "href": "#"
+          },
+          {
+            "level": "3",
+            "title": "Kitchen &amp; Table Linen",
+            "href": "#"
+          },
+          {
+            "level": "3",
+            "title": "Floor Coverings",
+            "href": "#"
+          },
+          {
+            "level": "3",
+            "title": "Smart Home Automation",
+            "href": "#",
+            "ismain": "true"
+          },
+          {
+            "level": "3",
+            "title": "Smart Security System",
+            "href": "#"
+          },
+          {
+            "level": "3",
+            "title": "Smart Door Locks",
+            "href": "#"
+          },
+          {
+            "level": "3",
+            "title": "Home Improvement",
+            "href": "#",
+            "ismain": "true"
+          },
+          {
+            "level": "3",
+            "title": "Tools &amp; Measuring Equipments",
+            "href": "#"
+          },
+          {
+            "level": "3",
+            "title": "Home Utilities &amp; Organizers",
+            "href": "#"
+          },
+          {
+            "level": "3",
+            "title": "Lawn &amp; Gardening",
+            "href": "#"
+          },
+          {
+            "level": "3",
+            "title": "Bathroom &amp; Kitchen Fittings",
+            "href": "#"
+          }
+        ]
+      },
+      {
+        "links": [
+          {
+            "level": "3",
+            "title": "Home Decor",
+            "href": "#",
+            "ismain": "true"
+          },
+          {
+            "level": "3",
+            "title": "Paintings",
+            "href": "#"
+          },
+          {
+            "level": "3",
+            "title": "Clocks",
+            "href": "#"
+          },
+          {
+            "level": "3",
+            "title": "Wall Shelves",
+            "href": "#"
+          },
+          {
+            "level": "3",
+            "title": "Stickers",
+            "href": "#"
+          },
+          {
+            "level": "3",
+            "title": "Showpieces &amp; Figurines",
+            "href": "#"
+          },
+          {
+            "level": "3",
+            "title": "Home Lighting",
+            "href": "#",
+            "ismain": "true"
+          },
+          {
+            "level": "3",
+            "title": "Bulbs",
+            "href": "#"
+          },
+          {
+            "level": "3",
+            "title": "Wall Lamp",
+            "href": "#"
+          },
+          {
+            "level": "3",
+            "title": "Table Lamp",
+            "href": "#"
+          },
+          {
+            "level": "3",
+            "title": "Ceiling Lamp",
+            "href": "#"
+          },
+          {
+            "level": "3",
+            "title": "Emergency Lights",
+            "href": "#"
+          },
+          {
+            "level": "3",
+            "title": "Festive Decor &amp; Gifts",
+            "href": "#",
+            "ismain": "true"
+          },
+          {
+            "level": "3",
+            "title": "Pet Supplies",
+            "href": "#",
+            "ismain": "true"
+          },
+          {
+            "level": "3",
+            "title": "Dogs",
+            "href": "#"
+          },
+          {
+            "level": "3",
+            "title": "Cats",
+            "href": "#"
+          },
+          {
+            "level": "3",
+            "title": "Fish &amp; Aquatics",
+            "href": "#"
+          }
+        ]
+      },
+      {
+        "links": [
+          {
+            "level": "3",
+            "title": "Durability Certified Furniture",
+            "href": "#",
+            "ismain": "true"
+          },
+          {},
+          {
+            "level": "3",
+            "title": "Christmas Store",
+            "href": "#",
+            "ismain": "true"
+          },
+          {
+            "level": "3",
+            "title": "Mugs Store",
+            "href": "#"
+          },
+          {
+            "level": "3",
+            "title": "Gardening Store",
+            "href": "#",
+            "ismain": "true"
+          },
+          {
+            "level": "3",
+            "title": "Stainless Steel Store",
+            "href": "#"
+          },
+          {
+            "level": "3",
+            "title": "Milton",
+            "href": "#"
+          },
+          {
+            "level": "3",
+            "title": "Bombay Dyeing",
+            "href": "#"
+          },
+          {
+            "level": "3",
+            "title": "@home",
+            "href": "#"
+          },
+          {
+            "level": "3",
+            "title": "HomeTown",
+            "href": "#"
+          },
+          {
+            "level": "3",
+            "title": "Ajanta",
+            "href": "#"
+          },
+          {
+            "level": "3",
+            "title": "Spaces by Welspun",
+            "href": "#"
+          },
+          {
+            "level": "3",
+            "title": "Prestige",
+            "href": "#"
+          },
+          {
+            "level": "3",
+            "title": "Perfect Home Store",
+            "href": "#",
+            "ismain": "true"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "level": "0",
+    "title": "Sports, Books &amp; More",
+    "href": "#",
+    "subnav": [
+      {
+        "links": [
+          {
+            "level": "3",
+            "title": "Sports",
+            "href": "#",
+            "ismain": "true"
+          },
+          {
+            "level": "3",
+            "title": "Cricket",
+            "href": "#"
+          },
+          {
+            "level": "3",
+            "title": "Badminton",
+            "href": "#"
+          },
+          {
+            "level": "3",
+            "title": "Cycling",
+            "href": "#"
+          },
+          {
+            "level": "3",
+            "title": "Football",
+            "href": "#"
+          },
+          {
+            "level": "3",
+            "title": "Skating",
+            "href": "#"
+          },
+          {
+            "level": "3",
+            "title": "Camping &amp; Hiking",
+            "href": "#"
+          },
+          {
+            "level": "3",
+            "title": "Swimming",
+            "href": "#"
+          },
+          {
+            "level": "3",
+            "title": "Exercise Fitness",
+            "href": "#",
+            "ismain": "true"
+          },
+          {
+            "level": "3",
+            "title": "Cardio Equipment",
+            "href": "#"
+          },
+          {
+            "level": "3",
+            "title": "Home Gyms",
+            "href": "#"
+          },
+          {
+            "level": "3",
+            "title": "Support",
+            "href": "#"
+          },
+          {
+            "level": "3",
+            "title": "Dumbbells",
+            "href": "#"
+          },
+          {
+            "level": "3",
+            "title": "Ab Exercisers",
+            "href": "#"
+          },
+          {
+            "level": "3",
+            "title": "Shakers &amp; Sippers",
+            "href": "#"
+          },
+          {
+            "level": "3",
+            "title": "Yoga Mat",
+            "href": "#"
+          },
+          {
+            "level": "3",
+            "title": "Gym Gloves",
+            "href": "#"
+          }
+        ]
+      },
+      {
+        "links": [
+          {
+            "level": "3",
+            "title": "Food Essentials",
+            "href": "#",
+            "ismain": "true"
+          },
+          {
+            "level": "3",
+            "title": "Nuts &amp; Dry Fruits",
+            "href": "#"
+          },
+          {
+            "level": "3",
+            "title": "Tea, Coffee and Beverages",
+            "href": "#"
+          },
+          {
+            "level": "3",
+            "title": "Chocolates",
+            "href": "#"
+          },
+          {
+            "level": "3",
+            "title": "Snacks Corner",
+            "href": "#"
+          },
+          {
+            "level": "3",
+            "title": "Gifting Combos",
+            "href": "#"
+          },
+          {
+            "level": "3",
+            "title": "Sweets Store",
+            "href": "#"
+          },
+          {
+            "level": "3",
+            "title": "Jams, Spreads and Honey",
+            "href": "#"
+          },
+          {
+            "level": "3",
+            "title": "Breakfast Items",
+            "href": "#"
+          },
+          {},
+          {
+            "level": "3",
+            "title": "All Supplements",
+            "href": "#"
+          },
+          {
+            "level": "3",
+            "title": "Protein Supplements",
+            "href": "#"
+          },
+          {
+            "level": "3",
+            "title": "Vitamin Supplements",
+            "href": "#"
+          },
+          {
+            "level": "3",
+            "title": "Health Drinks",
+            "href": "#"
+          },
+          {
+            "level": "3",
+            "title": "Ayurvedic Supplements",
+            "href": "#"
+          }
+        ]
+      },
+      {
+        "links": [
+          {
+            "level": "3",
+            "title": "Books",
+            "href": "#",
+            "ismain": "true"
+          },
+          {
+            "level": "3",
+            "title": "Entrance Exams",
+            "href": "#"
+          },
+          {
+            "level": "3",
+            "title": "Academics",
+            "href": "#"
+          },
+          {
+            "level": "3",
+            "title": "Literature &amp; Fiction",
+            "href": "#"
+          },
+          {
+            "level": "3",
+            "title": "Non Fiction",
+            "href": "#"
+          },
+          {
+            "level": "3",
+            "title": "Young Readers",
+            "href": "#"
+          },
+          {
+            "level": "3",
+            "title": "Self-Help",
+            "href": "#"
+          },
+          {
+            "level": "3",
+            "title": "E-Learning",
+            "href": "#"
+          },
+          {
+            "level": "3",
+            "title": "Preorders",
+            "href": "#"
+          },
+          {
+            "level": "3",
+            "title": "Indian Languages",
+            "href": "#"
+          },
+          {
+            "level": "3",
+            "title": "Stationery",
+            "href": "#",
+            "ismain": "true"
+          },
+          {
+            "level": "3",
+            "title": "Pens",
+            "href": "#"
+          },
+          {
+            "level": "3",
+            "title": "Diaries",
+            "href": "#"
+          },
+          {
+            "level": "3",
+            "title": "Card Holders",
+            "href": "#"
+          },
+          {
+            "level": "3",
+            "title": "Desk Organizers",
+            "href": "#"
+          },
+          {
+            "level": "3",
+            "title": "Calculators",
+            "href": "#"
+          },
+          {
+            "level": "3",
+            "title": "Key Chains",
+            "href": "#"
+          }
+        ]
+      },
+      {
+        "links": [
+          {
+            "level": "3",
+            "title": "Auto Accessories",
+            "href": "#",
+            "ismain": "true"
+          },
+          {
+            "level": "3",
+            "title": "Helmets &amp; Riding Gears",
+            "href": "#"
+          },
+          {
+            "level": "3",
+            "title": "Car Audio/Video",
+            "href": "#"
+          },
+          {
+            "level": "3",
+            "title": "Car Mobile Accessories",
+            "href": "#"
+          },
+          {
+            "level": "3",
+            "title": "Car &amp; Bike Care",
+            "href": "#"
+          },
+          {
+            "level": "3",
+            "title": "Vehicle Lubricants",
+            "href": "#"
+          },
+          {
+            "level": "3",
+            "title": "Industrial &amp; Scientific tools",
+            "href": "#",
+            "ismain": "true"
+          },
+          {
+            "level": "3",
+            "title": "Industrial Measurement Devices",
+            "href": "#"
+          },
+          {
+            "level": "3",
+            "title": "Industrial Testing Devices",
+            "href": "#"
+          },
+          {
+            "level": "3",
+            "title": "Lab &amp; Scientific Products",
+            "href": "#"
+          },
+          {
+            "level": "3",
+            "title": "Packaging &amp; Shipping Products",
+            "href": "#"
+          },
+          {
+            "level": "3",
+            "title": "Safety Products",
+            "href": "#"
+          },
+          {},
+          {
+            "level": "3",
+            "title": "Pregnancy and Fertility Kits",
+            "href": "#"
+          },
+          {
+            "level": "3",
+            "title": "Hot Water Bag",
+            "href": "#"
+          }
+        ]
+      },
+      {
+        "links": [
+          {
+            "level": "3",
+            "title": "Grocery (Only in Select Cities)",
+            "href": "#",
+            "ismain": "true"
+          },
+          {},
+          {
+            "level": "3",
+            "title": "Musical Instruments",
+            "href": "#"
+          },
+          {
+            "level": "3",
+            "title": "Music",
+            "href": "#"
+          },
+          {
+            "level": "3",
+            "title": "Movies &amp; Tv shows",
+            "href": "#"
+          },
+          {},
+          {
+            "level": "3",
+            "title": "Gaming Consoles",
+            "href": "#"
+          },
+          {
+            "level": "3",
+            "title": "Gaming Accessories",
+            "href": "#"
+          },
+          {
+            "level": "3",
+            "title": "PS4 Games",
+            "href": "#"
+          },
+          {
+            "level": "3",
+            "title": "Smart Glasses (VR)",
+            "href": "#"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "level": "0",
+    "title": "Offer Zone",
+    "href": "#"
+  }
+]
