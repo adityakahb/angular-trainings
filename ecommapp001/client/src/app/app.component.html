@@ -1,0 +1,43 @@
+<!-- <app-cta-btn [cProps]="{
+    tag: 'button',
+    href: '',
+    type: 'button',
+    text: 'Calculate',
+    title: 'Calculate',
+    primaryicon: 'fas fa-calculator',
+    ctaicon: 'fas fa-chevron-right',
+    ctastyle: 'primary',
+    isoutline: 'false',
+    size: ''
+}"></app-cta-btn>
+
+<app-cta-btn [cProps]="{
+    tag: 'a',
+    href: '#',
+    type: '',
+    text: 'Calculate',
+    title: 'Calculate',
+    primaryicon: 'fas fa-calculator',
+    ctaicon: 'fas fa-chevron-right',
+    ctastyle: 'primary',
+    isoutline: 'false',
+    size: ''
+}"></app-cta-btn> -->
+
+
+<div class="body-wrap">
+  <app-siteheader [loggedInUser]="{
+          firstname: 'Jane',
+          lastname: 'Doe',
+          notifications: {
+              count: '10',
+              unread: '10'
+          },
+          messages: {
+              count: '10',
+              unread: '10'
+          }
+      }"></app-siteheader>
+  <router-outlet></router-outlet>
+  <app-sitefooter></app-sitefooter>
+</div>

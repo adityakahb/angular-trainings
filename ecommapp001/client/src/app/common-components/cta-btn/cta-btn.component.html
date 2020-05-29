@@ -1,0 +1,46 @@
+<button
+  *ngIf="tag === 'button' && (share ||[]).length === 0"
+  [type]="type"
+  [class]="cssclass"
+  [title]="title"
+  >
+  <span *ngIf="primaryicon" class="_pi">
+    <ion-icon [name]="primaryicon"></ion-icon>
+  </span>
+  {{text}}
+  <span *ngIf="ctaicon" class="_ci">
+    <ion-icon [name]="ctaicon"></ion-icon>
+  </span>
+  
+</button>
+
+
+<a
+  *ngIf="tag === 'a'"
+  [href]="href"
+  [class]="cssclass"
+  [title]="title"
+  >
+  <span *ngIf="primaryicon" class="_pi">
+    <ion-icon [name]="primaryicon"></ion-icon>
+  </span>
+  {{text}}
+  <span *ngIf="ctaicon" class="_ci">
+    <ion-icon [name]="ctaicon"></ion-icon>
+  </span>
+
+</a>
+
+
+<div class="btn-group dropup cta-inline-dd" *ngIf="(share ||[]).length > 0">
+  <button type="button" role="button" [class]="cssclass + ' dropdown-toggle'" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+      <span *ngIf="text" class="txt" [innerHTML]="text"></span> 
+      <span *ngIf="ctaicon" [class]="ctaicon + ' _ci'"></span>
+  </button>
+  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+    <a class="dropdown-item" [href]="sh.link" [title]="sh.text" *ngFor="let sh of share">
+        <span class="icon" *ngIf="sh.icon"><img [src]="sh.icon" [alt]="sh.text"></span>
+        <span class="text" [innerHTML]="sh.text"></span>
+    </a>
+  </div>
+</div>

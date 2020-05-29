@@ -1,0 +1,67 @@
+@import './imports';
+@import '~bootstrap/scss/bootstrap';
+@import './sass/bootstrap-overrides';
+
+html {
+  font-size: 16px;
+}
+body {
+  background-color: $primary;
+}
+.max-wrap {
+  max-width: rem(1920px);
+  margin: 0 auto;
+}
+
+body {
+  
+  .slick-dots {
+    // background-color: rgba($light, 0.9);
+    bottom: 0;
+    display: block;
+    height: rem(24px);
+    left: 0;
+    position: absolute;
+    text-align: center;
+    width: 100%;
+
+    &,
+    li {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+
+    li {
+      display: inline-block;
+      // margin-top: rem(13px);
+      padding: 0 rem(8px);
+
+      &.slick-active button {
+        background-color: $primary;
+      }
+    }
+
+    button {
+      background-color: $light;
+      border-radius: rem(6px);
+      border: rem(1px) solid $light;
+      height: 10px;
+      overflow: hidden;
+      text-indent: -9999px;
+      width: 24px;
+      position: relative;
+
+      &:after {
+        content: '';
+        position: absolute;
+        top: rem(1px);
+        left: rem(1px);
+        width: calc(100% - #{rem(2px)});
+        height: calc(100% - #{rem(2px)});
+        border: 1px solid $primary;
+        border-radius: rem(4px);
+      }
+    }
+  }
+}

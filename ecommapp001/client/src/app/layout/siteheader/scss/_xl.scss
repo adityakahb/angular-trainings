@@ -1,0 +1,16 @@
+$rem480: rem(-480px);
+.nav-search-wrap {
+  max-width: rem(960px);
+}
+.siteheader-comp {
+  .nav-wrap {
+    button {
+      margin: 0 0 0 rem(16px);
+
+      &:hover {
+        color: $light;
+        background-color: $dark;
+      }
+    }
+  }
+}

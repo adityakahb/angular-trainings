@@ -1,0 +1,117 @@
+{
+    "nav": [
+        {
+            "title": "Recipes",
+            "links": [
+                {
+                    "title": "Healthy",
+                    "text": "Healthy",
+                    "link": "#"
+                },
+                {
+                    "title": "Vegan / Vegetarian",
+                    "text": "Vegan / Vegetarian",
+                    "link": "#"
+                },
+                {
+                    "title": "Quick",
+                    "text": "Quick",
+                    "link": "#"
+                },
+                {
+                    "title": "Global",
+                    "text": "Global",
+                    "link": "#"
+                },
+                {
+                    "title": "Ingredients",
+                    "text": "Ingredients",
+                    "link": "#"
+                },
+                {
+                    "type": "morelink",
+                    "title": "More recipes",
+                    "text": "More recipes",
+                    "link": "#"
+                }
+            ]
+        },
+        {
+            "title": "Articles",
+            "links": [
+                {
+                    "title": "How to?",
+                    "text": "How to?",
+                    "link": "#"
+                },
+                {
+                    "title": "A simple kitchen",
+                    "text": "A simple kitchen",
+                    "link": "#"
+                },
+                {
+                    "title": "Kids and Health",
+                    "text": "Kids and Health",
+                    "link": "#"
+                },
+                {
+                    "title": "For Sick and Elderly",
+                    "text": "For Sick and Elderly",
+                    "link": "#"
+                },
+                {
+                    "title": "Busting the myths",
+                    "text": "Busting the myths",
+                    "link": "#"
+                },
+                {
+                    "type": "morelink",
+                    "title": "More articles",
+                    "text": "More articles",
+                    "link": "#"
+                }
+            ]
+        },
+        {
+            "title": "Connect",
+            "links": [
+                {
+                    "icon": "fab fa-facebook-square",
+                    "title": "Facebook",
+                    "text": "Facebook",
+                    "link": "#"
+                },
+                {
+                    "icon": "fab fa-instagram",
+                    "title": "Instagram",
+                    "text": "Instagram",
+                    "link": "#"
+                },
+                {
+                    "icon": "fab fa-twitter",
+                    "title": "Twitter",
+                    "text": "Twitter",
+                    "link": "#"
+                },
+                {
+                    "icon": "fab fa-pinterest-square",
+                    "title": "Pinterest",
+                    "text": "Pinterest",
+                    "link": "#"
+                },
+                {
+                    "icon": "fab fa-youtube",
+                    "title": "Youtube",
+                    "text": "Youtube",
+                    "link": "#"
+                },
+                {
+                    "icon": "fas fa-newspaper",
+                    "title": "Newsletter",
+                    "text": "Newsletter",
+                    "link": "#"
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,195 @@
+<section class="siteheader-comp" id="siteheader-comp" [ngClass]="{'active': isScrolledDown}">
+  <div class="header-wrap">
+    <header>
+      <div class="max-wrap">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col">
+              <div class="logo-wrap">
+                <a href="#" class="site-logo">
+                  <img src="./../../../assets/logo-white.svg">
+                </a>
+              </div>
+              <div class="nav-search-wrap d-none d-md-block">
+                <form>
+                  <div class="input-group">
+                    <div class="input-group-prepend">
+                      <button class="btn btn-secondary btn-sm dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Select Category</button>
+                      <div class="dropdown-menu">
+                        <a class="dropdown-item" href="#">Action</a>
+                        <a class="dropdown-item" href="#">Another action</a>
+                        <a class="dropdown-item" href="#">Something else here</a>
+                        <div role="separator" class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">Separated link</a>
+                      </div>
+                    </div>
+                    <input type="search" class="form-control form-control-sm" aria-label="Text input with dropdown button">
+                    <div class="input-group-append">
+                      <app-cta-btn class="appended" [cProps]="{
+                        tag: 'button',
+                        type: 'submit',
+                        href: '',
+                        text: '',
+                        title: '',
+                        primaryicon: 'search',
+                        ctaicon: '',
+                        ctastyle: 'light',
+                        isoutline: 'false',
+                        size: 'sm'
+                      }"></app-cta-btn>
+                    </div>
+                  </div>
+                </form>
+              </div>
+              <div class="nav-wrap">
+                <button type="button" [ngClass]="{'active': isSearchNavOpen}" class="d-md-none" (click)="openSearchNav()">
+                  <ion-icon name="search"></ion-icon>
+                </button>
+                <button type="button">
+                  <ion-icon name="cart"></ion-icon>
+                </button>
+                <!-- <button type="button" [ngClass]="{'active': isLangNavOpen}" (click)="openLangNav()">
+                  <span class="txt">EN</span>
+                </button> -->
+                <button type="button" [ngClass]="{'active': isUserNavOpen}" class="d-none d-md-inline-block" (click)="openUserNav()">
+                  <ion-icon name="person-circle"></ion-icon>
+                </button>
+                <button type="button" [ngClass]="{'active': isNavOpen}" class="d-md-none" (click)="openNav()">
+                  <ion-icon name="menu"></ion-icon>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+  </div>
+</section>
+<div class="site-nav-buffer"></div>
+<div class="site-nav-wrap" [ngClass]="{'active': isNavOpen}">
+  <div class="nav-user-wrap d-md-none">
+    <div class="user-avtr">
+      <ion-icon name="person-circle"></ion-icon>
+    </div>
+    <app-cta-btn [cProps]="{
+        tag: 'a',
+        href: '#',
+        text: 'Login / Register',
+        title: 'Login / Register',
+        primaryicon: '',
+        ctaicon: 'chevron-forward',
+        ctastyle: 'primary',
+        isoutline: 'false',
+        size: 'sm'
+    }"></app-cta-btn>
+    <button class="close-site-nav" (click)="closeAllNav()">
+      <ion-icon name="close-circle-outline"></ion-icon>
+    </button>
+  </div>
+  <div class="max-wrap">
+    <nav>
+      <ul class="nav-menu">
+        <li *ngFor="let item of navData" class="nav-item">
+          <a [href]="item.landing">
+            <span class="txt" [innerHTML]="item.name"></span>
+            <span class="ikn"><span class="fas fa-chevron-right"></span></span>
+          </a>
+          <div class="sub-nav">
+            <div class="max-wrap">
+              <div class="container-fluid">
+                <div class="row">
+                  <div *ngFor="let subnavgroup of item.links" class="col-12 col-xl-4 p-0 pl-xl-3 pr-xl-3">
+                    <ul class="sub-nav-group">
+                      <li *ngFor="let subnav of subnavgroup.col">
+                        <a [href]="subnav.link" [innerHTML]="subnav.name"></a>
+                        <p [innerHTML]="subnav.desc"></p>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</div>
+<div class="siteheader-buffer" [ngClass]="{'active': isScrolledDown}"></div>
+
+<div class="hdr-nav-mask" (click)="closeAllNav()" [ngClass]="{'active': isUserNavOpen || isSearchNavOpen}"></div>
+<div class="hdr-nav-wrap type-user" [ngClass]="{'active': isUserNavOpen}">
+  <div class="text-right">
+    <button class="close-site-nav" (click)="closeAllNav()">
+      <ion-icon name="close-circle-outline"></ion-icon>
+    </button>
+  </div>
+  <div class="hdr-nav-content">
+    <form>
+      <div class="form-group">
+        <label for="email"><strong>Email address</strong></label>
+        <input type="email" class="form-control" id="email">
+      </div>
+      <div class="form-group">
+        <label for="pwd"><strong>Password</strong></label>
+        <input type="password" class="form-control" id="pwd">
+      </div>
+      <div class="checkbox">
+        <label><input type="checkbox"> Remember me</label>
+      </div>
+      <app-cta-btn class="mr-3" [cProps]="{
+        tag: 'button',
+        type: 'submit',
+        text: 'Login',
+        title: 'Login',
+        primaryicon: '',
+        ctaicon: 'chevron-forward',
+        ctastyle: 'primary',
+        isoutline: 'false'
+      }"></app-cta-btn>
+      Don't have an account? <a href="#">Register Now</a>.
+    </form>
+  </div>
+</div>
+
+<div class="hdr-nav-wrap type-search" [ngClass]="{'active': isSearchNavOpen}">
+  <div class="text-right">
+    <button class="close-site-nav" (click)="closeAllNav()">
+      <ion-icon name="close-circle-outline"></ion-icon>
+    </button>
+  </div>
+  <div class="hdr-nav-content">
+    <form>
+      <div class="form-group">
+        <label>Category</label>
+        <select class="form-control">
+          <option selected>Select one</option>
+          <option>2</option>
+          <option>3</option>
+          <option>4</option>
+          <option>5</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="" class="sr-only">Search Keywords</label>
+        <div class="input-group">
+          <input type="search" class="form-control" aria-label="Text input with dropdown button">
+          <div class="input-group-append">
+            <app-cta-btn class="appended" [cProps]="{
+              tag: 'button',
+              type: 'submit',
+              href: '',
+              text: '',
+              title: '',
+              primaryicon: 'search',
+              ctaicon: '',
+              ctastyle: 'light',
+              isoutline: 'false',
+              size: 'sm'
+            }"></app-cta-btn>
+          </div>
+        </div>
+      </div>
+    </form>
+  </div>
+</div>
