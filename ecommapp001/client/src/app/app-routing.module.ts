@@ -4,9 +4,14 @@ import { Routes, RouterModule } from '@angular/router';
 const routes: Routes = [
   {
     path: '',
-    redirectTo: 'pages/index',
-    pathMatch: 'full'
-  }
+    redirectTo: 'index',
+    pathMatch: 'prefix'
+  },
+  {
+    path: 'search',
+    redirectTo: 'search',
+    pathMatch: 'prefix'
+  },
 ];
 
 @NgModule({

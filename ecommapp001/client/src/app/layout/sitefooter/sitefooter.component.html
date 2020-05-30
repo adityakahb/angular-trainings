@@ -15,7 +15,9 @@
                 <ul>
                   <li *ngFor="let link of item.links" [ngClass]="link.type === 'morelink' ? 'morelink' : ''">
                     <a [title]="link.title" [href]="link.link">
-                      <span *ngIf="link.icon" [class]="link.icon"></span>
+                      <span *ngIf="link.icon">
+                        <ion-icon [name]="link.icon"></ion-icon>
+                      </span>
                       <span [innerHTML]="link.text" class="txt"></span>
                     </a>
                   </li>
@@ -23,7 +25,7 @@
               </nav>
             </div>
             <div class="col-12">
-              <p>&copy; SWEET SPATULA</p>
+              <p>&copy; 2020</p>
             </div>
           </div>
         </div>

@@ -367,7 +367,7 @@ limitations under the License.
 }
 
 /* @media (max-width: 920px) { */
-  @media (max-width: 767px) {
+  @media (max-width: 1199px) {
   .accessible-megamenu > .accessible-megamenu-top-nav-item {
     position: static;
   }
@@ -416,7 +416,7 @@ limitations under the License.
 }
 
 /* @media (max-width: 434px) { */
-@media (max-width: 767px) { 
+@media (max-width: 1199px) { 
   .accessible-megamenu-toggle {
     display: block;
     z-index: 3;
@@ -470,7 +470,7 @@ limitations under the License.
 }
 
 /* @media (max-width: 414px) { */
-@media (max-width: 767px) {
+@media (max-width: 1199px) {
   .accessible-megamenu .accessible-megamenu-panel.cols-4 > ol > li,
   .accessible-megamenu .accessible-megamenu-panel.cols-4b > ol > li,
   .accessible-megamenu .accessible-megamenu-panel.cols-3 > ol > li,

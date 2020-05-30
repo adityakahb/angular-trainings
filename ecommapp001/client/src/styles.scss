@@ -7,14 +7,17 @@ html {
 }
 body {
   background-color: $primary;
+  backface-visibility: hidden;
 }
 .max-wrap {
-  max-width: rem(1920px);
+  max-width: rem(1680px);
   margin: 0 auto;
 }
 
 body {
-  
+  &.nav-open {
+    overflow: hidden;
+  }
   .slick-dots {
     // background-color: rgba($light, 0.9);
     bottom: 0;
@@ -35,7 +38,7 @@ body {
     li {
       display: inline-block;
       // margin-top: rem(13px);
-      padding: 0 rem(8px);
+      margin: 0 rem(8px);
 
       &.slick-active button {
         background-color: $primary;

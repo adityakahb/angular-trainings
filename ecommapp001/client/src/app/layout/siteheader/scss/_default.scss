@@ -10,6 +10,7 @@ $rem240: rem(-240px);
   background-color: rgba($secondary-dark, 0.85);
   backdrop-filter: blur(#{rem(8px)});
   // box-shadow: rem(0px 8px 8px 0px) rgba($black, 0.25);
+  backdrop-filter: blur(#{rem(8px)});
   height: rem(96px);
   left: 0;
   position: fixed;
@@ -95,51 +96,27 @@ $rem240: rem(-240px);
   transform: translateX(101%);
   // transform: translateX(0%);
   transition: transform 250ms ease;
-  z-index: 860;
-  background-color: rgba($secondary, 0.85);
-  backdrop-filter: blur(0.5rem);
+  z-index: 2060;
+  background-color: rgba($secondary, 0.9);
   height: 100%;
   width: 100%;
-  &.active {
-    transform: translateX(0);
+  overflow-y: scroll;
+
+  .close-site-nav {
+    color: $white;
   }
 
-  .nav-user-wrap {
-    background-color: $primary-dark;
-    position: relative;
-    padding: rem(0 64px);
-    min-height: rem(64px);
-    .user-avtr, .close-site-nav {
-      font-size: rem(32px);
-      background: none;
-      border: 0;
-      height: rem(64px);
-      line-height: 1;
-      margin: 0;
-      padding: 0;
-      width: rem(64px);
-      color: $white;
-      top: 0;
-      position: absolute;
-      justify-content: center;
-    }
-    .user-avtr {
-      left: 0;
-    }
-    .close-site-nav {
-      right: 0;
-    }
-    &, .user-avtr {
-      display: flex;
-      align-items: center;
-    }
+  &.active {
+    transform: translateX(0);
   }
 
   .accessible-megamenu {
     border-color: transparent;
   }
   .accessible-megamenu-panel {
+    background: $secondary-dark;
     left: 0;
+    padding: 0;
     .sub-nav-group {
       &, li {
         list-style: none;
@@ -149,14 +126,58 @@ $rem240: rem(-240px);
     }
   }
 
+  .accessible-megamenu .accessible-megamenu-panel a {
+    font-weight: 400;
+    margin: 0;
+    &.ismain {
+      font-weight: 700;
+    }
+  }
+
   .accessible-megamenu-top-nav-item {
     border-color: transparent;
   }
 
-  .accessible-megamenu > .accessible-megamenu-top-nav-item a[aria-expanded] {
-    text-transform: uppercase;
-    font-size: rem(18px);
-    box-shadow: none;
+  .accessible-megamenu > .accessible-megamenu-top-nav-item {
+    a {
+      text-transform: uppercase;
+      font-size: rem(18px);
+      box-shadow: none;
+      height: auto;
+      line-height: 1.2;
+      position: relative;
+      .ikn {
+        position: absolute;
+        width: rem(48px);
+        height: 100%;
+        justify-content: center;
+        align-items: center;
+        top: 0;
+        right: 0;
+        &.plus {
+          display: flex;
+        }
+        &.minus {
+          display: none;
+        }
+      }
+      &.open, &:focus, &.focus, &:hover {
+        background: $secondary-dark;
+      }
+      &.open {
+        .ikn {
+          &.plus {
+            display: none;
+          }
+          &.minus {
+            display: flex;
+          }
+        }
+      }
+    }
+    .accessible-megamenu-panel a {
+      text-transform: none;
+    }
   }
 
   .accessible-megamenu > .accessible-megamenu-top-nav-item:first-child a[aria-expanded].open {
@@ -164,13 +185,6 @@ $rem240: rem(-240px);
     border: 0;
     left: 0;
     margin: 0;
-  }
-
-  .accessible-megamenu > .accessible-megamenu-top-nav-item a[aria-expanded].open,
-  .accessible-megamenu > .accessible-megamenu-top-nav-item a[aria-expanded]:hover,
-  .accessible-megamenu > .accessible-megamenu-top-nav-item a[aria-expanded]:focus,
-  .accessible-megamenu .accessible-megamenu-panel {
-    background: $secondary-dark;
   }
 
   .nav-menu {
@@ -190,7 +204,6 @@ $rem240: rem(-240px);
   }
 }
 
-
 .hdr-nav-mask, .hdr-nav-wrap {
   position: fixed;
   top: 0;
@@ -198,32 +211,34 @@ $rem240: rem(-240px);
   width: 100%;
   height: 100%;
   background-color: rgba($white, 0.5);
-  backdrop-filter: blur(0.5rem);
-  transform: translateX(100%);
+  transform: translateX(100%) translateZ(0);
   transition: transform 250ms ease;
   z-index: 2040;
   &.active {
-    transform: translateX(0);
+    transform: translateX(0) translateZ(0);
   }
 }
+
+.hdr-nav-wrap {
+  transition-delay: 125ms;
+}
+
+.close-site-nav {
+  font-size: rem(32px);
+  background: none;
+  border: 0;
+  height: rem(64px);
+  line-height: 1;
+  margin: 0;
+  padding: 0;
+  width: rem(48px);
+  color: $dark;
+  justify-content: center;
+}
+
 .hdr-nav-wrap {
   background-color: $gray-200;
   z-index: 2050;
-  .close-site-nav {
-    font-size: rem(32px);
-    background: none;
-    border: 0;
-    height: rem(64px);
-    line-height: 1;
-    margin: 0;
-    padding: 0;
-    width: rem(64px);
-    color: $dark;
-    justify-content: center;
-  }
-  .close-site-nav {
-    height: rem(64px);
-  }
   .hdr-nav-content {
     display: flex;
     height: calc(100% - #{rem(64px)});

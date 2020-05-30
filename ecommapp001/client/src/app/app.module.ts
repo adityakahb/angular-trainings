@@ -1,3 +1,4 @@
+import { PageSearchModule } from './pages/search/page-search.module';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 
@@ -15,7 +16,8 @@ import { IndexModule } from './pages/index/index.module';
     BrowserModule,
     AppRoutingModule,
     DefaultLayoutModule,
-    IndexModule
+    IndexModule,
+    PageSearchModule
   ],
   providers: [],
   bootstrap: [AppComponent],

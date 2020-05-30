@@ -9,11 +9,11 @@ $danger: #de786a;
 $light: #fcddc9;
 $dark: #3d4447;
 
-$primary-dark: darken($primary, 15%);
-$secondary-dark: darken($secondary, 15%);
+$primary-dark: darken($primary, 24%);
+$secondary-dark: darken($secondary, 24%);
 
-$primary-light: lighten($primary, 15%);
-$secondary-light: lighten($secondary, 15%);
+$primary-light: lighten($primary, 24%);
+$secondary-light: lighten($secondary, 24%);
 
 $theme-colors: () !default;
 // stylelint-disable-next-line scss/dollar-variable-default
@@ -35,7 +35,7 @@ $grid-breakpoints: (
   md: rem(768px),
   lg: rem(992px),
   xl: rem(1200px),
-  xxl: rem(1920px)
+  xxl: rem(1680px)
 );
 
 $container-max-widths: (
@@ -43,7 +43,7 @@ $container-max-widths: (
   md: rem(720px),
   lg: rem(960px),
   xl: rem(1140px),
-  xxl: rem(1860px)
+  xxl: rem(1616px)
 );
 
 $grid-gutter-width: rem(16px);

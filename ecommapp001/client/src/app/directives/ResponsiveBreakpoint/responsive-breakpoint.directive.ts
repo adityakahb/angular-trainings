@@ -1,25 +1,35 @@
 import { CommonFunctionsService } from './../../services/common-functions.service';
-import { Directive, AfterViewInit } from '@angular/core';
+import { Directive, AfterViewInit, Input, ElementRef } from '@angular/core';
 import { BreakpointObserver, BreakpointState } from '@angular/cdk/layout';
 
-let dpr = 0;
+const bpArr = ['xs', 'sm', 'md', 'lg', 'xl', 'xxl'];
+let dpr: any;
 
 @Directive({
   selector: '[appResponsiveBreakpoint]'
 })
 export class ResponsiveBreakpointDirective implements AfterViewInit {
+  @Input() type;
+  @Input() imgdata;
   currentBreakpoint = '';
-  constructor(public breakpointObserver: BreakpointObserver, private window: Window, private bpService: CommonFunctionsService) {
+
+  constructor(private el: ElementRef,
+              private breakpointObserver: BreakpointObserver,
+              private window: Window,
+              private bpService: CommonFunctionsService) {
     if (this.window && window.devicePixelRatio) {
       dpr = this.window.devicePixelRatio;
+    } else {
+      dpr = '';
     }
   }
   ngAfterViewInit(): void {
     this.breakpointObserver.observe([
       '(min-width: 576px)',
       '(min-width: 768px)',
-      '(min-width: 992px)',
-      '(min-width: 1200px)'])
+      '(min-width: 1024px)',
+      '(min-width: 1200px)',
+      '(min-width: 1680px)'])
       .subscribe((state: BreakpointState) => {
         this.currentBreakpoint = 'xs';
         if (state.breakpoints['(min-width: 576px)']) {
@@ -34,9 +44,38 @@ export class ResponsiveBreakpointDirective implements AfterViewInit {
         if (state.breakpoints['(min-width: 1200px)']) {
           this.currentBreakpoint = 'xl';
         }
+        if (state.breakpoints['(min-width: 1680px)']) {
+          this.currentBreakpoint = 'xxl';
+        }
         setTimeout(() => {
+          if (this.el.nativeElement && this.type === 'image' && this.imgdata) {
+            this.setImgUrl(this.currentBreakpoint, (dpr > 1 ? '2' : ''), this.imgdata);
+          }
           this.bpService.setCBP(this.currentBreakpoint + (dpr > 1 ? '2' : ''));
         }, 0);
       });
+  }
+  setImgUrl(bp, dp, imgdata) {
+    if (imgdata[bp + dp]) {
+      this.el.nativeElement.src = (/picsum/g).test(imgdata[bp + dp]) ?
+        imgdata[bp + dp] + '?random=' + parseInt('' + (Math.random() * 100000), 10) :
+        imgdata[bp + dp];
+    } else {
+      let index = bpArr.indexOf(bp);
+      while(index > 0) {
+        if (dp === '2' && imgdata[bpArr[index] + dp]) {
+          this.el.nativeElement.src = (/picsum/g).test(imgdata[bpArr[index]]) ?
+            imgdata[bpArr[index]] + '?random=' + parseInt('' + (Math.random() * 100000), 10) :
+            imgdata[bpArr[index]];
+          break;
+        } else if (imgdata[bpArr[index]]) {
+          this.el.nativeElement.src = (/picsum/g).test(imgdata[bpArr[index]]) ?
+            imgdata[bpArr[index]] + '?random=' + parseInt('' + (Math.random() * 100000), 10) :
+            imgdata[bpArr[index]];
+          break;
+        }
+        index--;
+      }
+    }
   }
 }

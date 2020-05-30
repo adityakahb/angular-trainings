@@ -16,7 +16,7 @@
     <app-ratings-reviews [data]="ratings"></app-ratings-reviews>
   </div>
   <div class="teaser-img" mat-card-image *ngIf="tileImg">
-    <app-responsive-image [stretch]="true" appResponsiveBreakpoint [imgData]="tileImg"></app-responsive-image>
+    <app-responsive-image [imgData]="tileImg"></app-responsive-image>
   </div>
   <div class="teaser-video" mat-card-image *ngIf="tileVideoURL">
     <iframe *ngIf="tileVideoSource === 'youtube'" width="560" height="315" [src]="tileVideoURL" frameborder="0"

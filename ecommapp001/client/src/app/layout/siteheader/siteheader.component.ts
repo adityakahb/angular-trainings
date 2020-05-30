@@ -7,7 +7,7 @@ declare const $: any;
 
 const className = 'nav-open';
 const langJson = require('./../../data/lang.json');
-const navJson = require('./../../data/megamenu.json');
+const navJson = require('./../../data/megamenu3.json') || [];
 let bodyElem;
 let htmlElem;
 let lastScrollTop = 0;
@@ -63,7 +63,7 @@ export class SiteheaderComponent implements OnInit, AfterViewInit {
     let mArr = [];
     if (elem) {
       let ul = elem.querySelector('#megamenudiv ._114Zhd');
-      let megamenu = this.generateMegamenuArr(ul, 0);
+      // let megamenu = this.generateMegamenuArr(ul, 0);
       // console.log('=========megamenu', JSON.stringify(megamenu));
     }
   }
@@ -106,17 +106,25 @@ export class SiteheaderComponent implements OnInit, AfterViewInit {
 
   get loginControls() { return this.loginForm.controls; }
 
-  @HostListener('window:scroll', ['$event']) onScrollEvent($event) {
-    if (window && document) {
-      lastScrollTop = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop || 0;
-      if (lastScrollTop > 0) {
-        // this.isScrolledDown = true;
-        this.isScrolledDown = false;
-      } else if (this.isScrolledDown && lastScrollTop <= 0) {
-        this.isScrolledDown = false;
-      }
-    }
-  }
+  // @HostListener('window:scroll', ['$event']) onScrollEvent($event) {
+  //   if (window && document) {
+  //     lastScrollTop = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop || 0;
+  //     if (lastScrollTop > 0) {
+  //       // this.isScrolledDown = true;
+  //       this.isScrolledDown = false;
+  //     } else if (this.isScrolledDown && lastScrollTop <= 0) {
+  //       this.isScrolledDown = false;
+  //     }
+  //   }
+  // }
+
+  // @HostListener('document:keyup', ['$event']) onEscapeEvent($event) {
+  //   if (window && document) {
+  //     if (($event || {}).keyCode === 27 && (this.isNavOpen || this.isUserNavOpen || this.isLangNavOpen || this.isSearchNavOpen)) {
+  //       this.closeAllNav();
+  //     }
+  //   }
+  // }
 
   createFormControls() {
     this.USER_EMAIL = new FormControl({ value: '' }, [Validators.required, Validators.email]);
@@ -135,7 +143,7 @@ export class SiteheaderComponent implements OnInit, AfterViewInit {
   updateScrollVal() {
     if (window && document && bodyElem) {
       bodyElem.classList.add(className);
-      bodyElem.style.top = (-1 * lastScrollTop) + 'px';
+      // bodyElem.style.top = (-1 * lastScrollTop) + 'px';
       lastScrollTopVal = lastScrollTop;
     }
   }
@@ -167,11 +175,11 @@ export class SiteheaderComponent implements OnInit, AfterViewInit {
     this.isLangNavOpen = false;
     this.isSearchNavOpen = false;
     if (window && document && htmlElem && bodyElem && bodyElem.classList.contains(className)) {
-      bodyElem.removeAttribute('style');
+      // bodyElem.removeAttribute('style');
       bodyElem.classList.remove(className);
-      window.scroll({
-        top: lastScrollTopVal
-      });
+      // window.scroll({
+      //   top: lastScrollTopVal
+      // });
     }
   }
 
