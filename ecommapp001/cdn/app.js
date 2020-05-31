@@ -10,17 +10,14 @@ app.use(compression());
 app.use('/vendor', express.static('vendor'));
 
 let jsURLs = [
-    'https://code.jquery.com/jquery-3.4.1.min.js',
+    'https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js',
     'http://localhost:4100/vendor/js/jquery-accessibleMegaMenu.js',
-    'https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js',
+    'https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.4.0/umd/popper.min.js',
     'https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js',
     'https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js',
-    'https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/noframework.waypoints.min.js'
+    'https://cdnjs.cloudflare.com/ajax/libs/stickybits/3.7.7/stickybits.min.js'
 ];
 let cssURLs = [
-    // 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/fontawesome.min.css',
-    // 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/solid.min.css',
-    // 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/brands.min.css',
     'http://localhost:4100/vendor/css/megamenu.css',
     'https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css',
     'https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css'

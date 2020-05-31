@@ -1,0 +1,114 @@
+[
+  {
+    "title": "item name",
+    "img": {
+      "xs": "https://picsum.photos/200/200",
+      "xs2": "https://picsum.photos/400/400"
+    },
+    "link": "#",
+    "ratings": "3.5",
+    "price": {
+      "currency": "INR",
+      "primary": "200",
+      "secondary": "99"
+    }
+  },
+  {
+    "title": "item name",
+    "img": {
+      "xs": "https://picsum.photos/200/200",
+      "xs2": "https://picsum.photos/400/400"
+    },
+    "link": "#",
+    "ratings": "3.5",
+    "price": {
+      "currency": "INR",
+      "primary": "200",
+      "secondary": "99"
+    }
+  },
+  {
+    "title": "item name",
+    "img": {
+      "xs": "https://picsum.photos/200/200",
+      "xs2": "https://picsum.photos/400/400"
+    },
+    "link": "#",
+    "ratings": "3.5",
+    "price": {
+      "currency": "INR",
+      "primary": "200",
+      "secondary": "99"
+    }
+  },
+  {
+    "title": "item name",
+    "img": {
+      "xs": "https://picsum.photos/200/200",
+      "xs2": "https://picsum.photos/400/400"
+    },
+    "link": "#",
+    "ratings": "3.5",
+    "price": {
+      "currency": "INR",
+      "primary": "200",
+      "secondary": "99"
+    }
+  },
+  {
+    "title": "item name",
+    "img": {
+      "xs": "https://picsum.photos/200/200",
+      "xs2": "https://picsum.photos/400/400"
+    },
+    "link": "#",
+    "ratings": "3.5",
+    "price": {
+      "currency": "INR",
+      "primary": "200",
+      "secondary": "99"
+    }
+  },
+  {
+    "title": "item name",
+    "img": {
+      "xs": "https://picsum.photos/200/200",
+      "xs2": "https://picsum.photos/400/400"
+    },
+    "link": "#",
+    "ratings": "3.5",
+    "price": {
+      "currency": "INR",
+      "primary": "200",
+      "secondary": "99"
+    }
+  },
+  {
+    "title": "item name",
+    "img": {
+      "xs": "https://picsum.photos/200/200",
+      "xs2": "https://picsum.photos/400/400"
+    },
+    "link": "#",
+    "ratings": "3.5",
+    "price": {
+      "currency": "INR",
+      "primary": "200",
+      "secondary": "99"
+    }
+  },
+  {
+    "title": "item name",
+    "img": {
+      "xs": "https://picsum.photos/200/200",
+      "xs2": "https://picsum.photos/400/400"
+    },
+    "link": "#",
+    "ratings": "3.5",
+    "price": {
+      "currency": "INR",
+      "primary": "200",
+      "secondary": "99"
+    }
+  }
+]

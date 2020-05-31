@@ -61,20 +61,35 @@ export class ResponsiveBreakpointDirective implements AfterViewInit {
         imgdata[bp + dp] + '?random=' + parseInt('' + (Math.random() * 100000), 10) :
         imgdata[bp + dp];
     } else {
+      let imgFound = '';
       let index = bpArr.indexOf(bp);
-      while(index > 0) {
-        if (dp === '2' && imgdata[bpArr[index] + dp]) {
-          this.el.nativeElement.src = (/picsum/g).test(imgdata[bpArr[index]]) ?
-            imgdata[bpArr[index]] + '?random=' + parseInt('' + (Math.random() * 100000), 10) :
-            imgdata[bpArr[index]];
-          break;
-        } else if (imgdata[bpArr[index]]) {
-          this.el.nativeElement.src = (/picsum/g).test(imgdata[bpArr[index]]) ?
-            imgdata[bpArr[index]] + '?random=' + parseInt('' + (Math.random() * 100000), 10) :
-            imgdata[bpArr[index]];
-          break;
+      if (dp === '2') {
+        while(index >= 0) {
+          imgFound = imgdata[bpArr[index] + dp];
+          if (imgFound) {
+            imgFound = (/picsum/g).test(imgFound) ?
+            imgFound + '?random=' + parseInt('' + (Math.random() * 100000), 10) :
+            imgFound;
+            break;
+          }
+          index--;
         }
-        index--;
+      }
+      if (imgFound === '') {
+        index = bpArr.indexOf(bp);
+        while(index >= 0) {
+          imgFound = imgdata[bpArr[index]];
+          if (imgFound) {
+            imgFound = (/picsum/g).test(imgFound) ?
+            imgFound + '?random=' + parseInt('' + (Math.random() * 100000), 10) :
+            imgFound;
+            break;
+          }
+          index--;
+        }
+      }
+      if (imgFound !== '') {
+        this.el.nativeElement.src = imgFound;
       }
     }
   }

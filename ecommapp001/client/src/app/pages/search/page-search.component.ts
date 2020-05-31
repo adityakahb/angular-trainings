@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+
 declare const require: any;
-let indexJson = require('./../../data/index.json');
+const searchResultsJson = require('./../../data/search-results.json') || []; 
 
 
 @Component({
@@ -9,11 +10,10 @@ let indexJson = require('./../../data/index.json');
   styleUrls: ['./page-search.component.scss']
 })
 export class PageSearchComponent implements OnInit {
-  indexData;
+  searchResultsData;
   constructor() { }
 
   ngOnInit() {
-    // this.generateData(epQaPhydrBJson);
-    this.indexData = indexJson;
+    this.searchResultsData = searchResultsJson;
   }
 }

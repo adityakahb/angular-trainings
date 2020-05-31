@@ -1,7 +1,9 @@
 .nav-search-wrap {
   padding: rem(16px 176px 16px 128px);
   select {
-    border-radius: rem(16px 0 0 16px);
+    // border-top-right-radius: 0;
+    // border-bottom-right-radius: 0;
+    border-radius: 0;
   }
 }
 

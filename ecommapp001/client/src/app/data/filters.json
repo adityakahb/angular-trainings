@@ -1,0 +1,51 @@
+[
+    {
+        "title": "Categories",
+        "type": "category"
+    },
+    {
+        "title": "Avg. Customer Review",
+        "type": "rating"
+    },
+    {
+        "title": "Price",
+        "type": "price"
+    },
+    {
+        "title": "Brand",
+        "type": "multiselect",
+        "filters": [
+            {
+                "id": "1",
+                "title": "Brand 1"
+            },
+            {
+                "id": "2",
+                "title": "Brand 2"
+            },
+            {
+                "id": "3",
+                "title": "Brand 3"
+            },
+            {
+                "id": "4",
+                "title": "Brand 4"
+            },
+            {
+                "id": "5",
+                "title": "Brand 5 with a very long text"
+            },
+            {
+                "id": "6",
+                "title": "Brand 6"
+            }
+        ],
+        "search": {
+            "label": "Search for an item",
+            "placeholder": "Search for an item"
+        },
+        "morelink": {
+            "title": "More 999+ items"
+        }
+    }
+]

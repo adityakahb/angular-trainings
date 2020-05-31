@@ -1,0 +1,15 @@
+<article class="item-teaser">
+  <a [href]="cProps.link" class="item-img">
+    <div>
+      <app-responsive-image [imgData]="cProps.img || {}"></app-responsive-image>
+    </div>
+  </a>
+  <div class="item-name">
+    <a [href]="cProps.link">
+      {{ cProps.title }}
+    </a>
+  </div>
+  <div class="item-rating-price">
+  </div>
+
+</article>

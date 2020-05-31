@@ -35,7 +35,7 @@ $grid-breakpoints: (
   md: rem(768px),
   lg: rem(992px),
   xl: rem(1200px),
-  xxl: rem(1680px)
+  xxl: rem(1696px)
 );
 
 $container-max-widths: (
@@ -43,14 +43,22 @@ $container-max-widths: (
   md: rem(720px),
   lg: rem(960px),
   xl: rem(1140px),
-  xxl: rem(1616px)
+  xxl: rem(1600px)
 );
 
-$grid-gutter-width: rem(16px);
+$grid-columns:                60;
+$grid-gutter-width:           rem(16px);
+$grid-row-columns:            6;
 
-$btn-border-radius: rem(19px);
-$btn-border-radius-lg: rem(24px);
-$btn-border-radius-sm: rem(16px);
+// $btn-border-radius: rem(19px);
+// $btn-border-radius-lg: rem(24px);
+// $btn-border-radius-sm: rem(16px);
+
+
+$border-radius: rem(4px);
+$border-radius-lg: rem(4px);
+$border-radius-sm: rem(4px);
+
 
 $font-family-sans-serif: 'Roboto Condensed', sans-serif;
 

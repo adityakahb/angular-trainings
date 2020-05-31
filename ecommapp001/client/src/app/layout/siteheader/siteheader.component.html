@@ -14,23 +14,12 @@
               <div class="nav-search-wrap d-none d-md-block">
                 <form>
                   <div class="input-group">
-                    <div class="input-group-prepend">
-                      <!-- <button class="btn btn-secondary btn-sm dropdown-toggle" type="button" data-toggle="dropdown"
-                        aria-haspopup="true" aria-expanded="false">Select Category</button>
-                      <div class="dropdown-menu">
-                        <a class="dropdown-item" href="#">Action</a>
-                        <a class="dropdown-item" href="#">Another action</a>
-                        <a class="dropdown-item" href="#">Something else here</a>
-                        <div role="separator" class="dropdown-divider"></div>
-                        <a class="dropdown-item" href="#">Separated link</a>
-                      </div> -->
-                      <select class="form-control form-control-sm">
-                        <option>Select Category</option>
-                      </select>
-                    </div>
                     <input type="search" class="form-control form-control-sm"
                       aria-label="Text input with dropdown button">
                     <div class="input-group-append">
+                      <select class="form-control form-control-sm">
+                        <option>All Categories</option>
+                      </select>
                       <app-cta-btn class="appended" [cProps]="{
                         tag: 'button',
                         type: 'submit',
