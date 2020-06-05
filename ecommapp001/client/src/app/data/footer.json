@@ -1,6 +1,86 @@
 {
     "nav": [
         {
+            "title": "About",
+            "links": [
+                {
+                    "title": "Contact Us",
+                    "text": "Contact Us",
+                    "link": "#"
+                },
+                {
+                    "title": "About Us",
+                    "text": "About Us",
+                    "link": "#"
+                },
+                {
+                    "title": "Careers",
+                    "text": "Careers",
+                    "link": "#"
+                },
+                {
+                    "title": "Press Releases",
+                    "text": "Press Releases",
+                    "link": "#"
+                }
+            ]
+        },
+        {
+            "title": "Help",
+            "links": [
+                {
+                    "title": "Payments",
+                    "text": "Payments",
+                    "link": "#"
+                },
+                {
+                    "title": "Shipping",
+                    "text": "Shipping",
+                    "link": "#"
+                },
+                {
+                    "title": "Cancellation & Returns",
+                    "text": "Cancellation & Returns",
+                    "link": "#"
+                },
+                {
+                    "title": "FAQ",
+                    "text": "FAQ",
+                    "link": "#"
+                },
+                {
+                    "title": "Report Infringement",
+                    "text": "Report Infringement",
+                    "link": "#"
+                }
+            ]
+        },
+        {
+            "title": "Policy",
+            "links": [
+                {
+                    "title": "Return Policy",
+                    "text": "Return Policy",
+                    "link": "#"
+                },
+                {
+                    "title": "Terms Of Use",
+                    "text": "Terms Of Use",
+                    "link": "#"
+                },
+                {
+                    "title": "Security",
+                    "text": "Security",
+                    "link": "#"
+                },
+                {
+                    "title": "Privacy",
+                    "text": "Privacy",
+                    "link": "#"
+                }
+            ]
+        },
+        {
             "title": "Connect",
             "links": [
                 {

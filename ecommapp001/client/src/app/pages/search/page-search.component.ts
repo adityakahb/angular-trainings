@@ -1,8 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 
 declare const require: any;
-const searchResultsJson = require('./../../data/search-results.json') || []; 
-
+declare const stickybits: any;
+const searchResultsJson = require('./../../data/search-results.json') || [];
 
 @Component({
   selector: 'app-page-search',
@@ -15,5 +15,6 @@ export class PageSearchComponent implements OnInit {
 
   ngOnInit() {
     this.searchResultsData = searchResultsJson;
+    console.log('==============stickybits 2', stickybits);
   }
 }

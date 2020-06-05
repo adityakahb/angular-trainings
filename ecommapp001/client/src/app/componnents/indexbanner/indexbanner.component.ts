@@ -1,4 +1,4 @@
-import { Component, OnInit, ViewEncapsulation } from '@angular/core';
+import { Component, OnInit, ViewEncapsulation, NgZone, ElementRef, ViewChild, AfterViewInit } from '@angular/core';
 
 declare const $: any;
 declare const require: any;
@@ -12,16 +12,20 @@ const bannerJson = require('./../../data/indexbanner.json');
   encapsulation: ViewEncapsulation.None
 })
 
-export class IndexbannerComponent implements OnInit {
+export class IndexbannerComponent implements OnInit, AfterViewInit {
+  @ViewChild('heroslider') heroslider: ElementRef;
+
   bannerData = {};
-  cbp = 'xs';
-  constructor() { }
+  constructor(private ngZone: NgZone) { }
 
   ngOnInit() {
     this.bannerData = bannerJson || [];
-    if (window && document) {
-      window.setTimeout(() => {
-        $('.hero-slider').slick({
+  }
+
+  ngAfterViewInit() {
+    this.ngZone.runOutsideAngular(() => {
+      if (window && document) {
+        $(this.heroslider.nativeElement).slick({
           arrows: false,
           autoplay: false,
           dots: true,
@@ -53,11 +57,7 @@ export class IndexbannerComponent implements OnInit {
             }
           ]
         });
-      }, 1000);
-    }
-  }
-
-  updateImgSrc(value) {
-    this.cbp = value;
+      }
+    });
   }
 }

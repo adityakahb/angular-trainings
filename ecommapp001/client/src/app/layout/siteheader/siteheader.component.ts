@@ -1,4 +1,4 @@
-import { Component, OnInit, AfterViewInit, HostListener, Input } from '@angular/core';
+import { Component, OnInit, AfterViewInit, HostListener, Input, NgZone, ElementRef, ViewChild } from '@angular/core';
 import { FormControl, FormBuilder, Validators } from '@angular/forms';
 import { Subscription } from 'rxjs';
 
@@ -20,7 +20,7 @@ let lastScrollTopVal = 0;
   styleUrls: ['./siteheader.component.scss']
 })
 export class SiteheaderComponent implements OnInit, AfterViewInit {
-
+  @ViewChild('siteheadernav') siteheadernav: ElementRef;
   @Input() loggedInUser;
 
   isLangNavOpen = false;
@@ -43,16 +43,21 @@ export class SiteheaderComponent implements OnInit, AfterViewInit {
   isLoginFailed = false;
   loginFailMsg = '';
 
-  constructor(private _formBuilder: FormBuilder) { }
+  constructor(private _formBuilder: FormBuilder, private ngZone: NgZone) { }
+
+  ngOnInit(): void {
+    this.createFormControls();
+    this.createForm();
+  }
 
   ngAfterViewInit() {
-    if (window && document) {
-      window.setTimeout(() => {
-        $('nav:first').accessibleMegaMenu();
-      }, 1000);
-      bodyElem = document.querySelector('body');
-      htmlElem = document.documentElement;
-    }
+    this.ngZone.runOutsideAngular(() => {
+      if (window && document) {
+        $(this.siteheadernav.nativeElement).accessibleMegaMenu();
+        bodyElem = document.querySelector('body');
+        htmlElem = document.documentElement;
+      }
+    });
     this.langData.forEach((item, index) => {
       if (index !== 0) {
         this.langArr.push(item);
@@ -97,11 +102,6 @@ export class SiteheaderComponent implements OnInit, AfterViewInit {
       arr.push(obj)
     });
     return arr;
-  }
-
-  ngOnInit(): void {
-    this.createFormControls();
-    this.createForm();
   }
 
   get loginControls() { return this.loginForm.controls; }

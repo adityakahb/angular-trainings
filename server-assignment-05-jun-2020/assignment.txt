@@ -1,0 +1,9 @@
+Assessment Details
+Implement a server management system with the following apis
+1. Add Server
+2. Update server
+3. Delete server
+4. Show list of servers
+Fields:
+server name, IP address, port, ram, disk space
+45 min

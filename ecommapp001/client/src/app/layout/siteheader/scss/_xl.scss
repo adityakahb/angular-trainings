@@ -38,7 +38,9 @@
     position: relative;
   }
   .accessible-megamenu {
-    padding-left: rem(200px);
+    padding: 0 rem(200px);
+    display: flex;
+    flex-direction: row;
   }
   .accessible-megamenu .accessible-megamenu-panel {
     border: rem(1px) solid $secondary-dark;
@@ -51,8 +53,7 @@
   }
   .accessible-megamenu > .accessible-megamenu-top-nav-item {
     height: auto;
-  }
-  .accessible-megamenu > .accessible-megamenu-top-nav-item {
+    width: 100%;
     a {
       font-size: rem(14px);
       height: rem(48px);
@@ -61,8 +62,9 @@
       display: flex;
       justify-content: center;
       align-items: center;
+      text-align: center;
       .ikn {
-        display: none;
+        display: none !important;
       }
       &.open, &:hover, &:focus {
         background: $secondary;
@@ -71,6 +73,7 @@
     .accessible-megamenu-panel {
       a {
         height: auto;
+        text-align: left;
         &.open, &:hover, &:focus, &.focus {
           background: transparent;
         }

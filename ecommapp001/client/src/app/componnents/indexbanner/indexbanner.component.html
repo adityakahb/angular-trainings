@@ -1,6 +1,6 @@
 <section class="indexbanner-comp">
   <div class="max-wrap">
-    <div class="hero-slider">
+    <div class="hero-slider" #heroslider>
       <div class="hero-slide" *ngFor="let slide of bannerData">
         <div class="img-wrap">
           <app-responsive-image [imgData]="slide.img || {}"></app-responsive-image>
