@@ -1,22 +1,50 @@
 <div class="main-content">
-  <div class="search-comp-header">
+  <div class="search-comp-header" id="searchsticky" #searchsticky>
     <div class="max-wrap">
-      500 results for "so and so search"
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-18 py-2 py-md-4">
+            <app-cta-btn class="mr-md-3" [cProps]="{
+              tag: 'button',
+              href: '',
+              type: 'button',
+              text: 'Filter',
+              title: 'Filter',
+              primaryicon: 'filter',
+              ctaicon: '',
+              ctastyle: 'dark',
+              isoutline: 'false',
+              size: 'sm'
+            }"></app-cta-btn>
+            <span class="d-none d-md-inline-block">500 results for "so and so search"</span>
+          </div>
+          <div class="col-42 py-2 py-md-4">
+            <form class="form-inline justify-content-end">
+              <div class="sort-group form-group m-0">
+                <label for="sortbyfeature" class="mr-3">Sort By</label>
+                <select class="form-control form-control-sm" id="sortbyfeature">
+                  <option>Relevance</option>
+                </select>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
   <section class="search-comp">
     <div class="max-wrap">
       <div class="container-fluid">
         <div class="row">
-          <div class="col-60 col-md-20 col-lg-15 col-xl-10">
+          <div class="col-60 col-xl-10 d-none d-xl-block">
             <aside class="filter-controls-wrap">
               left
             </aside>
           </div>
-          <div class="col-60 col-md-40 col-lg-45 col-xl-50">
+          <div class="col-60 col-xl-50">
             <div class="row">
 
-              <div class="search-item col-30 col-md-30 col-lg-20 col-xl-12 col-xxl-10 mb-3 px-1 pl-md-3" *ngFor="let item of searchResultsData">
+              <div class="search-item col-30 col-md-15 col-xl-12 col-xxl-10 mb-3 px-1 pl-xl-3" *ngFor="let item of searchResultsData">
                 <app-item-teaser [cProps]="item"></app-item-teaser>
               </div>
             

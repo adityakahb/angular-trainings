@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewChild, NgZone, ElementRef, AfterViewInit } from '@angular/core';
 
 declare const require: any;
 declare const stickybits: any;
@@ -9,12 +9,22 @@ const searchResultsJson = require('./../../data/search-results.json') || [];
   templateUrl: './page-search.component.html',
   styleUrls: ['./page-search.component.scss']
 })
-export class PageSearchComponent implements OnInit {
+export class PageSearchComponent implements OnInit, AfterViewInit {
+  @ViewChild('searchsticky') searchsticky: ElementRef;
   searchResultsData;
-  constructor() { }
+  constructor(private ngZone: NgZone) { }
 
   ngOnInit() {
     this.searchResultsData = searchResultsJson;
-    console.log('==============stickybits 2', stickybits);
+  }
+
+  ngAfterViewInit() {
+    this.ngZone.runOutsideAngular(() => {
+      if (window && document) {
+        if (stickybits && this.searchsticky.nativeElement) {
+          stickybits('#' + this.searchsticky.nativeElement.getAttribute('id'), {useStickyClasses: true, stickyBitStickyOffset: 64});
+        }
+      }
+    });
   }
 }

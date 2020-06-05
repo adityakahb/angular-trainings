@@ -2,7 +2,7 @@ $rem240: rem(-240px);
 
 .siteheader-buffer {
   background-color: $secondary-dark;
-  height: rem(96px);
+  height: rem(64px);
   transition: all 0.25s ease;
 }
 
@@ -11,7 +11,7 @@ $rem240: rem(-240px);
   backdrop-filter: blur(#{rem(8px)});
   // box-shadow: rem(0px 8px 8px 0px) rgba($black, 0.25);
   backdrop-filter: blur(#{rem(8px)});
-  height: rem(96px);
+  height: rem(64px);
   left: 0;
   position: fixed;
   top: 0;
@@ -72,7 +72,8 @@ $rem240: rem(-240px);
 }
 
 .site-nav-loc {
-  margin-top: rem(64px);
+  border-top: rem(1px) solid $secondary;
+  background-color: $secondary-dark;
   padding: rem(0 8px);
   height: rem(32px);
   display: flex;

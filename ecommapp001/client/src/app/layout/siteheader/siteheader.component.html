@@ -61,16 +61,17 @@
       </div>
     </header>
   </div>
-  <div class="site-nav-loc d-xl-none">
-    <div class="loc-icon mr-1">
-      <ion-icon name="location"></ion-icon>
-    </div>
-    <div class="mr-3">
-      <strong>Hyderabad - 500075</strong>
-    </div>
-    <a href="#">Change</a>
-  </div>
 </section>
+
+<div class="site-nav-loc d-xl-none">
+  <div class="loc-icon mr-1">
+    <ion-icon name="location"></ion-icon>
+  </div>
+  <div class="mr-3">
+    <strong>Hyderabad - 500075</strong>
+  </div>
+  <a href="#">Change</a>
+</div>
 
 <div class="hdr-nav-mask d-none d-md-block" (click)="closeAllNav()" [ngClass]="{'active': isUserNavOpen || isSearchNavOpen || isNavOpen}"></div>
 <div class="site-nav-buffer"></div>
@@ -81,16 +82,16 @@
         </button>
       </div>
   <div class="max-wrap">
-    <div class="site-nav-loc d-none d-xl-flex">
-      <div class="loc-icon mr-1">
-        <ion-icon name="location"></ion-icon>
-      </div>
-      <div class="mr-3 mr-md-1">
-        <strong>Hyderabad - 500001</strong>
-      </div>
-      <a href="#">Change</a>
-    </div>
     <nav #siteheadernav>
+      <div class="site-nav-loc d-none d-xl-flex">
+        <div class="loc-icon mr-1">
+          <ion-icon name="location"></ion-icon>
+        </div>
+        <div class="mr-3">
+          <strong>Hyderabad - 500075</strong>
+        </div>
+        <a href="#">Change</a>
+      </div>
       <ul class="nav-menu">
         <li *ngFor="let item of navData" class="nav-item">
           <a [href]="item.href" class="d-block d-xl-flex py-3 pr-5 pl-2 p-xl-2 px-xxl-3">
