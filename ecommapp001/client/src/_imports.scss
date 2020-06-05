@@ -1,7 +1,17 @@
 @import './sass/rem';
 
-$primary: #376888;
-$secondary: #6e5375;
+// $primary: #376888;
+// $secondary: #6e5375;
+// $success: #6bc76b;
+// $info: #6cc4df;
+// $warning: #f8b976;
+// $danger: #de786a;
+// $light: #fcddc9;
+// $dark: #3d4447;
+
+
+$primary: #325064;
+$secondary: #57384f;
 $success: #6bc76b;
 $info: #6cc4df;
 $warning: #f8b976;
@@ -9,11 +19,11 @@ $danger: #de786a;
 $light: #fcddc9;
 $dark: #3d4447;
 
-$primary-dark: darken($primary, 24%);
-$secondary-dark: darken($secondary, 24%);
+$primary-dark: darken($primary, 10%);
+$secondary-dark: darken($secondary, 10%);
 
-$primary-light: lighten($primary, 24%);
-$secondary-light: lighten($secondary, 24%);
+$primary-light: lighten($primary, 10%);
+$secondary-light: lighten($secondary, 10%);
 
 $theme-colors: () !default;
 // stylelint-disable-next-line scss/dollar-variable-default

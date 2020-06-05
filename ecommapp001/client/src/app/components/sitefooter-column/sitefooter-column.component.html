@@ -1,0 +1,21 @@
+<nav class="footer-col" [class]="isActive ? 'active' : ''">
+  <h6 class="py-3 pl-2 pr-5 p-md-0 m-0 mb-md-3" (click)="toggleNav()">
+    <span class="txt" [innerHTML]="cProps.title"></span>
+    <span class="ikn plus d-md-none">
+      <ion-icon name="add"></ion-icon>
+    </span>
+    <span class="ikn minus d-md-none">
+      <ion-icon name="remove"></ion-icon>
+    </span>
+  </h6>
+  <ul class="m-0 p-0 d-md-block">
+    <li *ngFor="let link of cProps.links" class="p-2 px-md-0 py-md-1" [class]="link.type === 'morelink' ? 'morelink' : ''">
+      <a [title]="link.title" [href]="link.link" [class]="link.icon ? 'has-icon' : ''">
+        <span *ngIf="link.icon">
+          <ion-icon [name]="link.icon"></ion-icon>
+        </span>
+        {{link.text}}
+      </a>
+    </li>
+  </ul>
+</nav>

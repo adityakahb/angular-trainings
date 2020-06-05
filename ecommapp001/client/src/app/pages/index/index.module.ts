@@ -1,7 +1,7 @@
 import { CommonModule } from '@angular/common';
 import { DirectiveModule } from './../../directives/directive.module';
 import { IndexComponent } from './index.component';
-import { IndexbannerComponent } from './../../componnents/indexbanner/indexbanner.component';
+import { IndexbannerComponent } from './../../components/indexbanner/indexbanner.component';
 import { IndexRoutingModule } from './index-routing.module';
 import { NgModule, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 import { RatingsReviewsModule } from './../../common-components/ratings-reviews/ratings-reviews.module';
