@@ -4,6 +4,7 @@ import { BreakpointObserver, BreakpointState } from '@angular/cdk/layout';
 
 const bpArr = ['xs', 'sm', 'md', 'lg', 'xl', 'xxl'];
 let dpr: any;
+let newBP = '';
 
 @Directive({
   selector: '[appResponsiveBreakpoint]'
@@ -46,6 +47,9 @@ export class ResponsiveBreakpointDirective implements AfterViewInit {
         }
         if (state.breakpoints['(min-width: 1680px)']) {
           this.currentBreakpoint = 'xxl';
+        }
+        if (this.currentBreakpoint !== newBP) {
+          newBP = this.currentBreakpoint;
         }
         setTimeout(() => {
           if (this.el.nativeElement && this.type === 'image' && this.imgdata) {

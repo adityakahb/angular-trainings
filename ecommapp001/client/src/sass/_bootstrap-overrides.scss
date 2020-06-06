@@ -5,4 +5,27 @@ body {
   .lead {
     font-weight: 300;
   }
+  .pagination {
+    .page-link {
+      width: rem(40px);
+      height: rem(40px);
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      line-height: 1;
+    }
+    &.pagination-lg {
+      .page-link {
+        width: rem(60px);
+        height: rem(60px);
+      }
+    }
+    &.pagination-sm {
+      .page-link {
+        width: rem(24px);
+        height: rem(24px);
+      }
+    }
+  }
 }
