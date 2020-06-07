@@ -3,6 +3,7 @@ import { Component, OnInit, ViewChild, NgZone, ElementRef, AfterViewInit } from 
 declare const require: any;
 declare const stickybits: any;
 const searchResultsJson = require('./../../data/search-results.json') || [];
+const filtersJson = require('./../../data/filters.json') || [];
 
 @Component({
   selector: 'app-page-search',
@@ -12,10 +13,16 @@ const searchResultsJson = require('./../../data/search-results.json') || [];
 export class PageSearchComponent implements OnInit, AfterViewInit {
   @ViewChild('searchsticky') searchsticky: ElementRef;
   searchResultsData;
+  filtersData;
+  isFiltersModalOpen = false;
+  closeFiltersModal = () => {
+    this.isFiltersModalOpen = false;
+  }
   constructor(private ngZone: NgZone) { }
 
   ngOnInit() {
     this.searchResultsData = searchResultsJson;
+    this.filtersData = filtersJson;
   }
 
   ngAfterViewInit() {
@@ -26,5 +33,9 @@ export class PageSearchComponent implements OnInit, AfterViewInit {
         }
       }
     });
+  }
+
+  openFiltersModal() {
+    this.isFiltersModalOpen = true;
   }
 }

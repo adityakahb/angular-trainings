@@ -1,0 +1,60 @@
+.filters-wrap {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 2050;
+  background-color: $gray-200;
+  height: 100%;
+  width: 100%;
+  transform: translateX(-101%) translateZ(0);
+  transition: transform 250ms ease;
+  transition-delay: 125ms;
+  .filters-header {
+    position: absolute;
+    height: rem(64px);
+    display: flex;
+    align-items: center;
+    width: 100%;
+    z-index: 5;
+    button {
+      align-items: center;
+      background: none;
+      border: 0;
+      color: $dark;
+      display: flex;
+      font-size: rem(32px);
+      height: rem(64px);
+      justify-content: center;
+      line-height: 1;
+      margin: 0;
+      padding: 0;
+      position: absolute;
+      right: 0;
+      top: 0;
+      width: rem(48px);
+    }
+  }
+  .filters-content {
+    display: flex;
+    margin-top: rem(64px);
+    height: calc(100% - #{rem(64px)});
+    overflow-y: scroll;
+  }
+  &.active {
+    transform: translateX(0) translateZ(0);
+  }
+}
+.filter-wrap-mask {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba($white, 0.5);
+  transform: translateX(-101%) translateZ(0);
+  transition: transform 250ms ease;
+  z-index: 2040;
+  &.active {
+    transform: translateX(0) translateZ(0);
+  }
+}

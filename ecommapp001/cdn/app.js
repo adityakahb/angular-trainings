@@ -13,7 +13,8 @@ let jsURLs = [
     'https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js',
     'http://localhost:4100/vendor/js/jquery-accessibleMegaMenu.js',
     'https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.4.0/umd/popper.min.js',
-    'https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js',
+    // 'https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js',
+    'https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/js/bootstrap.min.js',
     'https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js',
     'https://cdnjs.cloudflare.com/ajax/libs/stickybits/3.7.7/stickybits.min.js'
 ];

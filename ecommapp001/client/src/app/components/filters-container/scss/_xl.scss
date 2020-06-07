@@ -1,0 +1,10 @@
+.filters-wrap {
+  position: static;
+  background-color: transparent;
+  width: auto;
+  transform: translateX(0) translateZ(0);
+  .filters-content {
+    margin-top: 0;
+    overflow-y: visible;
+  }
+}

@@ -118,13 +118,13 @@ export class SiteheaderComponent implements OnInit, AfterViewInit {
   //   }
   // }
 
-  // @HostListener('document:keyup', ['$event']) onEscapeEvent($event) {
-  //   if (window && document) {
-  //     if (($event || {}).keyCode === 27 && (this.isNavOpen || this.isUserNavOpen || this.isLangNavOpen || this.isSearchNavOpen)) {
-  //       this.closeAllNav();
-  //     }
-  //   }
-  // }
+  @HostListener('document:keyup', ['$event']) onEscapeEvent($event) {
+    if (window && document) {
+      if (($event || {}).keyCode === 27 && (this.isNavOpen || this.isUserNavOpen || this.isLangNavOpen || this.isSearchNavOpen)) {
+        this.closeAllNav();
+      }
+    }
+  }
 
   createFormControls() {
     this.USER_EMAIL = new FormControl({ value: '' }, [Validators.required, Validators.email]);

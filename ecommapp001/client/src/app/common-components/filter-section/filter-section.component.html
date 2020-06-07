@@ -1,0 +1,45 @@
+<div class="filter-section" [attr.data-filtertype]="filter.type" [class]="isActive ? 'active' : ''">
+  <h6 class="filter-title d-block py-3 pl-3 pr-5 m-0 px-xl-0 py-xl-2" (click)="toggleFilter()">
+    <span class="txt"><strong>{{filter.title}}</strong></span>
+    <span class="ikn plus d-xl-none">
+      <ion-icon name="add"></ion-icon>
+    </span>
+    <span class="ikn minus d-xl-none">
+      <ion-icon name="remove"></ion-icon>
+    </span>
+  </h6>
+  <div class="filter-content px-3 mb-4 px-xl-0 d-xl-block" *ngIf="filter.type === 'multiselect'">
+    <ul>
+      <li *ngFor="let selectable of filter.filters" class="my-1">
+        <div class="custom-control custom-checkbox">
+          <input type="checkbox" class="custom-control-input" [id]="selectable.id">
+          <label class="custom-control-label" [for]="selectable.id">{{selectable.title}}</label>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div class="filter-content px-3 mb-4 px-xl-0 d-xl-block" *ngIf="filter.type === 'rating'">
+    <ul>
+      <li class="my-1">
+        <a href="#">
+          <app-ratings [value]="4"></app-ratings>
+        </a>
+      </li>
+      <li class="my-1">
+        <a href="#">
+          <app-ratings [value]="3"></app-ratings>
+        </a>
+      </li>
+      <li class="my-1">
+        <a href="#">
+          <app-ratings [value]="2"></app-ratings>
+        </a>
+      </li>
+      <li class="my-1">
+        <a href="#">
+          <app-ratings [value]="1"></app-ratings>
+        </a>
+      </li>
+    </ul>
+  </div>
+</div>

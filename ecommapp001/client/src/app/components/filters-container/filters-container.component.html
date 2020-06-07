@@ -1,0 +1,14 @@
+<aside class="filters-wrap" [class]="isOpen ? 'active' : ''">
+  <div class="filters-header px-3 d-xl-none">
+    <h4 class="m-0 text-uppercase"><strong>Filters</strong></h4>
+    <button type="button" class="filter-close" (click)="closeModal()">
+      <ion-icon name="close-circle-outline"></ion-icon>
+    </button>
+  </div>
+  <div class="filters-content">
+    <form class="w-100">
+      <app-filter-section *ngFor="let filter of cProps" [filter]="filter"></app-filter-section>
+    </form>
+  </div>
+</aside>
+<div class="filter-wrap-mask d-xl-none" [class]="isOpen ? 'active' : ''" (click)="closeModal()"></div>

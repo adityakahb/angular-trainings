@@ -7,9 +7,10 @@ import { AppComponent } from './app.component';
 
 import { DefaultLayoutModule } from './layout/defaultlayout/defaultlayout.module';
 import { IndexModule } from './pages/index/index.module';
+
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
   ],
   imports: [
     BrowserModule,
