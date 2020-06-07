@@ -42,6 +42,9 @@
                   <ion-icon name="search"></ion-icon>
                 </button>
                 <button type="button">
+                  <ion-icon name="heart"></ion-icon>
+                </button>
+                <button type="button">
                   <ion-icon name="cart"></ion-icon>
                 </button>
                 <!-- <button type="button" [ngClass]="{'active': isLangNavOpen}" (click)="openLangNav()">
@@ -94,7 +97,7 @@
       </div>
       <ul class="nav-menu">
         <li *ngFor="let item of navData" class="nav-item">
-          <a [href]="item.href" class="d-block d-xl-flex py-3 pr-5 pl-2 p-xl-2 px-xxl-3">
+          <a [href]="item.href" class="d-block d-xl-flex py-3 pr-5 pl-3 p-xl-2 px-xxl-2">
             <span class="txt" [innerHTML]="item.title"></span>
             <span class="ikn plus" *ngIf="(item.subnav || []).length > 0">
               <ion-icon name="add"></ion-icon>

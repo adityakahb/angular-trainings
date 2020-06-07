@@ -9,7 +9,66 @@
     },
     {
         "title": "Price",
-        "type": "price"
+        "type": "price",
+        "currency": "inr",
+        "ranges": [
+            {
+                "low": {
+                    "major": "00",
+                    "minor": "00"
+                },
+                "high": {
+                    "major": "1000",
+                    "minor": "00"
+                }
+            },
+            {
+                "low": {
+                    "major": "1001",
+                    "minor": "00"
+                },
+                "high": {
+                    "major": "2000",
+                    "minor": "00"
+                }
+            },
+            {
+                "low": {
+                    "major": "2001",
+                    "minor": "00"
+                },
+                "high": {
+                    "major": "3000",
+                    "minor": "00"
+                }
+            },
+            {
+                "low": {
+                    "major": "3001",
+                    "minor": "00"
+                },
+                "high": {
+                    "major": "4000",
+                    "minor": "00"
+                }
+            },
+            {
+                "low": {
+                    "major": "4001",
+                    "minor": "00"
+                },
+                "high": {
+                    "major": "5000",
+                    "minor": "00"
+                }
+            },
+            {
+                "low": {
+                    "major": "5001",
+                    "minor": "00"
+                }
+            }
+        ]
     },
     {
         "title": "Brand",

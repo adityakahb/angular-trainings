@@ -56,7 +56,7 @@ $rem240: rem(-240px);
       margin: rem(0 0 0 4px);
       padding: 0;
       transition: all 0.25s ease;
-      width: rem(48px);
+      width: rem(40px);
 
       font-size: rem(24px);
 
@@ -98,7 +98,7 @@ $rem240: rem(-240px);
   // transform: translateX(0%);
   transition: transform 250ms ease;
   z-index: 2060;
-  background-color: rgba($secondary, 0.9);
+  background-color: $secondary;
   height: 100%;
   width: 100%;
   overflow-y: scroll;
@@ -141,15 +141,15 @@ $rem240: rem(-240px);
 
   .accessible-megamenu > .accessible-megamenu-top-nav-item {
     a {
-      text-transform: uppercase;
       font-size: rem(18px);
+      font-weight: 700;
       box-shadow: none;
       height: auto;
       line-height: 1.2;
       position: relative;
       .ikn {
         position: absolute;
-        width: rem(48px);
+        width: rem(40px);
         height: 100%;
         justify-content: center;
         align-items: center;
@@ -178,6 +178,10 @@ $rem240: rem(-240px);
     }
     .accessible-megamenu-panel a {
       text-transform: none;
+      font-weight: 400;
+      &.ismain {
+        font-weight: 700;
+      }
     }
   }
 
@@ -225,14 +229,14 @@ $rem240: rem(-240px);
 }
 
 .close-site-nav {
-  font-size: rem(32px);
+  font-size: rem(24px);
   background: none;
   border: 0;
   height: rem(64px);
   line-height: 1;
   margin: 0;
   padding: 0;
-  width: rem(48px);
+  width: rem(40px);
   color: $dark;
   justify-content: center;
 }

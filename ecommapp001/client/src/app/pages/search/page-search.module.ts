@@ -7,6 +7,7 @@ import { ItemTeaserModule } from './../../common-components/item-teaser/item-tea
 import { NgModule, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 import { PageSearchComponent } from './page-search.component';
 import { PageSearchRoutingModule } from './page-search-routing.module';
+import { PriceModule } from './../../common-components/price/price.module';
 
 @NgModule({
   imports: [
@@ -15,7 +16,8 @@ import { PageSearchRoutingModule } from './page-search-routing.module';
     DirectiveModule,
     FilterSectionModule,
     ItemTeaserModule,
-    PageSearchRoutingModule
+    PageSearchRoutingModule,
+    PriceModule
   ],
   declarations: [
     FiltersContainerComponent,

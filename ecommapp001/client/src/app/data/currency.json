@@ -1,0 +1,21 @@
+[
+  {
+    "name": "usd",
+    "symbol": "&#36;"
+  },
+  {
+    "name": "inr",
+    "symbol": "&#x20b9;"
+  },
+  {
+    "name": "eur",
+    "symbol": "&#8364;"
+  },
+  {
+    "name": "gbp",
+    "symbol": "&#163;"
+  },{
+    "name": "jpy",
+    "symbol": "&#165;"
+  }
+]

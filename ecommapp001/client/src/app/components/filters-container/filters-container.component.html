@@ -6,9 +6,9 @@
     </button>
   </div>
   <div class="filters-content">
-    <form class="w-100">
+    <div class="w-100">
       <app-filter-section *ngFor="let filter of cProps" [filter]="filter"></app-filter-section>
-    </form>
+    </div>
   </div>
 </aside>
 <div class="filter-wrap-mask d-xl-none" [class]="isOpen ? 'active' : ''" (click)="closeModal()"></div>

@@ -1,3 +1,9 @@
 .ratings-comp {
   display: inline-block;
+  ion-icon {
+    margin-left: rem(2px);
+    &:first-child {
+      margin: 0;
+    }
+  }
 }

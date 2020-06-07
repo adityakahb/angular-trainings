@@ -18,6 +18,14 @@
       </li>
     </ul>
   </div>
+  <div class="filter-content px-3 mb-4 px-xl-0 d-xl-block" *ngIf="filter.type === 'price'">
+    <ul>
+      <li *ngFor="let price of filter.ranges" class="my-1">
+        <a href="#" *ngIf="price.low && price.high"><app-price [currency]="filter.currency" [price]="price.low"></app-price> - <app-price [currency]="filter.currency" [price]="price.high"></app-price></a>
+        <a href="#" *ngIf="price.low && !price.high">ABOVE <app-price [currency]="filter.currency" [price]="price.low"></app-price></a>
+      </li>
+    </ul>
+  </div>
   <div class="filter-content px-3 mb-4 px-xl-0 d-xl-block" *ngIf="filter.type === 'rating'">
     <ul>
       <li class="my-1">
