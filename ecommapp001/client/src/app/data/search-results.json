@@ -2,113 +2,113 @@
   {
     "title": "item name",
     "img": {
-      "xs": "https://picsum.photos/200/200",
-      "xs2": "https://picsum.photos/400/400"
+      "xs": "https://picsum.photos/320/320",
+      "xs2": "https://picsum.photos/640/640"
     },
     "link": "#",
     "ratings": "3.5",
     "price": {
-      "currency": "INR",
-      "primary": "200",
-      "secondary": "99"
+      "currency": "inr",
+      "major": "200",
+      "minor": "99"
     }
   },
   {
     "title": "item name",
     "img": {
-      "xs": "https://picsum.photos/200/200",
-      "xs2": "https://picsum.photos/400/400"
+      "xs": "https://picsum.photos/320/320",
+      "xs2": "https://picsum.photos/640/640"
     },
     "link": "#",
     "ratings": "3.5",
     "price": {
-      "currency": "INR",
-      "primary": "200",
-      "secondary": "99"
+      "currency": "inr",
+      "major": "200",
+      "minor": "99"
     }
   },
   {
     "title": "item name",
     "img": {
-      "xs": "https://picsum.photos/200/200",
-      "xs2": "https://picsum.photos/400/400"
+      "xs": "https://picsum.photos/320/320",
+      "xs2": "https://picsum.photos/640/640"
     },
     "link": "#",
     "ratings": "3.5",
     "price": {
-      "currency": "INR",
-      "primary": "200",
-      "secondary": "99"
+      "currency": "inr",
+      "major": "200",
+      "minor": "99"
     }
   },
   {
     "title": "item name",
     "img": {
-      "xs": "https://picsum.photos/200/200",
-      "xs2": "https://picsum.photos/400/400"
+      "xs": "https://picsum.photos/320/320",
+      "xs2": "https://picsum.photos/640/640"
     },
     "link": "#",
     "ratings": "3.5",
     "price": {
-      "currency": "INR",
-      "primary": "200",
-      "secondary": "99"
+      "currency": "inr",
+      "major": "200",
+      "minor": "99"
     }
   },
   {
     "title": "item name",
     "img": {
-      "xs": "https://picsum.photos/200/200",
-      "xs2": "https://picsum.photos/400/400"
+      "xs": "https://picsum.photos/320/320",
+      "xs2": "https://picsum.photos/640/640"
     },
     "link": "#",
     "ratings": "3.5",
     "price": {
-      "currency": "INR",
-      "primary": "200",
-      "secondary": "99"
+      "currency": "inr",
+      "major": "200",
+      "minor": "99"
     }
   },
   {
     "title": "item name",
     "img": {
-      "xs": "https://picsum.photos/200/200",
-      "xs2": "https://picsum.photos/400/400"
+      "xs": "https://picsum.photos/320/320",
+      "xs2": "https://picsum.photos/640/640"
     },
     "link": "#",
     "ratings": "3.5",
     "price": {
-      "currency": "INR",
-      "primary": "200",
-      "secondary": "99"
+      "currency": "inr",
+      "major": "200",
+      "minor": "99"
     }
   },
   {
     "title": "item name",
     "img": {
-      "xs": "https://picsum.photos/200/200",
-      "xs2": "https://picsum.photos/400/400"
+      "xs": "https://picsum.photos/320/320",
+      "xs2": "https://picsum.photos/640/640"
     },
     "link": "#",
     "ratings": "3.5",
     "price": {
-      "currency": "INR",
-      "primary": "200",
-      "secondary": "99"
+      "currency": "inr",
+      "major": "200",
+      "minor": "99"
     }
   },
   {
     "title": "item name",
     "img": {
-      "xs": "https://picsum.photos/200/200",
-      "xs2": "https://picsum.photos/400/400"
+      "xs": "https://picsum.photos/320/320",
+      "xs2": "https://picsum.photos/640/640"
     },
     "link": "#",
     "ratings": "3.5",
     "price": {
-      "currency": "INR",
-      "primary": "200",
-      "secondary": "99"
+      "currency": "inr",
+      "major": "200",
+      "minor": "99"
     }
   }
 ]

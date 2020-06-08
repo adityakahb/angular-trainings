@@ -33,7 +33,6 @@ if (window && document) {
   loadCSSFiles('http://localhost:4100/fontsbundle');
   loadCSSFiles('http://localhost:4100/cssbundle');
   loadJSFiles('http://localhost:4100/jsbundle').then(() => {
-    console.log('=============loaded the files')
     platformBrowserDynamic().bootstrapModule(AppModule).catch(err => console.error(err));
   });
 }

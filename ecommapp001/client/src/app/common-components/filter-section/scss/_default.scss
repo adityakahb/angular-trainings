@@ -53,4 +53,14 @@
       display: block;
     } 
   }
+
+  .color-dot {
+    width: rem(14px);
+    height: rem(14px);
+    border: rem(1px) solid $dark;
+    border-radius: 100%;
+    vertical-align: top;
+    position: relative;
+    top: rem(4px);
+  }
 }

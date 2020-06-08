@@ -12,7 +12,7 @@
     <ul>
       <li *ngFor="let selectable of filter.filters" class="my-1">
         <div class="custom-control custom-checkbox">
-          <input type="checkbox" class="custom-control-input" [id]="selectable.id">
+          <input type="checkbox" class="custom-control-input" [name]="'filter_section_' + generateFormName(filter.title)" [id]="selectable.id">
           <label class="custom-control-label" [for]="selectable.id">{{selectable.title}}</label>
         </div>
       </li>
@@ -21,7 +21,7 @@
   <div class="filter-content px-3 mb-4 px-xl-0 d-xl-block" *ngIf="filter.type === 'price'">
     <ul>
       <li *ngFor="let price of filter.ranges" class="my-1">
-        <a href="#" *ngIf="price.low && price.high"><app-price [currency]="filter.currency" [price]="price.low"></app-price> - <app-price [currency]="filter.currency" [price]="price.high"></app-price></a>
+        <a href="#" *ngIf="price.low && price.high"><app-price [currency]="filter.currency" [price]="price.low"></app-price> to <app-price [currency]="filter.currency" [price]="price.high"></app-price></a>
         <a href="#" *ngIf="price.low && !price.high">ABOVE <app-price [currency]="filter.currency" [price]="price.low"></app-price></a>
       </li>
     </ul>
@@ -47,6 +47,18 @@
         <a href="#">
           <app-ratings [value]="1"></app-ratings>
         </a>
+      </li>
+    </ul>
+  </div>
+  <div class="filter-content px-3 mb-4 px-xl-0 d-xl-block" *ngIf="filter.type === 'color'">
+    <ul>
+      <li class="my-1" *ngFor="let color of filter.palette">
+        <div class="custom-control custom-checkbox">
+          <input type="checkbox" class="custom-control-input" [name]="'filter_section_' + generateFormName(filter.title)" [id]="'filter_color_' + generateFormName(color.name)">
+          <label class="custom-control-label" [for]="'filter_color_' + generateFormName(color.name)">
+            <span [style]="'background-color: #' + color.colorhex" class="d-inline-block mr-1 color-dot"></span>
+            {{color.name}}</label>
+        </div>
       </li>
     </ul>
   </div>

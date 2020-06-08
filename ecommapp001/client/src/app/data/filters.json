@@ -1,110 +1,284 @@
 [
-    {
-        "title": "Categories",
-        "type": "category"
-    },
-    {
-        "title": "Avg. Customer Review",
-        "type": "rating"
-    },
-    {
-        "title": "Price",
-        "type": "price",
-        "currency": "inr",
-        "ranges": [
-            {
-                "low": {
-                    "major": "00",
-                    "minor": "00"
-                },
-                "high": {
-                    "major": "1000",
-                    "minor": "00"
-                }
-            },
-            {
-                "low": {
-                    "major": "1001",
-                    "minor": "00"
-                },
-                "high": {
-                    "major": "2000",
-                    "minor": "00"
-                }
-            },
-            {
-                "low": {
-                    "major": "2001",
-                    "minor": "00"
-                },
-                "high": {
-                    "major": "3000",
-                    "minor": "00"
-                }
-            },
-            {
-                "low": {
-                    "major": "3001",
-                    "minor": "00"
-                },
-                "high": {
-                    "major": "4000",
-                    "minor": "00"
-                }
-            },
-            {
-                "low": {
-                    "major": "4001",
-                    "minor": "00"
-                },
-                "high": {
-                    "major": "5000",
-                    "minor": "00"
-                }
-            },
-            {
-                "low": {
-                    "major": "5001",
-                    "minor": "00"
-                }
-            }
-        ]
-    },
-    {
-        "title": "Brand",
-        "type": "multiselect",
-        "filters": [
-            {
-                "id": "1",
-                "title": "Brand 1"
-            },
-            {
-                "id": "2",
-                "title": "Brand 2"
-            },
-            {
-                "id": "3",
-                "title": "Brand 3"
-            },
-            {
-                "id": "4",
-                "title": "Brand 4"
-            },
-            {
-                "id": "5",
-                "title": "Brand 5 with a very long text"
-            },
-            {
-                "id": "6",
-                "title": "Brand 6"
-            }
-        ],
-        "search": {
-            "label": "Search for an item",
-            "placeholder": "Search for an item"
+  {
+    "title": "Categories",
+    "type": "category"
+  },
+  {
+    "title": "Avg. Customer Review",
+    "type": "rating"
+  },
+  {
+    "title": "Colors",
+    "type": "color",
+    "palette": [
+      {
+        "colorhex": "36454f",
+        "name": "Black"
+      },
+      {
+        "colorhex": "ffffff",
+        "name": "White"
+      },
+      {
+        "colorhex": "0074d9",
+        "name": "Blue"
+      },
+      {
+        "colorhex": "3c4477",
+        "name": "Navy Blue"
+      },
+      {
+        "colorhex": "9fa8ab",
+        "name": "Grey"
+      },
+      {
+        "colorhex": "d34b56",
+        "name": "Red"
+      },
+      {
+        "colorhex": "5eb160",
+        "name": "Green"
+      },
+      {
+        "colorhex": "9fa8ab",
+        "name": "Grey Melange"
+      },
+      {
+        "colorhex": "36454f",
+        "name": "Charcoal"
+      },
+      {
+        "colorhex": "3d9970",
+        "name": "Olive"
+      },
+      {
+        "colorhex": "b03060",
+        "name": "Maroon"
+      },
+      {
+        "colorhex": "eadc32",
+        "name": "Yellow"
+      },
+      {
+        "colorhex": "f2f2f2",
+        "name": "Off White"
+      },
+      {
+        "colorhex": "f1a9c4",
+        "name": "Pink"
+      },
+      {
+        "colorhex": "f28d20",
+        "name": "Orange"
+      },
+      {
+        "colorhex": "008080",
+        "name": "Teal"
+      },
+      {
+        "colorhex": "cc9c33",
+        "name": "Mustard"
+      },
+      {
+        "colorhex": "a03245",
+        "name": "Burgundy"
+      },
+      {
+        "colorhex": "e8e6cf",
+        "name": "Beige"
+      },
+      {
+        "colorhex": "915039",
+        "name": "Brown"
+      },
+      {
+        "colorhex": "ff7f50",
+        "name": "Coral"
+      },
+      {
+        "colorhex": "b7410e",
+        "name": "Rust"
+      },
+      {
+        "colorhex": "800080",
+        "name": "Purple"
+      },
+      {
+        "colorhex": "ffe5b4",
+        "name": "Peach"
+      },
+      {
+        "colorhex": "ede6b9",
+        "name": "Cream"
+      },
+      {
+        "colorhex": "2e8b57",
+        "name": "Sea Green"
+      },
+      {
+        "colorhex": "40e0d0",
+        "name": "Turquoise Blue"
+      },
+      {
+        "colorhex": "000000",
+        "name": "Multi"
+      },
+      {
+        "colorhex": "c3b091",
+        "name": "Khaki"
+      },
+      {
+        "colorhex": "5db653",
+        "name": "Lime Green"
+      },
+      {
+        "colorhex": "8dc04a",
+        "name": "Fluorescent Green"
+      },
+      {
+        "colorhex": "483c32",
+        "name": "Taupe"
+      },
+      {
+        "colorhex": "e0b0ff",
+        "name": "Mauve"
+      },
+      {
+        "colorhex": "d6d6e5",
+        "name": "Lavender"
+      },
+      {
+        "colorhex": "4b302f",
+        "name": "Coffee Brown"
+      },
+      {
+        "colorhex": "b9529f",
+        "name": "Magenta"
+      },
+      {
+        "colorhex": "d2b48c",
+        "name": "Tan"
+      },
+      {
+        "colorhex": "e5c74a",
+        "name": "Gold"
+      },
+      {
+        "colorhex": "dd2f86",
+        "name": "Rose"
+      },
+      {
+        "colorhex": "dbaf97",
+        "name": "Nude"
+      },
+      {
+        "colorhex": "cc8240",
+        "name": "Bronze"
+      },
+      {
+        "colorhex": "b3b3b3",
+        "name": "Steel"
+      }
+    ]
+  },
+  {
+    "title": "Price",
+    "type": "price",
+    "currency": "inr",
+    "ranges": [
+      {
+        "low": {
+          "major": "00",
+          "minor": "00"
         },
-        "morelink": {
-            "title": "More 999+ items"
+        "high": {
+          "major": "1000",
+          "minor": "00"
         }
+      },
+      {
+        "low": {
+          "major": "1001",
+          "minor": "00"
+        },
+        "high": {
+          "major": "2000",
+          "minor": "00"
+        }
+      },
+      {
+        "low": {
+          "major": "2001",
+          "minor": "00"
+        },
+        "high": {
+          "major": "3000",
+          "minor": "00"
+        }
+      },
+      {
+        "low": {
+          "major": "3001",
+          "minor": "00"
+        },
+        "high": {
+          "major": "4000",
+          "minor": "00"
+        }
+      },
+      {
+        "low": {
+          "major": "4001",
+          "minor": "00"
+        },
+        "high": {
+          "major": "5000",
+          "minor": "00"
+        }
+      },
+      {
+        "low": {
+          "major": "5001",
+          "minor": "00"
+        }
+      }
+    ]
+  },
+  {
+    "title": "Brand",
+    "type": "multiselect",
+    "filters": [
+      {
+        "id": "1",
+        "title": "Brand 1"
+      },
+      {
+        "id": "2",
+        "title": "Brand 2"
+      },
+      {
+        "id": "3",
+        "title": "Brand 3"
+      },
+      {
+        "id": "4",
+        "title": "Brand 4"
+      },
+      {
+        "id": "5",
+        "title": "Brand 5 with a very long text"
+      },
+      {
+        "id": "6",
+        "title": "Brand 6"
+      }
+    ],
+    "search": {
+      "label": "Search for an item",
+      "placeholder": "Search for an item"
+    },
+    "morelink": {
+      "title": "More 999+ items"
     }
+  }
 ]

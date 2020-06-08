@@ -16,4 +16,8 @@ export class FilterSectionComponent implements OnInit {
   toggleFilter() {
     this.isActive = !this.isActive;
   }
+
+  generateFormName(str) {
+    return (str || '').toLowerCase().split(' ').join('_');
+  }
 }

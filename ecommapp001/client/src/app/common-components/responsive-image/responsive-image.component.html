@@ -1,1 +1,12 @@
-<img appResponsiveBreakpoint [imgdata]="imgData" type="image">
+<!-- <img appResponsiveBreakpoint [imgdata]="imgData" type="image"> -->
+<picture>
+  <source *ngIf="imgData.xxl || imgData.xxl2" media="(min-width: 1600px)" [attr.srcset]="generateSrcset(imgData.xxl, imgData.xxl2)">
+  <source *ngIf="imgData.xl || imgData.xl2" media="(min-width: 1200px)" [attr.srcset]="generateSrcset(imgData.xl, imgData.xl2)">
+  <source *ngIf="imgData.lg || imgData.lg2" media="(min-width: 1024px)" [attr.srcset]="generateSrcset(imgData.lg, imgData.lg2)">
+  <source *ngIf="imgData.sm || imgData.sm2" media="(min-width: 768px)" [attr.srcset]="generateSrcset(imgData.sm, imgData.sm2)">
+  <source *ngIf="imgData.xs || imgData.xs2" media="(min-width: 300px)" [attr.srcset]="generateSrcset(imgData.xs, imgData.xs2)">
+  <img [src]="imgData.xs" [attr.srcset]="generateSrcset(imgData.xs, imgData.xs2)" alt="Alt definition required">
+</picture>
+<!-- 
+"xs": "https://picsum.photos/200/200",
+      "xs2": "https://picsum.photos/400/400" -->

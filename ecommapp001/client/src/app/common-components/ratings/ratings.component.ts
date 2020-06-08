@@ -36,7 +36,6 @@ export class RatingsComponent implements OnInit {
       }
 
     } catch (e) {}
-    console.log('==============arr', arr);
     this.ratingsArr = arr;
   }
 }
