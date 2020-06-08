@@ -57,8 +57,16 @@ $rem240: rem(-240px);
       padding: 0;
       transition: all 0.25s ease;
       width: rem(40px);
-
+      position: relative;
       font-size: rem(24px);
+
+      .cart-count {
+        top: rem(4px);
+        left: 0;
+        font-weight: 700;
+        font-size: rem(14px);
+        color: $light;
+      }
 
       .txt {
         font-weight: bold;

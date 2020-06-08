@@ -18,10 +18,10 @@ export class ResponsiveImageComponent implements OnInit {
   generateSrcset(normal, retina) {
     let str = '';
     if (normal) {
-      normal = (/picsum/g).test(normal) ? normal + '?random=' + parseInt('' + (Math.random() * 100000), 10) : normal;
+      // normal = (/picsum/g).test(normal) ? normal + '?random=' + parseInt('' + (Math.random() * 100000), 10) : normal;
     }
     if (retina) {
-      retina = (/picsum/g).test(retina) ? retina + '?random=' + parseInt('' + (Math.random() * 100000), 10) : retina;
+      // retina = (/picsum/g).test(retina) ? retina + '?random=' + parseInt('' + (Math.random() * 100000), 10) : retina;
     }
     if (normal && retina) {
       str += normal + ' 1x, '
