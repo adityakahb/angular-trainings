@@ -1,12 +1,15 @@
 import { NgModule } from '@angular/core';
 import { ResponsiveBreakpointDirective } from './ResponsiveBreakpoint/responsive-breakpoint.directive';
+import { ItemTextTrimmerDirective } from './ItemTextTrimmer/item-text-trimmer.directive';
 
 @NgModule({
   declarations: [
-    ResponsiveBreakpointDirective
+    ResponsiveBreakpointDirective,
+    ItemTextTrimmerDirective
   ],
   exports: [
-    ResponsiveBreakpointDirective
+    ResponsiveBreakpointDirective,
+    ItemTextTrimmerDirective
   ],
   providers: [
     { provide: Window, useValue: window }

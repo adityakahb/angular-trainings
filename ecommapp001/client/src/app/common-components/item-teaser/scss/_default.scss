@@ -30,4 +30,12 @@
       width: 100%;
     }
   }
+
+  .item-name {
+    font-size: rem(14px);
+    // min-height: rem(62px);
+  }
+  &.default {
+    width: rem(160px);
+  }
 }

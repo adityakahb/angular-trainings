@@ -21,4 +21,5 @@ import { ItemTeaserComponent } from './item-teaser.component';
     ItemTeaserComponent
   ]
 })
-export class ItemTeaserModule { }
+
+export class ItemTeaserModule {}

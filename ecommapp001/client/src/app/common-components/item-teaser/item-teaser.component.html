@@ -1,15 +1,22 @@
-<article class="item-teaser">
-  <a [href]="cProps.link" class="item-img">
+<article class="item-teaser" [class]="checkdevice">
+  <a [href]="cProps.link" class="item-img mb-2">
     <div>
       <app-responsive-image [imgData]="cProps.img || {}"></app-responsive-image>
     </div>
   </a>
-  <div class="item-name">
-    <a [href]="cProps.link">
-      {{ cProps.title }}
+  <div class="item-name mb-2">
+    <!-- [titletext]="cProps.title"-->
+    <a [href]="cProps.link" #itemtitle_xs [class]="">
+      {{cProps.title}}
+    </a>
+    <a [href]="cProps.link" #itemtitle_md [class]="">
+      {{cProps.title}}
+    </a>
+    <a [href]="cProps.link" #itemtitle_xl class="">
+      {{cProps.title}}
     </a>
   </div>
-  <div class="item-rating-price">
+  <div class="item-ratings mb-2">
+    <app-ratings [value]="cProps.ratings"></app-ratings>
   </div>
-
 </article>
