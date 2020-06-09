@@ -35,7 +35,19 @@
     font-size: rem(14px);
     // min-height: rem(62px);
   }
-  &.default {
+  &.xs {
     width: rem(160px);
+  }
+  &.md {
+    width: rem(210px);
+  }
+  &.xl {
+    width: rem(160px);
+  }
+  &.xxl {
+    width: rem(250px);
+  }
+  .xs-hidden, .md-hidden, .xl-hidden, .xxl-hidden {
+    display: none;
   }
 }

@@ -6,13 +6,16 @@
   </a>
   <div class="item-name mb-2">
     <!-- [titletext]="cProps.title"-->
-    <a [href]="cProps.link" #itemtitle_xs [class]="">
+    <a [href]="cProps.link" #itemtitle_xs [class]="'xs-' + showxs">
       {{cProps.title}}
     </a>
-    <a [href]="cProps.link" #itemtitle_md [class]="">
+    <a [href]="cProps.link" #itemtitle_md [class]="'md-' + showmd">
       {{cProps.title}}
     </a>
-    <a [href]="cProps.link" #itemtitle_xl class="">
+    <a [href]="cProps.link" #itemtitle_xl [class]="'xl-' + showxl">
+      {{cProps.title}}
+    </a>
+    <a [href]="cProps.link" #itemtitle_xxl [class]="'xxl-' + showxxl">
       {{cProps.title}}
     </a>
   </div>
