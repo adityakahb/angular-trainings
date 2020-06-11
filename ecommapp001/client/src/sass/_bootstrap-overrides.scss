@@ -31,4 +31,22 @@ body {
   b, strong {
     font-weight: 700;
   }
+
+  .slick-arrow {
+    &.slick-prev, &.slick-next {
+      width: auto;
+      height: auto;
+      line-height: 1;
+      z-index: 5;
+      &:before {
+        display: none;
+      }
+    }
+    &.slick-prev {
+      left: 0;
+    }
+    &.slick-next {
+      right: 0;
+    }
+  }
 }
