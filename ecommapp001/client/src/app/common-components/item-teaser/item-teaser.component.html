@@ -1,4 +1,4 @@
-<article class="item-teaser" [class]="checkdevice">
+<article class="item-teaser">
   <a [href]="cProps.link" class="item-img mb-2">
     <div>
       <app-responsive-image [imgData]="cProps.img || {}"></app-responsive-image>
@@ -6,20 +6,12 @@
   </a>
   <div class="item-name mb-2">
     <!-- [titletext]="cProps.title"-->
-    <a [href]="cProps.link" #itemtitle_xs [class]="'xs-' + showxs">
-      {{cProps.title}}
-    </a>
-    <a [href]="cProps.link" #itemtitle_md [class]="'md-' + showmd">
-      {{cProps.title}}
-    </a>
-    <a [href]="cProps.link" #itemtitle_xl [class]="'xl-' + showxl">
-      {{cProps.title}}
-    </a>
-    <a [href]="cProps.link" #itemtitle_xxl [class]="'xxl-' + showxxl">
-      {{cProps.title}}
-    </a>
+    <span class="d-none">{{cProps.title}}</span>
+    <a [href]="cProps.link" class="d-xl-none" aria-hidden="true" [innerHTML]="xsval"></a>
+    <a [href]="cProps.link" class="d-none d-xl-block d-xxl-none" aria-hidden="true" [innerHTML]="xlval"></a>
+    <a [href]="cProps.link" class="d-none d-xxl-block" aria-hidden="true" [innerHTML]="xxlval"></a>
   </div>
   <div class="item-ratings mb-2">
-    <app-ratings [value]="cProps.ratings"></app-ratings>
+    <app-ratings [shouldShowBlank]="true" [value]="cProps.ratings"></app-ratings>
   </div>
 </article>

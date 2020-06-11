@@ -1,4 +1,4 @@
-import { Component, OnInit, AfterViewInit, Input, ViewEncapsulation, ViewChild, ElementRef, NgZone } from '@angular/core';
+import { Component, OnInit, AfterViewInit, Input, ViewEncapsulation } from '@angular/core';
 
 @Component({
   selector: 'app-item-teaser',
@@ -7,59 +7,33 @@ import { Component, OnInit, AfterViewInit, Input, ViewEncapsulation, ViewChild, 
   encapsulation: ViewEncapsulation.None
 })
 export class ItemTeaserComponent implements OnInit, AfterViewInit {
-  @ViewChild('itemtitle_xs') itemtitle_xs: ElementRef;
-  @ViewChild('itemtitle_md') itemtitle_md: ElementRef;
-  @ViewChild('itemtitle_xl') itemtitle_xl: ElementRef;
-  @ViewChild('itemtitle_xxl') itemtitle_xxl: ElementRef;
-
   @Input() cProps;
   @Input() theme;
 
-  showxs = 'hidden';
-  showmd = 'hidden';
-  showxl = 'hidden';
-  showxxl = 'hidden';
+  xsval = '';
+  xlval = '';
+  xxlval = '';
 
-  checkdevice = '';
+  constructor() { }
 
-  constructor(private ngZone: NgZone) { }
-
-  ngOnInit() {
-    
-  }
+  ngOnInit() {}
   ngAfterViewInit() {
-    this.ngZone.runOutsideAngular(() => {
-      this.generateText('xs');
-    });
-    
-    // if (this.itemtitle.nativeElement.offsetHeight > 72) {
-    //   let innertext = this.itemtitle.nativeElement.innerHTML;
-    //   while (this.itemtitle.nativeElement.offsetHeight > 72) {
-    //     innertext = innertext.substr(0, innertext.length - 1);
-    //     this.itemtitle.nativeElement.innerHTML = innertext;
-    //   }
-    //   innertext = innertext.substr(0, innertext.length - 5);
-    //   this.itemtitle.nativeElement.innerHTML = innertext + '...';
-    // }
-    // setTimeout(() => {
-      
-    // }, 0);
-  }
-  generateText(str) {
-    this.checkdevice = str;
-    this['show' + str] = '';
+    let xstext = (this.cProps || {}).title || '';
+    let xltext = (this.cProps || {}).title || ''
+    let xxltext = (this.cProps || {}).title || '';
+    if (xstext.length > 64) {
+      xstext = xstext.substr(0, 64).replace(/^\s+|\s+$/g, '') + '...';
+    }
+    if (xltext.length > 64) {
+      xltext = xltext.substr(0, 64).replace(/^\s+|\s+$/g, '') + '...';
+    }
+    if (xxltext.length > 108) {
+      xxltext = xxltext.substr(0, 108).replace(/^\s+|\s+$/g, '') + '...';
+    }
     setTimeout(() => {
-      const elem = (this['itemtitle_' + str] || {}).nativeElement;
-      console.log('=========(elem || {}).offsetHeight', (elem || {}).offsetHeight);
-      if ((elem || {}).offsetHeight > 72) {
-        let innertext = elem.innerHTML;
-        while(elem.offsetHeight > 72) {
-          innertext = innertext.substr(0, innertext.length - 1);
-          elem.innerHTML = innertext;
-        }
-        innertext = innertext.substr(0, innertext.length - 5);
-        elem.innerHTML = innertext + '...';
-      }
+      this.xsval = xstext;
+      this.xlval = xltext;
+      this.xxlval = xxltext;
     }, 0);
   }
 }

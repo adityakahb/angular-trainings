@@ -10,7 +10,7 @@ import { IndexModule } from './pages/index/index.module';
 
 @NgModule({
   declarations: [
-    AppComponent,
+    AppComponent
   ],
   imports: [
     BrowserModule,

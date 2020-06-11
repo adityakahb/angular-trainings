@@ -43,7 +43,7 @@ const generateFiles = () => {
   let featuredResultsArr = [];
   for (let i=0; i<searchResultsCount; i++) {
 
-    let nameCount = Math.floor(Math.random() * 16) + 1;
+    let nameCount = Math.floor(Math.random() * 20) + 1;
 
     let bg = Math.floor(Math.random()*16777215).toString(16);
     let fg = Math.floor(Math.random()*16777215).toString(16);

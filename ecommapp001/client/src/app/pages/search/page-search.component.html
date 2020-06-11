@@ -78,14 +78,15 @@
         </div>
         <div class="row">
           <div class="col">
-            <div class="container-fluid">
+            <!-- <div class="container-fluid">
               <div class="row">
                 <div class="search-item col-30 col-md-15 col-xl-10 mb-4 pb-4"
                   *ngFor="let item of featuredResultsData">
                   <app-item-teaser [cProps]="item"></app-item-teaser>
                 </div>
               </div>
-            </div>  
+            </div>   -->
+            <app-item-carousel [ngProps]="featuredResultsData"></app-item-carousel>
           </div>
         </div>
       </div>

@@ -8,6 +8,7 @@ import { Component, OnInit, Input } from '@angular/core';
 export class RatingsComponent implements OnInit {
 
   @Input() value;
+  @Input() shouldShowBlank;
   ratingsArr = [];
   onestar = 'star-outline';
 
