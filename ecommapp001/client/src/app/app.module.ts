@@ -7,6 +7,8 @@ import { AppComponent } from './app.component';
 
 import { DefaultLayoutModule } from './layout/defaultlayout/defaultlayout.module';
 import { IndexModule } from './pages/index/index.module';
+import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
+import { AuthInterceptor } from './shared/interceptors/auth.interceptor';
 
 @NgModule({
   declarations: [
@@ -17,9 +19,16 @@ import { IndexModule } from './pages/index/index.module';
     AppRoutingModule,
     DefaultLayoutModule,
     IndexModule,
-    PageSearchModule
+    PageSearchModule,
+    HttpClientModule
   ],
-  providers: [],
+  providers: [
+    {
+      provide: HTTP_INTERCEPTORS,
+      useClass: AuthInterceptor,
+      multi: true
+    }
+  ],
   bootstrap: [AppComponent],
   schemas: [CUSTOM_ELEMENTS_SCHEMA]
 })

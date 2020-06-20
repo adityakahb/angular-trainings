@@ -1,13 +1,13 @@
+import { AuthService } from './../../shared/services/auth.service';
 import { Component, OnInit, AfterViewInit, HostListener, Input, NgZone, ElementRef, ViewChild } from '@angular/core';
-import { FormControl, FormBuilder, Validators } from '@angular/forms';
-import { Subscription } from 'rxjs';
+import { FormGroup, FormControl, Validators } from '@angular/forms';
 
 declare const require: any;
 declare const $: any;
 
 const className = 'nav-open';
-const langJson = require('./../../data/lang.json');
-const navJson = require('./../../data/megamenu3.json') || [];
+const langJson = require('./../../shared/data/lang.json');
+const navJson = require('./../../shared/data/megamenu3.json') || [];
 let bodyElem;
 let htmlElem;
 let lastScrollTop = 0;
@@ -34,16 +34,15 @@ export class SiteheaderComponent implements OnInit, AfterViewInit {
 
   loginForm;
   currentUser: any;
-  querySubscription: Subscription;
   loginFormSubmitted = false;
 
-  USER_EMAIL: FormControl;
-  USER_PASSWORD: FormControl;
+  __EMAIL: FormControl;
+  __PASSWORD: FormControl;
   isLoginLoading = false;
   isLoginFailed = false;
   loginFailMsg = '';
 
-  constructor(private _formBuilder: FormBuilder, private ngZone: NgZone) { }
+  constructor(private authService: AuthService, private ngZone: NgZone) { }
 
   ngOnInit(): void {
     this.createFormControls();
@@ -64,19 +63,33 @@ export class SiteheaderComponent implements OnInit, AfterViewInit {
       }
     });
 
-    let elem = document.querySelector('#megamenudiv');
-    let mArr = [];
-    if (elem) {
-      let ul = elem.querySelector('#megamenudiv ._114Zhd');
-      // let megamenu = this.generateMegamenuArr(ul, 0);
-      // console.log('=========megamenu', JSON.stringify(megamenu));
-    }
+    // let elem = document.querySelector('#megamenudiv');
+    // let mArr = [];
+    // if (elem) {
+    //   let ul = elem.querySelector('#megamenudiv ._114Zhd');
+    //   let megamenu = this.generateMegamenuArr(ul, 0);
+    //   console.log('=========megamenu', JSON.stringify(megamenu));
+    // }
+  }
+
+  createFormControls() {
+    this.__EMAIL = new FormControl({ value: '' }, [Validators.required, Validators.email]);
+    this.__PASSWORD = new FormControl({ value: '' }, [
+      Validators.required,
+      Validators.pattern(/^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[#$^+=!*()@%&]).{8,10}$/)
+    ]);
+  }
+  createForm(): void {
+    this.loginForm = new FormGroup({
+      __EMAIL: this.__EMAIL,
+      __PASSWORD: this.__PASSWORD,
+    });
   }
 
   generateMegamenuArr(ul, level) {
     let arr = [];
     let li = Array.prototype.slice.call(ul.children || []);
-    
+
     (li || []).forEach(liitem => {
       let obj = {};
       let items = Array.prototype.slice.call(liitem.children || []);
@@ -84,7 +97,6 @@ export class SiteheaderComponent implements OnInit, AfterViewInit {
       // if (items.length === 1 && items[0].tagName === 'UL') {
       //   this.generateMegamenuArr(item, level+1); 
       // } else {
-        
       // }
       items.forEach(item => {
         if (item.tagName === 'A' || item.tagName === 'SPAN') {
@@ -124,20 +136,6 @@ export class SiteheaderComponent implements OnInit, AfterViewInit {
         this.closeAllNav();
       }
     }
-  }
-
-  createFormControls() {
-    this.USER_EMAIL = new FormControl({ value: '' }, [Validators.required, Validators.email]);
-    this.USER_PASSWORD = new FormControl({ value: '' }, [
-      Validators.required,
-      Validators.pattern(/^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[#$^+=!*()@%&]).{8,10}$/)
-    ]);
-  }
-  createForm(): void {
-    this.loginForm = this._formBuilder.group({
-      USER_EMAIL: this.USER_EMAIL,
-      USER_PASSWORD: this.USER_PASSWORD,
-    });
   }
 
   updateScrollVal() {
@@ -183,7 +181,15 @@ export class SiteheaderComponent implements OnInit, AfterViewInit {
     }
   }
 
-  onLoginSubmit(formValue) {
-
+  onLoginSubmit() {
+    this.loginFormSubmitted = true;
+    if (this.loginForm.invalid) {
+      return;
+    }
+    this.loginFailMsg = '';
+    // this.loginForm.get('__EMAIL').disable();
+    // this.loginForm.get('__PASSWORD').disable();
+    this.isLoginLoading = true;
+    this.authService.signIn(this.loginForm.value);
   }
 }

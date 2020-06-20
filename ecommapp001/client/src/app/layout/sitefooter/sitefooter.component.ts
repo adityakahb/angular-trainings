@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 declare const require: any;
 
-let footerJson = require('./../../data/footer.json');
+let footerJson = require('./../../shared/data/footer.json');
 
 @Component({
   selector: 'app-sitefooter',

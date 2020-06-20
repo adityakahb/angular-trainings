@@ -136,17 +136,32 @@
     </button>
   </div>
   <div class="hdr-nav-content">
-    <form>
+    <form [formGroup]="loginForm" (ngSubmit)="onLoginSubmit()">
       <div class="form-group">
-        <label for="email"><strong>Email address</strong></label>
-        <input type="email" class="form-control" id="email">
+        <label for="hdr_email"><strong>Email address</strong></label>
+        <input type="email" class="form-control" id="hdr_email"
+          [ngClass]="{'is-invalid': loginFormSubmitted && loginControls.__EMAIL.errors}"
+          placeholder="Registered Email" formControlName="__EMAIL">
+        <div *ngIf="loginFormSubmitted && loginControls.__EMAIL.errors" class="invalid-feedback">
+          <div *ngIf="loginControls.__EMAIL.errors.required">Email is required</div>
+          <div *ngIf="loginControls.__EMAIL.errors.email">Email must be a valid email address</div>
+        </div>
       </div>
       <div class="form-group">
-        <label for="pwd"><strong>Password</strong></label>
-        <input type="password" class="form-control" id="pwd">
+        <label for="hdr_pwd"><strong>Password</strong></label>
+        <input type="password" class="form-control"
+          [ngClass]="{'is-invalid': loginFormSubmitted && loginControls.__PASSWORD.errors}" id="hdr_pwd"
+          placeholder="Password" formControlName="__PASSWORD">
+        <div *ngIf="loginFormSubmitted && loginControls.__PASSWORD.errors" class="invalid-feedback">
+          <div *ngIf="loginControls.__PASSWORD.errors.required">Password is required</div>
+          <div *ngIf="loginControls.__PASSWORD.errors.pattern">Password must follow pattern</div>
+        </div>
       </div>
-      <div class="checkbox">
-        <label><input type="checkbox"> Remember me</label>
+      <div class="form-group">
+        <div class="custom-control custom-checkbox">
+          <input type="checkbox" class="custom-control-input" id="hdr_remember">
+          <label class="custom-control-label" for="hdr_remember">Remember Me</label>
+        </div>
       </div>
       <app-cta-btn class="mr-3" [cProps]="{
         tag: 'button',

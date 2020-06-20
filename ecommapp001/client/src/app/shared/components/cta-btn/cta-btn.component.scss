@@ -1,0 +1,46 @@
+@import './../../../../imports';
+.cta-comp {
+  text-transform: uppercase;
+  ._pi, ._ci {
+    display: inline-block;
+    height: rem(16px);
+    line-height: 1;
+    position: relative;
+    top: rem(2px);
+  }
+  ._pi {
+    margin-right: rem(8px);
+  }
+  ._ci {
+    margin-left: rem(8px);
+  }
+  &.no-text {
+    padding-left: 0;
+    padding-right: 0;
+    width: rem(38px);
+    &.btn-sm {
+      width: rem(30.57px);
+    }
+    &.btn-lg {
+      width: rem(47.71px);
+    }
+    ._pi, ._ci {
+      margin: 0;
+    }
+  }
+}
+.cta-inline-dd {
+  .cta-comp {
+    &:after {
+      display: none;
+    }
+  }
+}
+:host(.appended .cta-comp) {
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}
+:host(.prepended .cta-comp) {
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}

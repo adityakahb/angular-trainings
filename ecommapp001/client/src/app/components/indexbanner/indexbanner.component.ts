@@ -3,7 +3,7 @@ import { Component, OnInit, ViewEncapsulation, NgZone, ElementRef, ViewChild, Af
 declare const $: any;
 declare const require: any;
 
-const bannerJson = require('./../../data/indexbanner.json');
+const bannerJson = require('./../../shared/data/indexbanner.json');
 
 @Component({
   selector: 'app-indexbanner',

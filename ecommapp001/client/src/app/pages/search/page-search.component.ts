@@ -2,9 +2,9 @@ import { Component, OnInit, ViewChild, NgZone, ElementRef, AfterViewInit } from 
 
 declare const require: any;
 declare const stickybits: any;
-const searchResultsJson = require('./../../data/search-results.json') || [];
-const featuredResultsJson = require('./../../data/featured-results.json') || [];
-const filtersJson = require('./../../data/filters.json') || [];
+const searchResultsJson = require('./../../shared/data/search-results.json') || [];
+const featuredResultsJson = require('./../../shared/data/featured-results.json') || [];
+const filtersJson = require('./../../shared/data/filters.json') || [];
 
 @Component({
   selector: 'app-page-search',

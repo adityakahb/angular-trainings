@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 declare const require: any;
-let indexJson = require('./../../data/index.json');
+let indexJson = require('./../../shared/data/index.json');
 
 
 @Component({
