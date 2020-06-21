@@ -1,13 +1,13 @@
 <div class="alert custom"
-  [ngClass]="['alert-' + theme, (icon ? 'with-icon' : ''), (isClosable ? 'alert-dismissible' : '')]" role="alert">
+  [ngClass]="['alert-' + type, (icon ? 'with-icon' : ''), (isClosable ? 'alert-dismissible' : '')]" role="alert">
   <div class="icn" *ngIf="icon">
     <div class="ld-spinner" *ngIf="icon === 'loading-spinner'; else elseBlock"></div>
     <ng-template #elseBlock>
-      <span class="mdi" [ngClass]="'mdi-'+icon"></span>
+      <ion-icon [name]="icon"></ion-icon>
     </ng-template>
   </div>
   <div class="txt">
-    <div [innerHTML]="title" *ngIf="title"></div>
+    <h4 class="alert-heading" [innerHTML]="title" *ngIf="title"></h4>
     <div [innerHTML]="content" *ngIf="content"></div>
     <div *ngIf="actions.length > 0" class="btn-holder">
       <hr>

@@ -8,6 +8,7 @@ import { Component, OnInit, Input } from '@angular/core';
 export class CtaBtnComponent implements OnInit {
 
   @Input() cProps;
+  @Input() class;
 
   tag = '';
   type = '';
@@ -32,7 +33,7 @@ export class CtaBtnComponent implements OnInit {
     if (props.tag === 'button' || props.tag === 'a') {
       this.tag = props.tag;
 
-      this.cssclass = 'cta-comp btn';
+      this.cssclass = (this.class || '') + ' cta-comp btn';
 
       if (this.tag === 'button') {
         this.type = props.type || 'button';

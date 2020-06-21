@@ -8,9 +8,9 @@ import { Component, Input, OnInit } from '@angular/core';
 })
 export class AlertMsgComponent implements OnInit {
 
-  @Input() data;
+  @Input() cProps;
 
-  theme;
+  type;
   title;
   content;
   icon;
@@ -20,8 +20,8 @@ export class AlertMsgComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
-    const data = this.data || {};
-    this.theme = data.alertType ? data.alertType : 'light';
+    const data = this.cProps || {};
+    this.type = data.type ? data.type : 'light';
     this.title = data.title;
     this.content = data.content;
     this.icon = data.icon;

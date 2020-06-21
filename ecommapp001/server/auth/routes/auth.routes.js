@@ -83,7 +83,8 @@ router.post('/signin', (req, res, next) => {
     __EMAIL: req.body.__EMAIL
   }).then(user => {
     if (!user) {
-      return res.status(401).json({
+      return res.status(200).json({
+        status: 401,
         message: 'Authentication failed'
       });
     }
@@ -91,7 +92,8 @@ router.post('/signin', (req, res, next) => {
     return bcrypt.compare(req.body.__PASSWORD, user.__PASSWORD);
   }).then(response => {
     if (!response) {
-      return res.status(401).json({
+      return res.status(200).json({
+        status: 401,
         message: 'Authentication failed'
       });
     }
@@ -102,12 +104,14 @@ router.post('/signin', (req, res, next) => {
       expiresIn: '1h'
     });
     res.status(200).json({
+      status: 200,
       token: jwtToken,
       expiresIn: 3600,
       _id: getUser._id
     });
   }).catch(err => {
-    return res.status(401).json({
+    return res.status(200).json({
+      status: 401,
       message: 'Authentication failed'
     });
   });
@@ -144,7 +148,6 @@ router.route('/updateuser/:id').put((req, res, next) => {
   }, (error, data) => {
     if (error) {
       return next(error);
-      console.log(error)
     } else {
       res.json(data)
       console.log('User successfully updated!')

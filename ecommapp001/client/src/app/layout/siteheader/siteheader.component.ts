@@ -23,6 +23,60 @@ export class SiteheaderComponent implements OnInit, AfterViewInit {
   @ViewChild('siteheadernav') siteheadernav: ElementRef;
   @Input() loggedInUser;
 
+  headerTypeahead: string;
+  states: string[] = [
+    'Alabama',
+    'Alaska',
+    'Arizona',
+    'Arkansas',
+    'California',
+    'Colorado',
+    'Connecticut',
+    'Delaware',
+    'Florida',
+    'Georgia',
+    'Hawaii',
+    'Idaho',
+    'Illinois',
+    'Indiana',
+    'Iowa',
+    'Kansas',
+    'Kentucky',
+    'Louisiana',
+    'Maine',
+    'Maryland',
+    'Massachusetts',
+    'Michigan',
+    'Minnesota',
+    'Mississippi',
+    'Missouri',
+    'Montana',
+    'Nebraska',
+    'Nevada',
+    'New Hampshire',
+    'New Jersey',
+    'New Mexico',
+    'New York',
+    'North Dakota',
+    'North Carolina',
+    'Ohio',
+    'Oklahoma',
+    'Oregon',
+    'Pennsylvania',
+    'Rhode Island',
+    'South Carolina',
+    'South Dakota',
+    'Tennessee',
+    'Texas',
+    'Utah',
+    'Vermont',
+    'Virginia',
+    'Washington',
+    'West Virginia',
+    'Wisconsin',
+    'Wyoming'
+  ];
+
   isLangNavOpen = false;
   isNavOpen = false;
   isScrolledDown = false;
@@ -33,13 +87,13 @@ export class SiteheaderComponent implements OnInit, AfterViewInit {
   navData = navJson;
 
   loginForm;
-  currentUser: any;
   loginFormSubmitted = false;
 
   __EMAIL: FormControl;
   __PASSWORD: FormControl;
   isLoginLoading = false;
   isLoginFailed = false;
+  isLoginSuccess = true;
   loginFailMsg = '';
 
   constructor(private authService: AuthService, private ngZone: NgZone) { }
@@ -187,9 +241,28 @@ export class SiteheaderComponent implements OnInit, AfterViewInit {
       return;
     }
     this.loginFailMsg = '';
-    // this.loginForm.get('__EMAIL').disable();
-    // this.loginForm.get('__PASSWORD').disable();
+    this.loginForm.get('__EMAIL').disable();
+    this.loginForm.get('__PASSWORD').disable();
     this.isLoginLoading = true;
-    this.authService.signIn(this.loginForm.value);
+    this.authService.signIn(this.loginForm.value).subscribe((res: any) => {
+      this.loginForm.get('__EMAIL').enable();
+      this.loginForm.get('__PASSWORD').enable();
+      this.isLoginLoading = false;
+      if (res.token) {
+        this.authService.setToken(res.token);
+        this.loginFailMsg = '';
+        this.isLoginFailed = false;
+        this.isLoginSuccess = true;
+      } else {
+        this.loginFailMsg = res.message || 'Some Error Occurred';
+        this.isLoginFailed = true;
+        this.isLoginSuccess = false;
+      }
+    });
+  }
+
+  onLogout() {
+    this.authService.doLogout();
+    this.isLoginSuccess = false;
   }
 }

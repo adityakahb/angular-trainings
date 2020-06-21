@@ -256,9 +256,28 @@ $rem240: rem(-240px);
     display: flex;
     height: calc(100% - #{rem(64px)});
     overflow-y: scroll;
-    padding: rem(16px);
   }
   form {
     width: 100%;
+  }
+}
+
+.hdr-nav-content {
+  .nav-list {
+    ul, li, a {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: block;
+    }
+    button {
+      border: 0;
+      background-color: transparent;
+      text-align: left;
+      padding: 0;
+    }
+  }
+  li {
+    border-top: rem(1px) solid $gray-500;
   }
 }

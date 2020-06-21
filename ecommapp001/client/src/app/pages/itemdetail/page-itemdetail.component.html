@@ -1,0 +1,120 @@
+<div class="main-content">
+  <section class="itemdetail-comp">
+    <div class="max-wrap">
+      <div class="container-fluid">
+        <div class="row py-3">
+          <div class="col-md-20 col-xl-15 col-xxl-12">
+            <div class="detail-gallery">
+                <a href="#" class="primary">
+                  <div class="d-img">
+                    <img src="https://via.placeholder.com/400x400"/>
+                  </div>
+                </a>
+                <a href="#">
+                  <div class="d-img">
+                    <img src="https://via.placeholder.com/400x400"/>
+                  </div>
+                </a>
+                <a href="#">
+                  <div class="d-img">
+                    <img src="https://via.placeholder.com/400x400"/>
+                  </div>
+                </a>
+                <a href="#">
+                  <div class="d-img">
+                    <img src="https://via.placeholder.com/400x400"/>
+                  </div>
+                </a>
+                <a href="#">
+                  <div class="d-img">
+                    <img src="https://via.placeholder.com/400x400"/>
+                  </div>
+                </a>
+                <a href="#">
+                  <div class="d-img">
+                    <img src="https://via.placeholder.com/400x400"/>
+                  </div>
+                </a>
+                <a href="#">
+                  <div class="d-img">
+                    <img src="https://via.placeholder.com/400x400"/>
+                  </div>
+                </a>
+                <a href="#">
+                  <div class="d-img">
+                    <img src="https://via.placeholder.com/400x400"/>
+                  </div>
+                </a>
+            </div>
+          </div>
+          <div class="col-md-40 col-xl-30 col-xxl-36">
+            <h1 class="h6 d-md-none">{{detail.name}}</h1>
+            <h1 class="h5 d-none d-md-block d-xl-none">{{detail.name}}</h1>
+            <h1 class="h4 d-none d-xl-block">{{detail.name}}</h1>
+            <p><a [href]="detail.parent.link"><strong>{{detail.parent.title}}</strong></a></p>
+            <p><a href="#"><app-ratings [shouldShowBlank]="false" [value]="detail.ratings"></app-ratings></a></p>
+            <div class="desc" [innerHTML]="detail.description"></div>
+          </div>
+          <div class="col-60 d-xl-none">
+            <hr/>
+          </div>
+          <div class="col-md-60 col-xl-15 col-xxl-12">
+            <div class="row text-center">
+              <div class="col-60 col-md-20 col-xl-60">
+                <p class="current-price mb-1">
+                  <app-price [currency]="detail.currency" [price]="detail.price"></app-price>
+                </p>
+                <p class="old-price">
+                  <del><app-price [currency]="detail.currency" [price]="detail.oldprice"></app-price></del>
+                </p>
+              </div>
+              <div class="col-60 col-md-20 col-xl-60 px-xl-3">
+                <app-cta-btn class="btn-block mb-1" [cProps]="{
+                  tag: 'button',
+                  type: 'button',
+                  href: '',
+                  text: 'Add to Cart',
+                  title: 'Add to Cart',
+                  primaryicon: '',
+                  ctaicon: '',
+                  ctastyle: 'primary',
+                  isoutline: 'false',
+                  size: 'lg'
+                }"></app-cta-btn>
+                <app-cta-btn class="btn-block" [cProps]="{
+                  tag: 'button',
+                  type: 'button',
+                  href: '',
+                  text: 'Add to Wishlist',
+                  title: 'Add to Wishlist',
+                  primaryicon: '',
+                  ctaicon: '',
+                  ctastyle: 'light',
+                  isoutline: 'false',
+                  size: ''
+                }"></app-cta-btn>
+              </div>
+              <div class="col-60 d-md-none d-xl-block">
+                <hr/>
+              </div>
+              <div class="col-60 col-md-20 col-xl-60">
+                <app-cta-btn *ngFor="let share of detail.share" class="mx-1" [cProps]="{
+                  tag: 'a',
+                  type: '',
+                  href: share.link,
+                  text: '',
+                  title: share.title,
+                  primaryicon: share.icon,
+                  ctaicon: '',
+                  ctastyle: 'dark',
+                  isoutline: 'true',
+                  size: 'sm'
+                }"></app-cta-btn>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>

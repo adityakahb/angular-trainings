@@ -1,0 +1,288 @@
+{
+  "name": "ASUS ZenBook Pro Duo UX581 Intel Core i9 9th Gen 15.6\" 4K UHD OLED Touchscreen Laptop (32GB RAM/1TB NVMe SSD/Windows 10/6GB GDDR6 Graphics Card/ScreenPad Plus/Celestial Blue/2.50 Kg), UX581GV-H9201T",
+  "ratings": "4.1",
+  "parent": {
+    "title": "Asus",
+    "link": "#"
+  },
+  "currency":"inr",
+  "price":{"major":"234567","minor":"89"},
+  "oldprice":{"major":"345678","minor":"90"},
+  "description": "<ul><li>Processor: 9th Gen i9-9980HK Processor 2.4 GHz (16MB Cache, up to 5.0 GHz, 8 Cores, 16 Threads)</li><li>Memory: 32GB Onboard DDR4 2666MHz RAM | Storage: 1TB M.2 NVMe PCIe 3.0 x4 SSD</li><li>Graphics: Dedicated NVIDIA GeForce RTX 2060 GDDR6 6GB VRAM</li><li>Display: 15.6” OLED 4K UHD (3840 x 2160) 16:9 Touchscreen Panel, 89% screen-to-body ratio, 178° wide-view technology, 100% DCI-P3, PANTONE Validated</li><li>Operating System: Pre-loaded Windows 10 Home(64bit) with lifetime validity</li><li>Design &amp; battery: Spun-Metal finish| 5mm-thin bezels | Laptop weight 2.5 Kg | 71Whrs 8-cell Li-Polymer Battery</li><li>ScreenPad Plus: 14-inch 4K (3840 x 1100) Touch Display with 178˚ wide-view technology | Keyboard : Full-size backlit keyboard, 1.4mm key travel, Integrated LED-backlit numeric keypad on touchpad, Precision touchpad (PTP) technology supports up to four-finger smart gestures</li></ul>",
+  "specifications": [{
+    "title": "Technical Specifications",
+    "specs": [
+      {
+        "label": "Brand",
+        "value": "ASUS"
+      },
+      {
+        "label": "Model",
+        "value": "UX581GV-H2041T"
+      },
+      {
+        "label": "Model Name",
+        "value": "ZenBook Pro Duo"
+      },
+      {
+        "label": "Item Weight",
+        "value": "2.5 Kg"
+      },
+      {
+        "label": "Product Dimensions",
+        "value": "24.6 x 35.9 x 2.4 cm"
+      },
+      {
+        "label": "Batteries:",
+        "value": "1 Lithium Polymer batteries required. (included)"
+      },
+      {
+        "label": "Item model number",
+        "value": "UX581GV-H2041T"
+      },
+      {
+        "label": "RAM Size",
+        "value": "32 GB"
+      },
+      {
+        "label": "Flash Memory Installed Size",
+        "value": "1.0"
+      },
+      {
+        "label": "Ram Memory Installed Size",
+        "value": "32 GB"
+      },
+      {
+        "label": "Ram Memory Maximum Size",
+        "value": "32 GB"
+      },
+      {
+        "label": "Ram Memory Technology",
+        "value": "DDR4"
+      },
+      {
+        "label": "Hard Drive Size",
+        "value": "1 TB"
+      },
+      {
+        "label": "Hard Drive Interface",
+        "value": "Solid State"
+      },
+      {
+        "label": "Hard Disk Technology",
+        "value": "Flash Memory Solid State"
+      },
+      {
+        "label": "Optical Drive Type",
+        "value": "None"
+      },
+      {
+        "label": "Removable Memory",
+        "value": "MicroSD"
+      },
+      {
+        "label": "Operating System",
+        "value": "Windows 10 Home"
+      },
+      {
+        "label": "Processor Brand",
+        "value": "Intel"
+      },
+      {
+        "label": "Processor Speed",
+        "value": "2.4 GHz"
+      },
+      {
+        "label": "Processor Type",
+        "value": "Core i9"
+      },
+      {
+        "label": "Processor Count",
+        "value": "1"
+      },
+      {
+        "label": "Hardware Interface",
+        "value": "USB, Thunderbolt, HDMI"
+      },
+      {
+        "label": "Graphics Card Description",
+        "value": "Dedicated"
+      },
+      {
+        "label": "Graphics Card Ram Size",
+        "value": "6 GB"
+      },
+      {
+        "label": "Graphics RAM Type",
+        "value": "VRAM"
+      },
+      {
+        "label": "Graphics Coprocessor",
+        "value": "Dedicated NVIDIA GeForce RTX 2060"
+      },
+      {
+        "label": "Resolution",
+        "value": "3840 x 2160"
+      },
+      {
+        "label": "Included Components",
+        "value": "Laptop, AC Adapter, User Guide, Manuals"
+      },
+      {
+        "label": "Software Included",
+        "value": "Webcam"
+      },
+      {
+        "label": "Display Technology",
+        "value": "OLED"
+      },
+      {
+        "label": "Screen Size",
+        "value": "15.6 Inches"
+      },
+      {
+        "label": "Display Type",
+        "value": "OLED"
+      },
+      {
+        "label": "Viewing Angle",
+        "value": "178 Degrees"
+      },
+      {
+        "label": "Image Brightness",
+        "value": "400nits"
+      },
+      {
+        "label": "Display Resolution Maximum",
+        "value": "3840 x 2160 (4K UHD)"
+      },
+      {
+        "label": "Power Source",
+        "value": "Battery Powered"
+      },
+      {
+        "label": "Battery Average Life",
+        "value": "8 Hours"
+      },
+      {
+        "label": "Battery Average Life Standby",
+        "value": "8 Hours"
+      },
+      {
+        "label": "Batteries Included",
+        "value": "Yes"
+      },
+      {
+        "label": "Batteries Required",
+        "value": "Yes"
+      },
+      {
+        "label": "Battery Cell Composition",
+        "value": "Lithium Polymer"
+      },
+      {
+        "label": "Wireless Type",
+        "value": "2.4 GHz Radio Frequency"
+      },
+      {
+        "label": "Keyboard Description",
+        "value": "Backlit keyboard"
+      },
+      {
+        "label": "Connector Type",
+        "value": "Wireless"
+      },
+      {
+        "label": " Device interface - primary ",
+        "value": "Touchscreen"
+      },
+      {
+        "label": "",
+        "value": ""
+      }
+    ]
+  }, {
+    "title": "Additional Information",
+    "specs": [
+      {
+        "label": "ASIN",
+        "value": "B08521KLH6"
+      },
+      {
+        "label": "Customer Reviews",
+        "value": "<span _ngcontent-mpb-c65=\"\" class=\"dpProductDetailB08521KLH6\"><span _ngcontent-mpb-c65=\"\" data-action=\"a-popover\" data-a-popover=\"{&quot;max-width&quot;:&quot;700&quot;,&quot;closeButton&quot;:&quot;false&quot;,&quot;position&quot;:&quot;triggerBottom&quot;,&quot;allowLinkDefault&quot;:&quot;1&quot;,&quot;url&quot;:&quot;/review/widgets/average-customer-review/popover/ref=acr_dpproductdetail_popover?ie=UTF8&amp;asin=B08521KLH6&amp;contextId=dpProductDetail&quot;}\" class=\"a-declarative\"><a _ngcontent-mpb-c65=\"\" href=\"javascript:void(0)\" class=\"a-popover-trigger a-declarative\"><i _ngcontent-mpb-c65=\"\" class=\"a-icon a-icon-star a-star-4\"><span _ngcontent-mpb-c65=\"\" class=\"a-icon-alt\">4.1 out of 5 stars</span></i><i _ngcontent-mpb-c65=\"\" class=\"a-icon a-icon-popover\"></i></a></span><span _ngcontent-mpb-c65=\"\" class=\"a-letter-space\"></span><span _ngcontent-mpb-c65=\"\" class=\"a-size-small\"><a _ngcontent-mpb-c65=\"\" href=\"/product-reviews/B08521KLH6/ref=acr_dpproductdetail_text?ie=UTF8&amp;showViewpoints=1\" class=\"a-link-normal\">16 customer ratings</a></span></span>"
+      },
+      {
+        "label": "Amazon Bestsellers Rank",
+        "value": " #32,380 in Computers &amp; Accessories (<a _ngcontent-mpb-c65=\"\" href=\"/gp/bestsellers/computers/ref=pd_zg_ts_computers\">See Top 100 in Computers &amp; Accessories</a>) <ul _ngcontent-mpb-c65=\"\" class=\"zg_hrsr\"><li _ngcontent-mpb-c65=\"\" class=\"zg_hrsr_item\"><span _ngcontent-mpb-c65=\"\" class=\"zg_hrsr_rank\">#1184</span><span _ngcontent-mpb-c65=\"\" class=\"zg_hrsr_ladder\">in&nbsp;<a _ngcontent-mpb-c65=\"\" href=\"/gp/bestsellers/computers/1375424031/ref=pd_zg_hrsr_computers\">Laptops</a></span></li></ul>"
+      },
+      {
+        "label": "Date First Available",
+        "value": "21 February 2020"
+      },
+      {
+        "label": "",
+        "value": ""
+      }
+    ]
+  }],
+  "gallery": [
+    {
+      "type": "video",
+      "url": "",
+      "isprimary": "true",
+      "thumb": ""
+    },
+    {
+      "type": "image",
+      "url": "",
+      "isprimary": "false",
+      "thumb": ""
+    },
+    {
+      "type": "image",
+      "url": "",
+      "isprimary": "false",
+      "thumb": ""
+    },
+    {
+      "type": "image",
+      "url": "",
+      "isprimary": "false",
+      "thumb": ""
+    },
+    {
+      "type": "image",
+      "url": "",
+      "isprimary": "false",
+      "thumb": ""
+    }
+  ],
+  "share": [
+    {
+      "icon": "mail",
+      "title": "Share via Email",
+      "link": "#"
+    },
+    {
+      "icon": "logo-facebook",
+      "title": "Share via Facebook",
+      "link": "#"
+    },
+    {
+      "icon": "logo-twitter",
+      "title": "Share via Twitter",
+      "link": "#"
+    },
+    {
+      "icon": "logo-pinterest",
+      "title": "Share via Pinterest",
+      "link": "#"
+    },
+    {
+      "icon": "logo-instagram",
+      "title": "Share via Instagram",
+      "link": "#"
+    }
+  ]
+}

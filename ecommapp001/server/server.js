@@ -6,6 +6,7 @@ const mongoose = require('mongoose');
 
 // Express APIs
 const authapi = require('./auth/routes/auth.routes');
+const searchapi = require('./search/routes/search.routes');
 
 // MongoDB conection
 mongoose.Promise = global.Promise;
@@ -36,6 +37,7 @@ app.use(cors());
 app.use('/public', express.static('public'));
 
 app.use('/authapi', authapi);
+app.use('/searchapi', searchapi);
 
 // Define PORT
 const port = process.env.PORT || 4000;

@@ -1,0 +1,47 @@
+.main-content {
+  background-color: $white;
+  .itemdetail-comp {
+    .desc {
+      color: $gray-600;
+      font-size: rem(14px);
+      ul, ol {
+        padding: 0;
+        margin-left: rem(16px);
+      }
+    }
+  }
+  .current-price {
+    font-size: rem(32px);
+    font-weight: 700;
+    color: $secondary;
+    line-height: 1;
+  }
+  .old-price {
+    font-size: rem(20px);
+    font-weight: 700;
+    color: $gray-500;
+    line-height: 1;
+  }
+  .detail-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    a {
+      display: block;
+      width: 25%;
+      padding: rem(1px);
+      &.primary {
+        width: 50%;
+      }
+    }
+    .d-img {
+      position: relative;
+      height: 0;
+      width: 100%;
+      padding-bottom: 100%;
+      img {
+        @include center-center();
+        width: 100%;
+      }
+    }
+  }
+}

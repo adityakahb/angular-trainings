@@ -14,8 +14,9 @@
               <div class="nav-search-wrap d-none d-md-block">
                 <form>
                   <div class="input-group">
-                    <input type="search" class="form-control form-control-sm"
-                      aria-label="Text input with dropdown button">
+                    <input name="inlineTypeahead" type="search" class="form-control form-control-sm"
+                      aria-label="" [(ngModel)]="headerTypeahead"
+                      [typeahead]="states">
                     <div class="input-group-append">
                       <select class="form-control form-control-sm">
                         <option>All Categories</option>
@@ -135,7 +136,7 @@
       <ion-icon name="close-circle-outline"></ion-icon>
     </button>
   </div>
-  <div class="hdr-nav-content">
+  <div class="hdr-nav-content px-3" *ngIf="!isLoginSuccess">
     <form [formGroup]="loginForm" (ngSubmit)="onLoginSubmit()">
       <div class="form-group">
         <label for="hdr_email"><strong>Email address</strong></label>
@@ -174,7 +175,42 @@
         isoutline: 'false'
       }"></app-cta-btn>
       Don't have an account? <a href="#">Register Now</a>.
+      <div class="mb-3"></div>
+      <app-alert-msg *ngIf="isLoginLoading" [cProps]="{
+        type: 'info',
+        title: '',
+        content: 'Please wait',
+        icon: 'loading-spinner',
+        actions: [],
+        isClosable: false
+      }"></app-alert-msg>
+      <app-alert-msg *ngIf="isLoginFailed" [cProps]="{
+        type: 'danger',
+        title: '',
+        content: loginFailMsg,
+        icon: 'alert-circle',
+        actions: [],
+        isClosable: false
+      }"></app-alert-msg>
     </form>
+  </div>
+  <div class="hdr-nav-content" *ngIf="isLoginSuccess">
+    <nav class="nav-list w-100">
+      <ul>
+        <li>
+          <a href="#" class="p-3">Your Orders</a>
+        </li>
+        <li>
+          <a href="#" class="p-3">Your Account</a>
+        </li>
+        <li>
+          <a href="#" class="p-3">Help &amp; Support</a>
+        </li>
+        <li>
+          <button type="button" class="p-3 w-100 text-danger" (click)="onLogout()">Logout</button>
+        </li>
+      </ul>
+    </nav>
   </div>
 </div>
 
@@ -185,7 +221,7 @@
     </button>
   </div>
   <div class="hdr-nav-content">
-    <form>
+    <form class="d-block px-3">
       <div class="form-group">
         <label>Category</label>
         <select class="form-control">
@@ -199,7 +235,7 @@
       <div class="form-group">
         <label for="" class="sr-only">Search Keywords</label>
         <div class="input-group">
-          <input type="search" class="form-control" aria-label="Text input with dropdown button">
+          <input name="modalTypeahead" type="search" class="form-control" aria-label="">
           <div class="input-group-append">
             <app-cta-btn class="appended" [cProps]="{
               tag: 'button',

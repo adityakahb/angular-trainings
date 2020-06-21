@@ -13,6 +13,11 @@ const routes: Routes = [
     redirectTo: 'search',
     pathMatch: 'prefix'
   },
+  {
+    path: 'detail',
+    redirectTo: 'detail',
+    pathMatch: 'prefix'
+  },
 ];
 
 @NgModule({

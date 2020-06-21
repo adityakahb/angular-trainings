@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
 import { User } from './../interfaces/user.interface';
 import { Observable, throwError } from 'rxjs';
-import { catchError, map } from 'rxjs/operators';
+import { catchError } from 'rxjs/operators';
 import { HttpClient, HttpHeaders, HttpErrorResponse } from '@angular/common/http';
 import { Router } from '@angular/router';
 
@@ -27,14 +27,13 @@ export class AuthService {
   // Sign-in
   signIn(user: User) {
     return this.http.post<any>(`${this.endpoint}/signin`, user)
-      .subscribe((res: any) => {
-        console.log('=============res', res);
-        localStorage.setItem('access_token', res.token);
-        this.getUserProfile(res._id).subscribe((pRes) => {
-          this.currentUser = pRes;
-          // this.router.navigate(['userprofile/' + pRes.msg._id]);
-        });
-      });
+      .pipe(
+        catchError(this.handleError)
+      );
+  }
+
+  setToken(token) {
+    localStorage.setItem('access_token', token);
   }
 
   getToken() {
@@ -48,20 +47,20 @@ export class AuthService {
 
   doLogout() {
     const removeToken = localStorage.removeItem('access_token');
-    if (removeToken == null) {
-      this.router.navigate(['log-in']);
-    }
+    // if (removeToken == null) {
+    //   this.router.navigate(['log-in']);
+    // }
   }
 
   // User profile
   getUserProfile(id): Observable<any> {
-    return this.http.get(`${this.endpoint}/userprofile/${id}`, { headers: this.headers }).pipe(
-      map((res: Response) => res || {}),
-      catchError(this.handleError)
-    );
+    return this.http.get(`${this.endpoint}/userprofile/${id}`, { headers: this.headers })
+      .pipe(
+        catchError(this.handleError)
+      );
   }
 
-  // Error
+  // Error 
   handleError(error: HttpErrorResponse) {
     let msg = '';
     if (error.error instanceof ErrorEvent) {
