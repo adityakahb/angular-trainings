@@ -5,7 +5,7 @@
         <div class="row py-3">
           <div class="col-md-20 col-xl-15 col-xxl-12">
             <div class="detail-gallery mb-3">
-                <a href="#" class="primary">
+                <a class="primary" (click)="openDetailGallery(detailgallery)">
                   <div class="d-img">
                     <img src="https://via.placeholder.com/400x400"/>
                   </div>
@@ -53,12 +53,12 @@
             </div>
           </div>
           <div class="col-md-40 col-xl-30 col-xxl-36 px-xl-3 px-xxl-5">
-            <h1 class="h6 d-md-none">{{detail.name}}</h1>
-            <h1 class="h5 d-none d-md-block d-xl-none">{{detail.name}}</h1>
-            <h1 class="h4 d-none d-xl-block">{{detail.name}}</h1>
-            <p><a [href]="detail.parent.link"><strong>{{detail.parent.title}}</strong></a></p>
-            <p><a href="#"><app-ratings [shouldShowBlank]="false" [value]="detail.ratings"></app-ratings></a></p>
-            <div class="desc" [innerHTML]="detail.description"></div>
+            <h1 class="h6 d-md-none">{{idetail.name}}</h1>
+            <h1 class="h5 d-none d-md-block d-xl-none">{{idetail.name}}</h1>
+            <h1 class="h4 d-none d-xl-block">{{idetail.name}}</h1>
+            <p><a [href]="idetail.parent.link"><strong>{{idetail.parent.title}}</strong></a></p>
+            <p><a href="#"><app-ratings [shouldShowBlank]="false" [value]="idetail.ratings"></app-ratings></a></p>
+            <div class="desc" [innerHTML]="idetail.description"></div>
           </div>
           <div class="col-60 d-xl-none">
             <hr/>
@@ -67,10 +67,10 @@
             <div class="row text-center">
               <div class="col-60 col-md-20 col-xl-60">
                 <p class="current-price mb-1">
-                  <app-price [currency]="detail.currency" [price]="detail.price"></app-price>
+                  <app-price [currency]="idetail.currency" [price]="idetail.price"></app-price>
                 </p>
                 <p class="old-price">
-                  <del><app-price [currency]="detail.currency" [price]="detail.oldprice"></app-price></del>
+                  <del><app-price [currency]="idetail.currency" [price]="idetail.oldprice"></app-price></del>
                 </p>
               </div>
               <div class="col-60 col-md-20 col-xl-60">
@@ -103,7 +103,7 @@
                 <hr/>
               </div>
               <div class="col-60 col-md-20 col-xl-60">
-                <app-cta-btn *ngFor="let share of detail.share" class="mx-1" [cProps]="{
+                <app-cta-btn *ngFor="let share of idetail.share" class="mx-1" [cProps]="{
                   tag: 'a',
                   type: '',
                   href: share.link,
@@ -123,3 +123,15 @@
     </div>
   </section>
 </div>
+
+<ng-template #detailgallery>
+  <div class="modal-header">
+    <h4 class="modal-title pull-left">Modal</h4>
+    <button type="button" class="close pull-right" aria-label="Close" (click)="modalRef.hide()">
+      <span aria-hidden="true">&times;</span>
+    </button>
+  </div>
+  <div class="modal-body">
+    Just a modal with a bunch of words inside, nothing serious.
+  </div>
+</ng-template> 

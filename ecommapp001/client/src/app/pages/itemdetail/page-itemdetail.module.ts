@@ -7,6 +7,7 @@ import { PageItemdetailComponent } from './page-itemdetail.component';
 import { PageItemdetailRoutingModule } from './page-itemdetail-routing.module';
 import { PriceModule } from './../../shared/components/price/price.module';
 import { RatingsModule } from './../../shared/components/ratings/ratings.module';
+import { ModalModule } from 'ngx-bootstrap/modal';
 
 @NgModule({
   imports: [
@@ -14,6 +15,7 @@ import { RatingsModule } from './../../shared/components/ratings/ratings.module'
     CtaBtnModule,
     DirectiveModule,
     ItemCarouselModule,
+    ModalModule.forRoot(),
     PageItemdetailRoutingModule,
     PriceModule,
     RatingsModule,

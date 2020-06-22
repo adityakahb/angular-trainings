@@ -1,10 +1,11 @@
-import { Component, OnInit, ViewChild, NgZone, ElementRef, AfterViewInit, ViewEncapsulation } from '@angular/core';
+import { Component, OnInit, ViewChild, NgZone, ElementRef, AfterViewInit, ViewEncapsulation, TemplateRef } from '@angular/core';
+import { BsModalRef, BsModalService } from 'ngx-bootstrap/modal';
 import { SearchService } from 'src/app/shared/services/search.service';
 
 declare const require: any;
 declare const stickybits: any;
 
-const detailJson = require('./../../shared/data/itemdetail.json') || [];
+const detailJson = require('./../../shared/data/itemdetail.json') || {};
 
 @Component({
   selector: 'app-page-itemdetail',
@@ -14,14 +15,15 @@ const detailJson = require('./../../shared/data/itemdetail.json') || [];
 })
 export class PageItemdetailComponent implements OnInit, AfterViewInit {
   @ViewChild('searchsticky') searchsticky: ElementRef;
+  modalRef: BsModalRef;
 
-  detail;
+  idetail = {};
 
-  constructor(private searchService: SearchService, private ngZone: NgZone) { }
+  constructor(private searchService: SearchService, private modalService: BsModalService, private ngZone: NgZone) { }
 
   ngOnInit() {
     this.searchService.getSearchResults('').subscribe((res) => {
-      this.detail = detailJson;
+      this.idetail = detailJson;
       if (res.status === 200) {
       }
     });
@@ -52,5 +54,12 @@ export class PageItemdetailComponent implements OnInit, AfterViewInit {
         // console.log('=============specsArr', JSON.stringify(specsArr));
       }
     });
+  }
+
+  openDetailGallery(template: TemplateRef<any>) {
+    this.modalRef = this.modalService.show(
+      template,
+      Object.assign({}, { class: 'gray modal-lg' })
+    );
   }
 }
