@@ -23,14 +23,17 @@
     line-height: 1;
   }
   .detail-gallery {
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    row-gap: rem(1px);
+    column-gap: rem(1px);
+    grid-template-columns: auto auto auto auto;
+    grid-template-rows: auto auto auto auto;
     a {
       display: block;
-      width: 25%;
-      padding: rem(1px);
+      // padding: rem(0 1px 1px 0);
       &.primary {
-        width: 50%;
+        grid-column: 1 / span 2;
+        grid-row: 1 / span 2;
       }
     }
     .d-img {

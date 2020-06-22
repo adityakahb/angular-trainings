@@ -4,8 +4,13 @@
       <div class="container-fluid">
         <div class="row py-3">
           <div class="col-md-20 col-xl-15 col-xxl-12">
-            <div class="detail-gallery">
+            <div class="detail-gallery mb-3">
                 <a href="#" class="primary">
+                  <div class="d-img">
+                    <img src="https://via.placeholder.com/400x400"/>
+                  </div>
+                </a>
+                <a href="#">
                   <div class="d-img">
                     <img src="https://via.placeholder.com/400x400"/>
                   </div>
@@ -47,7 +52,7 @@
                 </a>
             </div>
           </div>
-          <div class="col-md-40 col-xl-30 col-xxl-36">
+          <div class="col-md-40 col-xl-30 col-xxl-36 px-xl-3 px-xxl-5">
             <h1 class="h6 d-md-none">{{detail.name}}</h1>
             <h1 class="h5 d-none d-md-block d-xl-none">{{detail.name}}</h1>
             <h1 class="h4 d-none d-xl-block">{{detail.name}}</h1>
@@ -68,14 +73,14 @@
                   <del><app-price [currency]="detail.currency" [price]="detail.oldprice"></app-price></del>
                 </p>
               </div>
-              <div class="col-60 col-md-20 col-xl-60 px-xl-3">
-                <app-cta-btn class="btn-block mb-1" [cProps]="{
+              <div class="col-60 col-md-20 col-xl-60">
+                <app-cta-btn class="btn-block mb-3" [cProps]="{
                   tag: 'button',
                   type: 'button',
                   href: '',
                   text: 'Add to Cart',
                   title: 'Add to Cart',
-                  primaryicon: '',
+                  primaryicon: 'cart',
                   ctaicon: '',
                   ctastyle: 'primary',
                   isoutline: 'false',
@@ -87,7 +92,7 @@
                   href: '',
                   text: 'Add to Wishlist',
                   title: 'Add to Wishlist',
-                  primaryicon: '',
+                  primaryicon: 'heart',
                   ctaicon: '',
                   ctastyle: 'light',
                   isoutline: 'false',

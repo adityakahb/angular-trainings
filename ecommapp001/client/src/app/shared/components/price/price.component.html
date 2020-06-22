@@ -1,5 +1,6 @@
 <span class="c-price">
-  <span class="sym" [innerHTML]="symbol"></span>
-  <span class="maj" [innerHTML]="major"></span>
-  <span class="min" [innerHTML]="minor"></span>
+  <span class="full" *ngIf="showIntl" [innerHTML]="full"></span>
+  <span class="sym" *ngIf="!showIntl" [innerHTML]="symbol"></span>
+  <span class="maj" *ngIf="!showIntl" [innerHTML]="major"></span>
+  <span class="min" *ngIf="!showIntl" [innerHTML]="minor"></span>
 </span>

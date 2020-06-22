@@ -14,18 +14,29 @@ export class PriceComponent implements OnInit {
   symbol;
   major;
   minor;
+  full;
+  showIntl = true;
 
   constructor() { }
 
   ngOnInit(): void {
-    const symbolArr = currencyJSON.filter(item => item.name === this.currency);
-    if ((symbolArr || [])[0]) {
-      this.symbol = symbolArr[0].symbol;
+    if (Intl) {
+      this.showIntl = true;
+      const major = (this.price || {}).major || '00';
+      const minor = (this.price || {}).minor || '00';
+      this.full = new Intl.NumberFormat('en-IN', { style: 'currency', currency: 'INR' })
+        .format(parseFloat(major + '.' + minor));
+    } else {
+      this.showIntl = false;
+      const symbolArr = currencyJSON.filter(item => item.name === this.currency);
+      if ((symbolArr || [])[0]) {
+        this.symbol = symbolArr[0].symbol;
+      }
+      const major = (this.price || {}).major || '00';
+      const minor = (this.price || {}).minor || '00';
+      this.major = major === '00' ? '0' : major;
+      this.minor = minor === '00' ? '' : minor;
     }
-    const major = (this.price || {}).major || '00';
-    const minor = (this.price || {}).minor || '00';
-    this.major = major === '00' ? '0' : major;
-    this.minor = minor === '00' ? '' : minor;
   }
 
 }
