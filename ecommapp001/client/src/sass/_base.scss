@@ -117,6 +117,17 @@ body {
     .modal-header, .modal-content {
       border-radius: 0;
     }
+    .detail-modal-gallery {
+      overflow-x: scroll;
+      white-space: nowrap;
+      .d-img {
+        width: rem(48px);
+        height: rem(48px);
+        img {
+          width: 100%;
+        }
+      }
+    }
     #detailslider {
       &, .slick-track, .d-img {
         display: flex !important;
@@ -127,23 +138,25 @@ body {
         &, & > div {
           display: flex;
           height: 100%; 
-          width: 100%;
+          width: 100% !important;
           position: relative;
         }
       }
       .d-img {
         justify-content: center;
         align-items: center;
+        position: relative;
       }
       .d-img-src {
-        // bottom: 0;
-        // left: 0;
-        // margin: auto;
-        // max-height: 100%;
-        // max-width: 100%;
-        // position: absolute;
-        // right: 0;
-        // top: 0;
+        @include center-center();
+        &.tall {
+          width: 100%;
+          height: auto;
+        }
+        &.wide {
+          width: auto;
+          height: 100%;
+        }
       }
     }
   }

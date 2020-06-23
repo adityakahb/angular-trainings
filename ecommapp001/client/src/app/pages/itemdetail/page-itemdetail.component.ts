@@ -52,8 +52,20 @@ export class PageItemdetailComponent implements OnInit {
         if (slider) {
           $(slider).on('init', () => {
             const slides = slider.querySelectorAll('.d-img');
+            const slide1 = slides[0];
+            let className = '';
+            if ($(slide1).outerHeight() >= $(slide1).outerWidth()) {
+              className = 'tall';
+            }
+            if ($(slide1).outerHeight() < $(slide1).outerWidth()) {
+              className = 'wide';
+            }
             slides.forEach(slide => {
-              $(slide).trigger('zoom.destroy').zoom({ on: 'grab' });
+              if ($(slide).find('img').length > 0) {
+                $(slide).find('img').removeClass('d-none wide tall').addClass(className);
+                $(slide).find('span').addClass('d-none');
+                $(slide).trigger('zoom.destroy').zoom({ on: 'click' });
+              }
             });
             this.detailslider = slider;
           });
