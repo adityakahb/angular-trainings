@@ -1,6 +1,9 @@
 .main-content {
   background-color: $white;
   .itemdetail-comp {
+    h1 {
+      font-weight: 400;
+    }
     .desc {
       color: $gray-600;
       font-size: rem(14px);
