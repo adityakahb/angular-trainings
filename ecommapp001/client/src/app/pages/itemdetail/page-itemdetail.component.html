@@ -2,7 +2,7 @@
   <section class="itemdetail-comp" *ngIf="idetail">
     <div class="max-wrap">
       <div class="container-fluid">
-        <div class="row py-3">
+        <div class="row py-2">
           <div class="col-md-20 col-xl-16 col-xxl-15">
             <div class="detail-gallery mb-3">
                 <a href="#" *ngFor="let img of imgArr; index as i" [class]="i === 0 ? 'primary' : ''" (click)="openDetailGallery($event, detailgallery)">
@@ -18,16 +18,18 @@
             <h1 class="h4 d-none d-xl-block">{{idetail.name}}</h1>
             <p><a [href]="idetail.parent.link"><strong>{{idetail.parent.title}}</strong></a></p>
             <p><a href="#"><app-ratings [shouldShowBlank]="false" [value]="idetail.ratings"></app-ratings></a></p>
-            <button type="button" class="w-100 p-2 pr-5 border border-dark rounded-lg d-md-none">
-              <span class="txt">See description</span>
-              <span class="ikn plus d-md-none">
-                <ion-icon name="add"></ion-icon>
-              </span>
-              <span class="ikn minus d-md-none">
-                <ion-icon name="remove"></ion-icon>
-              </span>
-            </button>
-            <div class="desc" [innerHTML]="idetail.description"></div>
+            <div class="prod-desc" [class]="desctoggled ? 'active' : ''" (click)="desctoggled = !desctoggled">
+              <button type="button" class="d-desc-cta w-100 p-2 pr-5 border border-dark rounded-lg d-md-none text-left">
+                <span class="txt">Product description</span>
+                <span class="ikn plus">
+                  <ion-icon name="add"></ion-icon>
+                </span>
+                <span class="ikn minus">
+                  <ion-icon name="remove"></ion-icon>
+                </span>
+              </button>
+              <div class="desc pt-3 pt-md-0" [innerHTML]="idetail.description"></div>
+            </div>
           </div>
           <div class="col-60 d-xl-none">
             <hr/>
@@ -72,13 +74,26 @@
                 <hr/>
               </div>
               <div class="col-60 col-md-20 col-xl-60">
-                <app-cta-btn *ngFor="let share of idetail.share" [class]="'mx-1 rounded-circle'" [cProps]="{
+                <app-cta-btn [class]="'mx-1 mb-md-3 mb-xl-0 rounded-pill'" [cProps]="{
+                  tag: 'button',
+                  type: 'button',
+                  href: '#',
+                  text: 'Add to Wishlist',
+                  title: 'Add to Wishlist',
+                  primaryicon: 'heart',
+                  ctaicon: '',
+                  ctastyle: 'info',
+                  isoutline: '',
+                  size: 'sm'
+                }"></app-cta-btn>
+                <br class="d-none d-md-block d-xl-none"/>
+                <app-cta-btn [class]="'mx-1 rounded-pill'" [cProps]="{
                   tag: 'a',
                   type: '',
-                  href: share.link,
-                  text: '',
-                  title: share.title,
-                  primaryicon: share.icon,
+                  href: '#',
+                  text: 'Share',
+                  title: 'Share',
+                  primaryicon: 'share-social',
                   ctaicon: '',
                   ctastyle: 'dark',
                   isoutline: 'true',

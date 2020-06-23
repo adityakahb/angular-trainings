@@ -47,4 +47,43 @@
       }
     }
   }
+  .d-desc-cta {
+    background-color: transparent;
+    position: relative;
+    .ikn {
+      position: absolute;
+      right: 0;
+      top: 0;
+      height: 100%;
+      width: rem(40px);
+      justify-content: center;
+      align-items: center;
+      &.plus {
+        display: flex;
+      }
+      &.minus {
+        display: none;
+      }
+    }
+  }
+  .prod-desc {
+    .desc {
+      display: none;
+    }
+    &.active {
+      .d-desc-cta {
+        .ikn {
+          &.plus {
+            display: none;
+          }
+          &.minus {
+            display: flex;
+          }
+        }
+      }
+      .desc {
+        display: block;
+      }
+    }
+  }
 }

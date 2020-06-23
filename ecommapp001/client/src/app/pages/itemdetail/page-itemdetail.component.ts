@@ -19,6 +19,7 @@ export class PageItemdetailComponent implements OnInit {
   modalRef: BsModalRef;
   subscriptions: Subscription[] = [];
   detailslider;
+  desctoggled = false;
 
   imgArr = [
     'https://via.placeholder.com/2400x2400',
