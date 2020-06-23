@@ -1,9 +1,10 @@
-import { Component, OnInit, ViewChild, NgZone, ElementRef, AfterViewInit, ViewEncapsulation, TemplateRef } from '@angular/core';
+import { ChangeDetectorRef, Component, OnInit, ViewChild, NgZone, ElementRef, ViewEncapsulation, TemplateRef } from '@angular/core';
 import { BsModalRef, BsModalService } from 'ngx-bootstrap/modal';
 import { SearchService } from 'src/app/shared/services/search.service';
+import { combineLatest, Subscription } from 'rxjs';
 
 declare const require: any;
-declare const stickybits: any;
+declare const $: any;
 
 const detailJson = require('./../../shared/data/itemdetail.json') || {};
 
@@ -13,13 +14,28 @@ const detailJson = require('./../../shared/data/itemdetail.json') || {};
   styleUrls: ['./page-itemdetail.component.scss'],
   encapsulation: ViewEncapsulation.None
 })
-export class PageItemdetailComponent implements OnInit, AfterViewInit {
-  @ViewChild('searchsticky') searchsticky: ElementRef;
+export class PageItemdetailComponent implements OnInit {
+  @ViewChild('detailgallery') detailgallery: ElementRef;
   modalRef: BsModalRef;
+  subscriptions: Subscription[] = [];
+  detailslider;
 
-  idetail = {};
+  imgArr = [
+    'https://via.placeholder.com/2400x2400',
+    'https://via.placeholder.com/2400x2400',
+    'https://via.placeholder.com/2400x2400',
+    'https://via.placeholder.com/2400x2400',
+    'https://via.placeholder.com/2400x2400',
+    'https://via.placeholder.com/2400x2400',
+    'https://via.placeholder.com/2400x2400'
+  ]
 
-  constructor(private searchService: SearchService, private modalService: BsModalService, private ngZone: NgZone) { }
+  idetail;
+
+  constructor(private searchService: SearchService,
+              private modalService: BsModalService,
+              private ngZone: NgZone,
+              private changeDetection: ChangeDetectorRef) { }
 
   ngOnInit() {
     this.searchService.getSearchResults('').subscribe((res) => {
@@ -29,37 +45,87 @@ export class PageItemdetailComponent implements OnInit, AfterViewInit {
     });
   }
 
-  ngAfterViewInit() {
+  initSlider() {
     this.ngZone.runOutsideAngular(() => {
       if (window && document) {
-        // if (stickybits && this.searchsticky.nativeElement) {
-        //   stickybits('#' + this.searchsticky.nativeElement.getAttribute('id'), {useStickyClasses: true, stickyBitStickyOffset: 64});
-        // }
-        // const parent = document.getElementById('prodDetails');
-        // const tables = parent.querySelectorAll('table');
-
-        // const specsArr = Array.prototype.slice.call(tables || []).map(table => {
-        //   const trs = table.querySelectorAll('tr');
-        //   return {
-        //     table: Array.prototype.slice.call(trs || []).map(tr => {
-        //       // console.log('===============tr', tr.getElementsByClassName('label')[0]);
-        //       return {
-        //         label: tr.getElementsByClassName('label').length > 0 ? tr.getElementsByClassName('label')[0].innerHTML : '',
-        //         value: tr.getElementsByClassName('value').length > 0 ? tr.getElementsByClassName('value')[0].innerHTML : ''
-        //       }
-        //     })
-        //   };
-        // });
-
-        // console.log('=============specsArr', JSON.stringify(specsArr));
+        const slider = document.getElementById('detailslider');
+        if (slider) {
+          $(slider).on('init', () => {
+            const slides = slider.querySelectorAll('.d-img');
+            slides.forEach(slide => {
+              $(slide).trigger('zoom.destroy').zoom({ on: 'grab' });
+            });
+            this.detailslider = slider;
+          });
+          setTimeout(() => {
+            $(slider).slick({
+              arrows: true,
+              autoplay: false,
+              dots: false,
+              infinite: true,
+              slidesToShow: 1,
+              slidesToScroll: 1,
+              speed: 300,
+              prevArrow: `<button
+              class="btn btn-light btn-lg slick-prev"
+              type="button" title="Previous">
+              <ion-icon name="chevron-back"></ion-icon>
+            </button>`,
+              nextArrow: `<button
+              class="btn btn-light btn-lg slick-next"
+              type="button" title="Next">
+              <ion-icon name="chevron-forward"></ion-icon>
+            </button>`
+            });
+          }, 0);
+        }
       }
     });
   }
 
-  openDetailGallery(template: TemplateRef<any>) {
+  destroySlider() {
+    this.ngZone.runOutsideAngular(() => {
+      if (window && document && this.detailslider) {
+        try {
+          $(this.detailslider).slick('unslick');
+        }
+        catch(e) {}
+      }
+    });
+  }
+
+  openDetailGallery($event: Event, template: TemplateRef<any>) {
+    $event.preventDefault();
+    const _combine = combineLatest(
+      this.modalService.onShow,
+      this.modalService.onShown,
+      this.modalService.onHide,
+      this.modalService.onHidden
+    ).subscribe(() => this.changeDetection.markForCheck());
+    this.subscriptions.push(
+      this.modalService.onShown.subscribe((reason: string) => {
+        console.log(`onShown event has been fired`);
+        this.initSlider();
+      })
+    );
+    this.subscriptions.push(
+      this.modalService.onHidden.subscribe((reason: string) => {
+        console.log(`onHidden event has been fired`);
+        this.unsubscribe();
+        this.destroySlider();
+      })
+    );
+    this.subscriptions.push(_combine);
     this.modalRef = this.modalService.show(
       template,
-      Object.assign({}, { class: 'gray modal-lg' })
+      Object.assign({}, { class: 'idetail-modal' })
     );
+  }
+
+  unsubscribe() {
+    this.subscriptions.forEach((subscription: Subscription) => {
+      subscription.unsubscribe();
+    });
+    this.subscriptions = [];
   }
 }

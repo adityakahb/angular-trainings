@@ -1,53 +1,13 @@
 <div class="main-content">
-  <section class="itemdetail-comp">
+  <section class="itemdetail-comp" *ngIf="idetail">
     <div class="max-wrap">
       <div class="container-fluid">
         <div class="row py-3">
           <div class="col-md-20 col-xl-15 col-xxl-12">
             <div class="detail-gallery mb-3">
-                <a class="primary" (click)="openDetailGallery(detailgallery)">
+                <a href="#" *ngFor="let img of imgArr; index as i" [class]="i === 0 ? 'primary' : ''" (click)="openDetailGallery($event, detailgallery)">
                   <div class="d-img">
-                    <img src="https://via.placeholder.com/400x400"/>
-                  </div>
-                </a>
-                <a href="#">
-                  <div class="d-img">
-                    <img src="https://via.placeholder.com/400x400"/>
-                  </div>
-                </a>
-                <a href="#">
-                  <div class="d-img">
-                    <img src="https://via.placeholder.com/400x400"/>
-                  </div>
-                </a>
-                <a href="#">
-                  <div class="d-img">
-                    <img src="https://via.placeholder.com/400x400"/>
-                  </div>
-                </a>
-                <a href="#">
-                  <div class="d-img">
-                    <img src="https://via.placeholder.com/400x400"/>
-                  </div>
-                </a>
-                <a href="#">
-                  <div class="d-img">
-                    <img src="https://via.placeholder.com/400x400"/>
-                  </div>
-                </a>
-                <a href="#">
-                  <div class="d-img">
-                    <img src="https://via.placeholder.com/400x400"/>
-                  </div>
-                </a>
-                <a href="#">
-                  <div class="d-img">
-                    <img src="https://via.placeholder.com/400x400"/>
-                  </div>
-                </a>
-                <a href="#">
-                  <div class="d-img">
-                    <img src="https://via.placeholder.com/400x400"/>
+                    <img [src]="img"/>
                   </div>
                 </a>
             </div>
@@ -126,12 +86,16 @@
 
 <ng-template #detailgallery>
   <div class="modal-header">
-    <h4 class="modal-title pull-left">Modal</h4>
+    <h4 class="modal-title pull-left">Gallery</h4>
     <button type="button" class="close pull-right" aria-label="Close" (click)="modalRef.hide()">
-      <span aria-hidden="true">&times;</span>
+      <ion-icon name="close"></ion-icon>
     </button>
   </div>
   <div class="modal-body">
-    Just a modal with a bunch of words inside, nothing serious.
+    <div id="detailslider" class="px-1">
+      <div class="d-img" *ngFor="let img of imgArr">
+        <img class="d-img-src" [src]="img"/>
+      </div>
+    </div>
   </div>
 </ng-template> 
