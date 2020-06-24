@@ -1,45 +1,11 @@
 @import './sass/rem';
+@import './sass/colors';
 
-// $primary: #376888;
-// $secondary: #6e5375;
-// $success: #6bc76b;
-// $info: #6cc4df;
-// $warning: #f8b976;
-// $danger: #de786a;
-// $light: #fcddc9;
-// $dark: #3d4447;
+$primary-dark: darken($primary, 10%);
+$secondary-dark: darken($secondary, 10%);
 
-// $primary: #325064;
-// $secondary: #57384f;
-// $success: #6bc76b;
-// $info: #6cc4df;
-// $warning: #f8b976;
-// $danger: #de786a;
-// $light: #fcddc9;
-// $dark: #3d4447;
-
-$palette-color1: #8cd0e5;
-$palette-color2: #376888;
-$palette-color3: #826b88;
-$palette-color4: #de786a;
-$palette-color5: #f8b976;
-$palette-color6: #fcddc9;
-
-
-$primary: #376888;
-$secondary: #826b88;
-$success: #6bc76b;
-$info: #8cd0e5;
-$warning: #f8b976;
-$danger: #de786a;
-$light: #fcddc9;
-$dark: #3d4447;
-
-$primary-dark: darken($primary, 15%);
-$secondary-dark: darken($secondary, 15%);
-
-$primary-light: lighten($primary, 15%);
-$secondary-light: lighten($secondary, 15%);
+$primary-light: lighten($primary, 10%);
+$secondary-light: lighten($secondary, 10%);
 
 $theme-colors: () !default;
 // stylelint-disable-next-line scss/dollar-variable-default
@@ -51,7 +17,8 @@ $theme-colors: map-merge((
   "warning": $warning,
   "danger": $danger,
   "light": $light,
-  "dark": $dark),
+  "dark": $dark
+),
 $theme-colors);
 
 

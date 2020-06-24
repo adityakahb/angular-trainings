@@ -4,6 +4,9 @@
     h1 {
       font-weight: 400;
     }
+    .breadcrumb {
+      background: transparent;
+    }
     .desc {
       color: $gray-600;
       font-size: rem(14px);
@@ -51,7 +54,8 @@
     }
   }
   .d-desc-cta {
-    background-color: transparent;
+    background-color: $gray-200;
+    border: rem(1px) solid $gray-200;
     position: relative;
     .ikn {
       position: absolute;
